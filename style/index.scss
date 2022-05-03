@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     transition: .25s ease-in-out;
+    font-family: sans-serif;
+    
+}
+html {
+   scroll-behavior: smooth; 
 }
 
 @mixin center-aligned {
@@ -16,7 +21,12 @@
 body {
     background: rgb(31, 19, 5);
 }
-span {
+
+
+// HAMBURGER MENU //
+
+#ham > span,
+#cross > span {
     display: block;
     background: lavender;
     border-radius: 2px;
@@ -107,10 +117,13 @@ span {
   }
 }
 
+// ^^ HAMBURGER MENU ^^ //
+
 header {
   height: 100vh;
-  
 }
+
+
 .video-container {
     height: 79.5vh;
     width: 100vw;
@@ -132,6 +145,27 @@ video {
     position: absolute;
     top:0;
 }
+
+#logo {
+    position: absolute;
+    display: inline-block;
+    top: 40vh;
+    left: 30vw;
+    font-size: clamp(90px, 30vw, 150px);  
+    overflow: hidden;
+    transition: 1s;
+    
+}
+// #logo > span {
+//    transition: 3s; 
+// }
+
+#logo.apart {
+    left: 10vw;
+    letter-spacing: 150px;
+    color:rgba(0, 0, 0, 0);
+}
+
 main {
   height: 180vh;
   background:rgb(31, 19, 5);
@@ -141,7 +175,7 @@ footer {
     background:rgb(68, 81, 107);
 }
 
-@media screen and (max-width: 1004px) {
+@media screen and (max-width: 1100px) {
     video {
         height: 100%;
         width: auto;
