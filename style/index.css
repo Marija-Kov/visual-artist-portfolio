@@ -5,10 +5,115 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 body {
+  background: #1f1305;
+}
+
+span {
+  display: block;
   background: lavender;
+  border-radius: 2px;
+}
+
+#menu-toggle {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 0;
+  cursor: pointer;
+}
+
+#menu-toggle #ham {
+  height: 80%;
+  width: 80%;
+  margin: 15px;
+  position: absolute;
+}
+
+#menu-toggle #ham span {
+  width: 70%;
+  height: 4px;
+  margin: 10px 0;
+}
+
+#menu-toggle #ham span:nth-child(1) {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+#menu-toggle #ham span:nth-child(2) {
+  -webkit-transition-delay: .625s;
+          transition-delay: .625s;
+}
+
+#menu-toggle #ham span:nth-child(3) {
+  -webkit-transition-delay: .75s;
+          transition-delay: .75s;
+}
+
+#menu-toggle #cross {
+  height: 80%;
+  width: 80%;
+  margin: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+}
+
+#menu-toggle #cross span:nth-child(1) {
+  position: absolute;
+  height: 0%;
+  width: 4px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  top: 10px;
+  left: 20px;
+}
+
+#menu-toggle #cross span:nth-child(2) {
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  top: 32px;
+  left: -2px;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+#menu-toggle.open #ham span {
+  width: 0%;
+}
+
+#menu-toggle.open #ham span:nth-child(1) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+#menu-toggle.open #ham span:nth-child(2) {
+  -webkit-transition-delay: .125s;
+          transition-delay: .125s;
+}
+
+#menu-toggle.open #ham span:nth-child(3) {
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+#menu-toggle.open #cross span:nth-child(1) {
+  height: 80%;
+  -webkit-transition-delay: .625s;
+          transition-delay: .625s;
+}
+
+#menu-toggle.open #cross span:nth-child(2) {
+  width: 80%;
+  -webkit-transition-delay: .375s;
+          transition-delay: .375s;
 }
 
 header {
@@ -34,14 +139,14 @@ video {
   height: 100%;
   width: 100%;
   z-index: 2;
-  background: rgba(158, 17, 240, 0.137);
+  background: rgba(85, 23, 201, 0.137);
   position: absolute;
   top: 0;
 }
 
 main {
   height: 180vh;
-  background: rgba(255, 242, 218, 0.815);
+  background: #1f1305;
 }
 
 footer {
