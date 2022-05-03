@@ -167,9 +167,37 @@ video {
 }
 
 main {
+  padding-top: 20vh;
+  display: flex;
+  flex-wrap: wrap;
   height: 180vh;
   background:rgb(31, 19, 5);
+  color: lavender;
 }
+.artwork {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    top: 150vh;
+}
+.artwork > section {
+      @include center-aligned;
+        width: 100%;
+        min-width: 375px;
+        height: 100%;
+        border: dotted 1px lavender;
+        flex: 1;
+    }
+
+h2 {
+    flex: 3;
+    text-align: center;
+    height:fit-content;
+    border: dotted 2px lavender;
+}
+
 footer {
     height: 20vh;
     background:rgb(68, 81, 107);
