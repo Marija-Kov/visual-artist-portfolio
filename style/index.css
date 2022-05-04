@@ -5,24 +5,31 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-  font-family: sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: menlo-regular;
+  src: url("/fonts/Menlo.ttc");
+}
+
 body {
   background: #1f1305;
+  font-family: menlo-regular;
 }
 
 #ham > span,
 #cross > span {
   display: block;
-  background: lavender;
+  background: whitesmoke;
   border-radius: 2px;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
 }
 
 #menu-toggle {
@@ -153,30 +160,38 @@ video {
 #logo {
   position: absolute;
   display: inline-block;
-  top: 40vh;
+  color: #1f1305;
+  top: 30vh;
   left: 30vw;
+  font-family: sans-serif;
   font-size: clamp(90px, 30vw, 150px);
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
+  white-space: nowrap;
+  word-wrap: nowrap;
 }
 
 #logo.apart {
   left: 10vw;
   letter-spacing: 150px;
   color: rgba(0, 0, 0, 0);
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
 }
 
 main {
-  padding-top: 20vh;
+  height: calc(190vh + 200px);
+  background: rgba(27, 20, 5, 0.233);
+  color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 180vh;
-  background: #1f1305;
-  color: lavender;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: dotted 1px whitesmoke;
 }
 
 .artwork {
@@ -185,13 +200,29 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
-  height: 40vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+  height: calc(100vh + 200px);
   width: 100%;
-  top: 150vh;
+  padding-top: 20vh;
 }
 
-.artwork > section {
+.artwork-sections-wrapper {
+  height: 33vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: dotted 1px whitesmoke;
+}
+
+.artwork-sections-wrapper > section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,35 +232,98 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  min-width: 375px;
-  height: 100%;
-  border: dotted 1px lavender;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  min-width: 375px;
+  max-width: 500px;
+  height: 33vh;
+  border: dotted 1px whitesmoke;
 }
 
-h2 {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+h3.artwork,
+h3.about {
   text-align: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: dotted 2px lavender;
+  overflow: hidden;
+  position: absolute;
+  background: none;
+  color: rgba(245, 245, 245, 0.5);
+  top: 700px;
+}
+
+h3.about {
+  top: 1500px;
+}
+
+.about {
+  height: 90vh;
+  background: rgba(34, 28, 68, 0.801);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about > article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: dotted 1px whitesmoke;
+  max-width: 1200px;
+}
+
+.about > article > p,
+.about > article > picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: dotted 1px whitesmoke;
+  height: 100%;
+  min-width: 375px;
 }
 
 footer {
-  height: 20vh;
+  height: 10vh;
   background: #44516b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
 }
 
 @media screen and (max-width: 1100px) {
   video {
     height: 100%;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about > article {
+    padding-top: 25vh;
   }
 }
 /*# sourceMappingURL=index.css.map */

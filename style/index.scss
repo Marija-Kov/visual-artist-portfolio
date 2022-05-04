@@ -4,12 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .25s ease-in-out;
-    font-family: sans-serif;
+    //transition: .25s ease-in-out;
+    text-decoration: none;
+    color: whitesmoke;
     
 }
 html {
    scroll-behavior: smooth; 
+}
+@font-face {
+    font-family: menlo-regular;
+    src: url("/fonts/Menlo.ttc");
 }
 
 @mixin center-aligned {
@@ -20,6 +25,7 @@ html {
 
 body {
     background: rgb(31, 19, 5);
+    font-family: menlo-regular;
 }
 
 
@@ -28,8 +34,9 @@ body {
 #ham > span,
 #cross > span {
     display: block;
-    background: lavender;
+    background: whitesmoke;
     border-radius: 2px;
+    transition: .25s ease;
 }
 #menu-toggle {
   display: inline-block;
@@ -149,63 +156,110 @@ video {
 #logo {
     position: absolute;
     display: inline-block;
-    top: 40vh;
+    color:rgb(31, 19, 5);
+    top: 30vh;
     left: 30vw;
+    font-family: sans-serif;
     font-size: clamp(90px, 30vw, 150px);  
     overflow: hidden;
     transition: 1s;
-    
+    white-space: nowrap;
+    word-wrap: nowrap;
 }
-// #logo > span {
-//    transition: 3s; 
-// }
 
 #logo.apart {
     left: 10vw;
     letter-spacing: 150px;
     color:rgba(0, 0, 0, 0);
+    filter: blur(7px);
 }
 
 main {
-  padding-top: 20vh;
+  height: calc(190vh + 200px);
+  background:rgba(27, 20, 5, 0.233);
+  color: whitesmoke;
   display: flex;
-  flex-wrap: wrap;
-  height: 180vh;
-  background:rgb(31, 19, 5);
-  color: lavender;
+  flex-direction: column;
+  border: dotted 1px whitesmoke;
 }
 .artwork {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    height: 40vh;
+    //align-items: center;
+    justify-content: center;
+    gap: 0;
+    height: calc(100vh + 200px);
     width: 100%;
-    top: 150vh;
+    padding-top: 20vh;
 }
-.artwork > section {
-      @include center-aligned;
-        width: 100%;
-        min-width: 375px;
-        height: 100%;
-        border: dotted 1px lavender;
+.artwork-sections-wrapper {
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: dotted 1px whitesmoke;
+
+}
+.artwork-sections-wrapper > section {
+     @include center-aligned;
         flex: 1;
+        min-width: 375px;
+        max-width: 500px;
+        height: 33vh;
+        border: dotted 1px whitesmoke;
     }
 
-h2 {
-    flex: 3;
+h3.artwork,
+h3.about {
     text-align: center;
-    height:fit-content;
-    border: dotted 2px lavender;
+    overflow: hidden;
+    position: absolute;
+    background: none;
+    color: rgba(245, 245, 245, 0.5); 
+    top: 700px;
+}
+h3.about {
+    top: 1500px;
 }
 
+.about {
+    height: 90vh;
+    background:rgba(34, 28, 68, 0.801);
+    @include center-aligned;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.about > article {
+    display: flex;
+    flex-wrap: wrap;
+    border: dotted 1px whitesmoke;
+    max-width: 1200px;
+}
+.about > article > p,
+.about > article > picture {
+    flex: 1;
+    border: dotted 1px whitesmoke;
+    height: 100%;
+    min-width: 375px;
+}
 footer {
-    height: 20vh;
+    height: 10vh;
     background:rgb(68, 81, 107);
+    @include center-aligned;
+}
+.attribution {
+    font-size: 11px;
 }
 
 @media screen and (max-width: 1100px) {
     video {
         height: 100%;
         width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about > article {
+        padding-top: 25vh;
     }
 }
