@@ -6,9 +6,9 @@
     box-sizing: border-box;
     //transition: .25s ease-in-out;
     text-decoration: none;
-    color: whitesmoke;
-    
+    color: whitesmoke;  
 }
+
 html {
    scroll-behavior: smooth; 
 }
@@ -26,8 +26,10 @@ html {
 body {
     background: rgb(31, 19, 5);
     font-family: menlo-regular;
+    font-size: clamp(12px, 1vw, 14px);
 }
 
+// <<<<  T O P  /  H E A D E R  S E C T I O N  >>>> //
 
 // HAMBURGER MENU //
 
@@ -174,6 +176,8 @@ video {
     filter: blur(7px);
 }
 
+// <<<<  M A I N  /  C O N T E N T  S E C T I O N  >>>> //
+                      
 main {
   height: calc(190vh + 200px);
   background:rgba(27, 20, 5, 0.233);
@@ -181,6 +185,8 @@ main {
   display: flex;
   flex-direction: column;
   border: dotted 1px whitesmoke;
+  line-height: 140%;
+  letter-spacing: 110%;
 }
 .artwork {
     display: flex;
@@ -191,6 +197,7 @@ main {
     height: calc(100vh + 200px);
     width: 100%;
     padding-top: 20vh;
+    
 }
 .artwork-sections-wrapper {
     height: 33vh;
@@ -198,8 +205,8 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     border: dotted 1px whitesmoke;
-
 }
+
 .artwork-sections-wrapper > section {
      @include center-aligned;
         flex: 1;
@@ -207,7 +214,26 @@ main {
         max-width: 500px;
         height: 33vh;
         border: dotted 1px whitesmoke;
+        &:nth-child(1) {
+        background-image: url("/media/images/Sail.jpg");
+        background-size: 180%;
+        background-position: center;
+        filter: grayscale(0.8);
+        
+        &:hover {
+            cursor: pointer;
+            filter: grayscale(0.5);
+            transition: 20s ease-out;
+            background-size: 140%;
+            background-position: auto;
+            background-position-x: 20%;
+            background-position-y: 45%;
+            
+        }
+        }
+        
     }
+
 
 h3.artwork,
 h3.about {
@@ -218,6 +244,9 @@ h3.about {
     color: rgba(245, 245, 245, 0.5); 
     top: 700px;
 }
+
+// <<<  B O T T O M  /  A B O U T  S E C T I O N  >>>> //
+
 h3.about {
     top: 1500px;
 }
@@ -242,6 +271,7 @@ h3.about {
     height: 100%;
     min-width: 375px;
 }
+
 footer {
     height: 10vh;
     background:rgb(68, 81, 107);

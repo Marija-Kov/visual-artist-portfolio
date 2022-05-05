@@ -21,6 +21,7 @@ html {
 body {
   background: #1f1305;
   font-family: menlo-regular;
+  font-size: clamp(12px, 1vw, 14px);
 }
 
 #ham > span,
@@ -192,6 +193,8 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   border: dotted 1px whitesmoke;
+  line-height: 140%;
+  letter-spacing: 110%;
 }
 
 .artwork {
@@ -239,6 +242,26 @@ main {
   max-width: 500px;
   height: 33vh;
   border: dotted 1px whitesmoke;
+}
+
+.artwork-sections-wrapper > section:nth-child(1) {
+  background-image: url("/media/images/Sail.jpg");
+  background-size: 180%;
+  background-position: center;
+  -webkit-filter: grayscale(0.8);
+          filter: grayscale(0.8);
+}
+
+.artwork-sections-wrapper > section:nth-child(1):hover {
+  cursor: pointer;
+  -webkit-filter: grayscale(0.5);
+          filter: grayscale(0.5);
+  -webkit-transition: 20s ease-out;
+  transition: 20s ease-out;
+  background-size: 140%;
+  background-position: auto;
+  background-position-x: 20%;
+  background-position-y: 45%;
 }
 
 h3.artwork,
