@@ -1,3 +1,4 @@
+@import url(_hamburger.css);
 *,
 *::after,
 *::before {
@@ -22,112 +23,6 @@ body {
   background: #1f1305;
   font-family: menlo-regular;
   font-size: clamp(12px, 1vw, 14px);
-}
-
-#ham > span,
-#cross > span {
-  display: block;
-  background: whitesmoke;
-  border-radius: 2px;
-  -webkit-transition: .25s ease;
-  transition: .25s ease;
-}
-
-#menu-toggle {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  position: fixed;
-  right: 0;
-  cursor: pointer;
-}
-
-#menu-toggle #ham {
-  height: 80%;
-  width: 80%;
-  margin: 15px;
-  position: absolute;
-}
-
-#menu-toggle #ham span {
-  width: 70%;
-  height: 4px;
-  margin: 10px 0;
-}
-
-#menu-toggle #ham span:nth-child(1) {
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
-}
-
-#menu-toggle #ham span:nth-child(2) {
-  -webkit-transition-delay: .625s;
-          transition-delay: .625s;
-}
-
-#menu-toggle #ham span:nth-child(3) {
-  -webkit-transition-delay: .75s;
-          transition-delay: .75s;
-}
-
-#menu-toggle #cross {
-  height: 80%;
-  width: 80%;
-  margin: 15px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  position: absolute;
-}
-
-#menu-toggle #cross span:nth-child(1) {
-  position: absolute;
-  height: 0%;
-  width: 4px;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  top: 10px;
-  left: 20px;
-}
-
-#menu-toggle #cross span:nth-child(2) {
-  position: absolute;
-  width: 0%;
-  height: 4px;
-  top: 32px;
-  left: -2px;
-  -webkit-transition-delay: .25s;
-          transition-delay: .25s;
-}
-
-#menu-toggle.open #ham span {
-  width: 0%;
-}
-
-#menu-toggle.open #ham span:nth-child(1) {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-#menu-toggle.open #ham span:nth-child(2) {
-  -webkit-transition-delay: .125s;
-          transition-delay: .125s;
-}
-
-#menu-toggle.open #ham span:nth-child(3) {
-  -webkit-transition-delay: .25s;
-          transition-delay: .25s;
-}
-
-#menu-toggle.open #cross span:nth-child(1) {
-  height: 80%;
-  -webkit-transition-delay: .625s;
-          transition-delay: .625s;
-}
-
-#menu-toggle.open #cross span:nth-child(2) {
-  width: 80%;
-  -webkit-transition-delay: .375s;
-          transition-delay: .375s;
 }
 
 header {
@@ -183,7 +78,7 @@ video {
 
 main {
   height: calc(190vh + 200px);
-  background: rgba(27, 20, 5, 0.233);
+  background: rgba(34, 28, 68, 0.801);
   color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,11 +171,14 @@ h3.about {
 
 h3.about {
   top: 1500px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .about {
   height: 90vh;
-  background: rgba(34, 28, 68, 0.801);
+  border: dotted 1px whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
