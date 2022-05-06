@@ -1,4 +1,3 @@
-@import url(_hamburger.css);
 *,
 *::after,
 *::before {
@@ -10,8 +9,22 @@
   color: whitesmoke;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: hkgrotesk-light;
+  src: url("/fonts/HKGrotesk-Light.ttf");
+}
+
+@font-face {
+  font-family: essence-sans;
+  src: url("/fonts/Essence-Sans.ttf");
 }
 
 @font-face {
@@ -21,8 +34,125 @@ html {
 
 body {
   background: #1f1305;
-  font-family: menlo-regular;
-  font-size: clamp(12px, 1vw, 14px);
+  font-family: hkgrotesk-light;
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+nav {
+  position: absolute;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+#ham > span,
+#cross > span {
+  display: block;
+  background: whitesmoke;
+  border-radius: 2px;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
+}
+
+#menu-toggle {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 0;
+  cursor: pointer;
+}
+
+#menu-toggle #ham {
+  height: 80%;
+  width: 80%;
+  margin: 15px;
+  position: absolute;
+}
+
+#menu-toggle #ham span {
+  width: 70%;
+  height: 4px;
+  margin: 10px 0;
+}
+
+#menu-toggle #ham span:nth-child(1) {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+#menu-toggle #ham span:nth-child(2) {
+  -webkit-transition-delay: .625s;
+          transition-delay: .625s;
+}
+
+#menu-toggle #ham span:nth-child(3) {
+  -webkit-transition-delay: .75s;
+          transition-delay: .75s;
+}
+
+#menu-toggle #cross {
+  height: 80%;
+  width: 80%;
+  margin: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+}
+
+#menu-toggle #cross span:nth-child(1) {
+  position: absolute;
+  height: 0%;
+  width: 4px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  top: 10px;
+  left: 20px;
+}
+
+#menu-toggle #cross span:nth-child(2) {
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  top: 32px;
+  left: -2px;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+#menu-toggle.open #ham span {
+  width: 0%;
+}
+
+#menu-toggle.open #ham span:nth-child(1) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+#menu-toggle.open #ham span:nth-child(2) {
+  -webkit-transition-delay: .125s;
+          transition-delay: .125s;
+}
+
+#menu-toggle.open #ham span:nth-child(3) {
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+#menu-toggle.open #cross span:nth-child(1) {
+  height: 80%;
+  -webkit-transition-delay: .625s;
+          transition-delay: .625s;
+}
+
+#menu-toggle.open #cross span:nth-child(2) {
+  width: 80%;
+  -webkit-transition-delay: .375s;
+          transition-delay: .375s;
 }
 
 header {
