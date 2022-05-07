@@ -6,7 +6,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  color: whitesmoke;
 }
 
 li {
@@ -36,17 +35,33 @@ body {
   background: #1f1305;
   font-family: hkgrotesk-light;
   font-size: clamp(14px, 1.5vw, 16px);
+  color: whitesmoke;
 }
 
 nav {
   position: absolute;
+  top: 30px;
+  right: 5vw;
+  z-index: 0;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+}
+
+nav ul li::first-letter {
+  text-transform: uppercase;
+}
+
+li > a {
+  color: rgba(245, 245, 245, 0.747);
+}
+
+li > a:hover {
+  color: whitesmoke;
 }
 
 #ham > span,
@@ -217,7 +232,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: dotted 1px whitesmoke;
+  border: dotted 1px rgba(245, 245, 245, 0.473);
   line-height: 140%;
   letter-spacing: 110%;
 }
@@ -247,7 +262,7 @@ main {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: dotted 1px whitesmoke;
+  border: dotted 1px rgba(245, 245, 245, 0.438);
 }
 
 .artwork-sections-wrapper > section {
@@ -266,7 +281,7 @@ main {
   min-width: 375px;
   max-width: 500px;
   height: 33vh;
-  border: dotted 1px whitesmoke;
+  border: dotted 1px rgba(245, 245, 245, 0.452);
 }
 
 .artwork-sections-wrapper > section:nth-child(1) {
@@ -308,7 +323,7 @@ h3.about {
 
 .about {
   height: 90vh;
-  border: dotted 1px whitesmoke;
+  border: dotted 1px rgba(245, 245, 245, 0.479);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +348,6 @@ h3.about {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: dotted 1px whitesmoke;
   max-width: 1200px;
 }
 
@@ -342,7 +356,7 @@ h3.about {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: dotted 1px whitesmoke;
+  border: dotted 1px rgba(245, 245, 245, 0.479);
   height: 100%;
   min-width: 375px;
 }

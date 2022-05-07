@@ -6,8 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     //transition: .25s ease-in-out;
-    text-decoration: none;
-    color: whitesmoke;  
+    text-decoration: none; 
 }
 li {
     list-style: none;
@@ -40,17 +39,33 @@ body {
     background: rgb(31, 19, 5);
     font-family: hkgrotesk-light;
     font-size: clamp(14px, 1.5vw, 16px);
+    color: whitesmoke; 
 }
 
 nav {
     position: absolute;
+    top: 30px;
+    right: 5vw;
+    z-index: 0;
     ul {
         display: flex;
-        gap: 20px;
-
+        gap: 30px;
+      li {
+        &::first-letter {
+        text-transform: uppercase;
+        }
+        
+      }
     }
+    
 }
 
+li > a {
+  color:rgba(245, 245, 245, 0.747);
+  &:hover{
+  color:rgba(245, 245, 245, 1);
+  }
+}
 // <<<<  T O P  /  H E A D E R  S E C T I O N  >>>> //
 
 // HAMBURGER MENU //
@@ -205,7 +220,7 @@ main {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  border: dotted 1px whitesmoke;
+  border: dotted 1px rgba(245, 245, 245, 0.473);
   line-height: 140%;
   letter-spacing: 110%;
 }
@@ -225,7 +240,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: dotted 1px whitesmoke;
+    border: dotted 1px rgba(245, 245, 245, 0.438);
 }
 
 .artwork-sections-wrapper > section {
@@ -234,7 +249,7 @@ main {
         min-width: 375px;
         max-width: 500px;
         height: 33vh;
-        border: dotted 1px whitesmoke;
+        border: dotted 1px rgba(245, 245, 245, 0.452);
         &:nth-child(1) {
         background-image: url("/media/images/Sail.jpg");
         background-size: 180%;
@@ -275,7 +290,7 @@ h3.about {
 
 .about {
     height: 90vh;
-    border: dotted 1px whitesmoke;
+    border: dotted 1px rgba(245, 245, 245, 0.479);
     @include center-aligned;
     justify-content: flex-start;
     flex-direction: column;
@@ -283,13 +298,12 @@ h3.about {
 .about > article {
     display: flex;
     flex-wrap: wrap;
-    border: dotted 1px whitesmoke;
     max-width: 1200px;
 }
 .about > article > p,
 .about > article > picture {
     flex: 1;
-    border: dotted 1px whitesmoke;
+    border: dotted 1px rgba(245, 245, 245, 0.479);
     height: 100%;
     min-width: 375px;
 }
