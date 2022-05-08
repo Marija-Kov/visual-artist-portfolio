@@ -3,13 +3,13 @@
        {
          "name": "Mercy",
          "year": "2019",
-         "medium": "Plastic bottle, tape, straw, sodium-bicarbonate, vinegar, blue ink",
-         "size": "20 x 20 cm",
+         "medium": "5l plastic bottles, vacuum pipe, tape, straw, sodium-bicarbonate, vinegar, blue ink",
+         "size": "00 x 00 cm",
           "images": {
-            " " : " ",
-            " " : " "         
+            "jpg" : "/media/images/3d/mercy-0.jpg"
+                  
          },
-         "description": " "
+         "description": "A functional construction for the performance of euthanasia on small animals directly poses the question of ethics and compassion in situations where the thought of effectively putting an end to someone's suffering seems counterintuitive. "
       },
        {
          "name": "We are Stardust",
@@ -17,30 +17,19 @@
          "medium": "glass jar, charred bits of plants and animal body parts",
          "size": "720ml",
           "images": {
-            " " : " ",
-            " " : " "         
+            "jpg" : "/media/images/3d/we-are-stardust-0.jpg"
+         
          },
-         "description": " "
-      },
-       {
-         "name": "Mercy",
-         "year": "2019",
-         "medium": "plastic bottle, tape, straw, sodium-bicarbonate, vinegar, blue ink",
-         "size": "20 x 20 cm",
-          "images": {
-            " " : " ",
-            " " : " "         
-         },
-         "description": " "
+         "description": "The concept was inspired by the lyrics of Joni Mitchell in the context of preservation of the life on Earth. The charred substance composed out of burnt animal body parts (byproducts of the food industry) and plants stand as the essentialist response to the illusionist ideas about existence, primarily that of humans and their consciousness - a cultural tendency that transcends the mere fight for survival and that might just be the one which makes humans the most invasive species on the planet. The project is a particularly uncharismatic allusion to the distant future."
       },
        {
          "name": "Conflux series",
          "year": "2019",
          "medium": "Acrylic, paper pulp, cement, salt crystals on chipwood board",
-         "size": "20 x 20 cm",
+         "size": "00 x 00 cm",
           "images": {
-            " " : " ",
-            " " : " "         
+            "jpg" : "/media/images/3d/conflux-1.jpg",
+            "closeup" : "/media/images/3d/conflux-2.jpg"         
          },
          "description": " "
       }
@@ -53,23 +42,26 @@
          "medium": "Hand embroidery mounted on canvas",
          "size": "20 x 20 cm",
          "images": {
-            " " : " ",
-            " " : " "         
+            "jpg" : "/media/images/embroidery/fusion-1.jpg",
+            "angle" : "/media/images/embroidery/fusion-2.jpg"         
          },
 
          "description": " "
       },
       {
-         "name": "Purgatorium series",
+         "name": "Purgatorium",
          "year": "2019 - 2020",
          "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
-         "size": "20 x 20 cm",
+         "size": "100 x 150 cm",
          "images": {
-            " " : " ",
-            " " : " "         
+            "jpg1" : "/media/images/on-canvas/purgatorium-1.jpg",
+            "jpg2" : "/media/images/on-canvas/purgatorium-2.jpg", 
+            "jpg3" : "/", 
+            "closeup" : "/media/images/on-canvas/purg-closeup.jpg"
+               
          },
 
-         "description": " "
+         "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
       },
        {
          "name": "View",
@@ -84,28 +76,34 @@
          "description": " "
       },
       {
-         "name": "Monotype series",
+         "name": "Untitled",
          "year": "2019 - 2020",
          "medium": "Oil / acrylic on paper",
          "size": "20 x 20 cm",
          "images": {
-            " " : " ",
-            " " : " "         
+            "jpg1" : "/media/images/on-paper/monotype-1.jpg",
+            "jpg2" : " "         
          },
 
-         "description": " "
+         "description": "Monotypes on paper."
       },
       {
-         "name": "Oil pastel series",
+         "name": "Untitled",
          "year": "2020",
          "medium": "Oil pastel on paper",
-         "size": "20 x 20 cm",
+         "size": "30 x 40cm",
          "images": {
-            " " : " ",
-            " " : " "         
+            "jpg1" : "/media/images/on-paper/pastel-1.jpg",
+             "jpg2" : "/media/images/on-paper/pastel-2.jpg",  
+             "jpg3" : "/media/images/on-paper/pastel-3.jpg",
+             "jpg4" : "/media/images/on-paper/pastel-4.jpg",
+             "jpg5" : "/media/images/on-paper/pastel-5.jpg",
+             "jpg6" : "/media/images/on-paper/pastel-6.jpg",  
+             "jpg7" : "/media/images/on-paper/pastel-7.jpg"     
+             
          },
 
-         "description": " "
+         "description": "Oil pastel on paper series."
       }
    ]
 }
