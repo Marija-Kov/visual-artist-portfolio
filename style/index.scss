@@ -75,11 +75,15 @@ body {
 
 nav {
     position: fixed;
-    top: 30px;
-    right: 10vw;
+    z-index: 99;
+    top:0;
     display: inline-block;
     animation: fadeInX 0.5s;
+    background:rgb(31, 19, 5);
+    height: 80px;
+    width: 100vw;
     ul {
+        padding:30px 100px 0 55vw;
         display: flex;
         gap: 30px;
       li {
@@ -111,9 +115,11 @@ li > a {
 #menu-toggle {
   display: none;
   width: 80px;
-  height: 80px;
+  aspect-ratio: 1;
   position:fixed;
   right: 0;
+  top: -6px;
+  z-index: 99;
   animation: fadeInX 0.3s;
   cursor:pointer;
   #ham {
@@ -254,13 +260,13 @@ video {
                       
 main {
   height: calc(190vh + 200px);
-  background:rgba(34, 28, 68, 0.801);
+  background:rgba(36, 23, 16, 0.87);
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  border: dotted 1px rgba(245, 245, 245, 0.473);
   line-height: 140%;
   letter-spacing: 110%;
+  
 }
 .artwork {
     display: flex;
@@ -270,6 +276,7 @@ main {
     gap: 0;
     height: calc(100vh + 200px);
     width: 100%;
+    padding: 0 10vw;
     padding-top: 20vh;
     
 }
@@ -278,15 +285,15 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: dotted 1px rgba(245, 245, 245, 0.438);
+    
 }
 
 .artwork-sections-wrapper > section {
      @include center-aligned;
         flex: 1;
-        min-width: 375px;
+        min-width: 300px;
         max-width: 500px;
-        height: 33vh;
+        height: 49vh;
         border: dotted 1px rgba(245, 245, 245, 0.452);
         &:nth-child(1) {
         background-image: url("/media/images/Sail.jpg");
@@ -345,6 +352,9 @@ h3.about {
     height: 100%;
     min-width: 375px;
 }
+.about > article > p {
+  padding: 0 10vw;
+}
 
 footer {
     height: 10vh;
@@ -355,10 +365,13 @@ footer {
     font-size: 11px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 984px) {
     video {
         height: 100%;
         width: auto;
+    }
+    .artwork-sections-wrapper > section  {
+       height: 33vh;
     }
 }
 
@@ -374,5 +387,13 @@ footer {
 @media screen and (max-width: 768px) {
     .about > article {
         padding-top: 25vh;
+    }
+    nav{ 
+      width: 100%;
+      height: 250px;
+      ul {
+        padding: 60px 40vw;
+        flex-direction: column;
+      }
     }
 }
