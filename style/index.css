@@ -105,8 +105,32 @@ a {
   }
 }
 
+@-webkit-keyframes blink {
+  0% {
+    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+  }
+  50% {
+    border-bottom: solid 50px whitesmoke;
+  }
+  100% {
+    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+  }
+  50% {
+    border-bottom: solid 50px whitesmoke;
+  }
+  100% {
+    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+  }
+}
+
 body {
-  background: #1f1305;
+  background: #241710;
   font-family: hkgrotesk-light;
   font-size: clamp(14px, 1.5vw, 16px);
   color: whitesmoke;
@@ -309,6 +333,34 @@ video {
   color: rgba(0, 0, 0, 0);
   -webkit-filter: blur(7px);
           filter: blur(7px);
+}
+
+#scroll {
+  position: absolute;
+  top: 92vh;
+  display: inline-block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(245, 245, 245, 0.5);
+}
+
+#scroll::after {
+  content: '';
+  border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+  position: absolute;
+  top: 20px;
+  width: 5px;
+  height: 50px;
+  -webkit-animation: blink 5s infinite;
+          animation: blink 5s infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 main {

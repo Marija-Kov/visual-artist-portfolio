@@ -1,0 +1,111 @@
+{
+   "3d": [
+       {
+         "name": "Mercy",
+         "year": "2019",
+         "medium": "Plastic bottle, tape, straw, sodium-bicarbonate, vinegar, blue ink",
+         "size": "20 x 20 cm",
+          "images": {
+            " " : " ",
+            " " : " "         
+         },
+         "description": " "
+      },
+       {
+         "name": "We are Stardust",
+         "year": "2019",
+         "medium": "glass jar, charred bits of plants and animal body parts",
+         "size": "720ml",
+          "images": {
+            " " : " ",
+            " " : " "         
+         },
+         "description": " "
+      },
+       {
+         "name": "Mercy",
+         "year": "2019",
+         "medium": "plastic bottle, tape, straw, sodium-bicarbonate, vinegar, blue ink",
+         "size": "20 x 20 cm",
+          "images": {
+            " " : " ",
+            " " : " "         
+         },
+         "description": " "
+      },
+       {
+         "name": "Conflux series",
+         "year": "2019",
+         "medium": "Acrylic, paper pulp, cement, salt crystals on chipwood board",
+         "size": "20 x 20 cm",
+          "images": {
+            " " : " ",
+            " " : " "         
+         },
+         "description": " "
+      }
+      
+   ],
+   "2d": [
+        {
+         "name": "Fusion",
+         "year": "2021",
+         "medium": "Hand embroidery mounted on canvas",
+         "size": "20 x 20 cm",
+         "images": {
+            " " : " ",
+            " " : " "         
+         },
+
+         "description": " "
+      },
+      {
+         "name": "Purgatorium series",
+         "year": "2019 - 2020",
+         "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
+         "size": "20 x 20 cm",
+         "images": {
+            " " : " ",
+            " " : " "         
+         },
+
+         "description": " "
+      },
+       {
+         "name": "View",
+         "year": "2020",
+         "medium": "Acrylic + grainy pigment on canvas",
+         "size": "20 x 20 cm",
+         "images": {
+            " " : " ",
+            " " : " "         
+         },
+
+         "description": " "
+      },
+      {
+         "name": "Monotype series",
+         "year": "2019 - 2020",
+         "medium": "Oil / acrylic on paper",
+         "size": "20 x 20 cm",
+         "images": {
+            " " : " ",
+            " " : " "         
+         },
+
+         "description": " "
+      },
+      {
+         "name": "Oil pastel series",
+         "year": "2020",
+         "medium": "Oil pastel on paper",
+         "size": "20 x 20 cm",
+         "images": {
+            " " : " ",
+            " " : " "         
+         },
+
+         "description": " "
+      }
+   ]
+}

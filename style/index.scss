@@ -68,8 +68,20 @@ a {
   }
 }
 
+@keyframes blink {
+  0% {
+    border-bottom:solid 50px rgba(245, 245, 245, 0.5);
+  }
+  50% {
+    border-bottom:solid 50px rgba(245, 245, 245, 1);
+  }
+  100% {
+    border-bottom:solid 50px rgba(245, 245, 245, 0.5);
+  }
+}
+
 body {
-    background: rgb(31, 19, 5);
+    background: rgb(36, 23, 16);
     font-family: hkgrotesk-light;
     font-size: clamp(14px, 1.5vw, 16px);
     color: whitesmoke; 
@@ -258,6 +270,28 @@ video {
     letter-spacing: 150px;
     color:rgba(0, 0, 0, 0);
     filter: blur(7px);
+}
+
+#scroll {
+  position: absolute;
+  top: 92vh;
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  color:rgba(245, 245, 245, 0.5);
+
+  &::after {
+    content: '';
+    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+    position: absolute;
+    top:20px;
+    width: 5px;
+    height: 50px;
+    animation: blink 5s infinite;
+    animation-delay: 5s;
+  }
 }
 
 // <<<<  M A I N  /  C O N T E N T  S E C T I O N  >>>> //
