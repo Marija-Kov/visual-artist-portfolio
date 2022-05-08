@@ -31,6 +31,76 @@ html {
   src: url("/fonts/Menlo.ttc");
 }
 
+@-webkit-keyframes fadeInY {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-60deg);
+            transform: rotateY(-60deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+@keyframes fadeInY {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-60deg);
+            transform: rotateY(-60deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInX {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-60deg);
+            transform: rotateX(-60deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes fadeInX {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-60deg);
+            transform: rotateX(-60deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   background: #1f1305;
   font-family: hkgrotesk-light;
@@ -39,10 +109,12 @@ body {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 30px;
-  right: 5vw;
-  z-index: 0;
+  right: 10vw;
+  display: inline-block;
+  -webkit-animation: fadeInX 0.5s;
+          animation: fadeInX 0.5s;
 }
 
 nav ul {
@@ -74,11 +146,13 @@ li > a:hover {
 }
 
 #menu-toggle {
-  display: inline-block;
+  display: none;
   width: 80px;
   height: 80px;
   position: fixed;
   right: 0;
+  -webkit-animation: fadeInX 0.3s;
+          animation: fadeInX 0.3s;
   cursor: pointer;
 }
 
@@ -187,6 +261,8 @@ header {
 
 video {
   width: 100%;
+  -webkit-animation: fadeInY 1s;
+          animation: fadeInY 1s;
 }
 
 .video-overlay {
@@ -201,6 +277,7 @@ video {
 #logo {
   position: absolute;
   display: inline-block;
+  z-index: 3;
   color: #1f1305;
   top: 30vh;
   left: 30vw;
@@ -211,6 +288,8 @@ video {
   transition: 1s;
   white-space: nowrap;
   word-wrap: nowrap;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
 }
 
 #logo.apart {
@@ -383,6 +462,15 @@ footer {
   video {
     height: 100%;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #menu-toggle {
+    display: inline-block;
+  }
+  nav {
+    display: none;
   }
 }
 

@@ -35,18 +35,50 @@ html {
     align-items: center;
 }
 
+@keyframes fadeInY {
+  from {
+    opacity: 0;
+    transform: rotateY(-60deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+@keyframes fadeInX {
+  from {
+    opacity: 0;
+    transform: rotateX(-60deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
     background: rgb(31, 19, 5);
     font-family: hkgrotesk-light;
     font-size: clamp(14px, 1.5vw, 16px);
     color: whitesmoke; 
+    
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 30px;
-    right: 5vw;
-    z-index: 0;
+    right: 10vw;
+    display: inline-block;
+    animation: fadeInX 0.5s;
     ul {
         display: flex;
         gap: 30px;
@@ -77,11 +109,12 @@ li > a {
     transition: .25s ease;
 }
 #menu-toggle {
-  display: inline-block;
+  display: none;
   width: 80px;
   height: 80px;
   position:fixed;
   right: 0;
+  animation: fadeInX 0.3s;
   cursor:pointer;
   #ham {
     height:80%;
@@ -178,9 +211,11 @@ header {
     overflow-x: hidden;
     position: fixed;
     z-index:-1;
+    
 }
 video {
     width: 100%;
+   animation: fadeInY 1s; 
 }
 .video-overlay {
     height: 100%;
@@ -194,6 +229,7 @@ video {
 #logo {
     position: absolute;
     display: inline-block;
+    z-index: 3;
     color:rgb(31, 19, 5);
     top: 30vh;
     left: 30vw;
@@ -203,6 +239,8 @@ video {
     transition: 1s;
     white-space: nowrap;
     word-wrap: nowrap;
+    animation: fadeIn 3s;
+    
 }
 
 #logo.apart {
@@ -322,6 +360,15 @@ footer {
         height: 100%;
         width: auto;
     }
+}
+
+@media screen and (max-width: 1024px) {
+  #menu-toggle {
+    display: inline-block;
+  }
+  nav {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
