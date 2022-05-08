@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color: whitesmoke;
+}
+
 @font-face {
   font-family: hkgrotesk-light;
   src: url("/fonts/HKGrotesk-Light.ttf");
@@ -267,6 +271,7 @@ header {
 
 video {
   width: 100%;
+  height: auto;
   -webkit-animation: fadeInY 1s;
           animation: fadeInY 1s;
 }
@@ -284,7 +289,7 @@ video {
   position: absolute;
   display: inline-block;
   z-index: 3;
-  color: #1f1305;
+  color: #312b24;
   top: 30vh;
   left: 30vw;
   font-family: sans-serif;
@@ -308,7 +313,7 @@ video {
 
 main {
   height: calc(190vh + 200px);
-  background: rgba(36, 23, 16, 0.87);
+  background: #241710;
   color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,7 +354,7 @@ main {
       flex-wrap: wrap;
 }
 
-.artwork-sections-wrapper > section {
+.artwork-sections-wrapper > a > section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,28 +369,30 @@ main {
           flex: 1;
   min-width: 300px;
   max-width: 500px;
-  height: 49vh;
-  border: dotted 1px rgba(245, 245, 245, 0.452);
+  height: 30vh;
+  font-size: 30px;
+  line-height: 40px;
 }
 
-.artwork-sections-wrapper > section:nth-child(1) {
-  background-image: url("/media/images/Sail.jpg");
+.artwork-sections-wrapper > a > section:nth-child(1), .artwork-sections-wrapper > a > section:nth-child(2), .artwork-sections-wrapper > a > section:nth-child(3) {
   background-size: 180%;
   background-position: center;
-  -webkit-filter: grayscale(0.8);
-          filter: grayscale(0.8);
+  border-right: solid 1px whitesmoke;
+  border-left: solid 1px whitesmoke;
+  background: #241710;
+  -webkit-filter: grayscale(0.00001);
+          filter: grayscale(0.00001);
 }
 
-.artwork-sections-wrapper > section:nth-child(1):hover {
+.artwork-sections-wrapper > a > section:hover {
   cursor: pointer;
-  -webkit-filter: grayscale(0.5);
-          filter: grayscale(0.5);
   -webkit-transition: 20s ease-out;
   transition: 20s ease-out;
   background-size: 140%;
   background-position: auto;
   background-position-x: 20%;
   background-position-y: 45%;
+  background-repeat: no-repeat;
 }
 
 h3.artwork,
