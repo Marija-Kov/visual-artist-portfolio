@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+  width: 1em;
+
+}
+
+::-webkit-scrollbar-track {
+  //border-left: solid 1px rgba(245, 245, 245, 0.507);
+  margin-block: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 245, 245, 0.76);
+  border-radius: 50px;
+  border: solid 0.25em rgb(36, 23, 16);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(245, 245, 245);
+  
+}
 
 *,
 *::after,
