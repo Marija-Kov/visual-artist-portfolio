@@ -411,28 +411,35 @@ footer {
 // <<<< A R T W O R K  P A G E S >>>> //
 
 .gallery {
-background:rgb(138, 82, 52);
 height: 100vh;
 display: flex;
+padding: 0.5%;
+
 
 .thumbs {
   display: flex;
+  gap: 5px;
+  flex-direction: column;
   height: 100%;
-  width: 20vw;
-  background:rgb(68, 81, 107);
+  max-width: 200px;
+  width: 15vw;
+  min-width: 180px;
+  background:rgb(36, 23, 16);
   z-index: 250;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   .thumb {
-    width: 100%;
-    max-height: 300px;
+    min-height: 150px;
+    border: solid 1px gray;
   }
 
 }
 
 .large {
   height: 100%;
-  width: 80vw;
-  background:rgba(85, 23, 201, 0.5);
+  width: 90vw;
+  border: solid 1px gray;
 }
 
 }
@@ -474,17 +481,22 @@ display: flex;
 
     .gallery {
       width: 100vw;
-      height: 100vh;
+      //height: 100vh;
       flex-direction: column-reverse;
 
       .thumbs {
         flex-direction: row;
-        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
         height: 20vh;
+        gap: 2%;
+        max-width: none;
+        min-width: none;
+        width: 100%;
 
         .thumb {
           height: 100%;
-          max-width: 300px;
+          min-width: 150px;
           }
       }
 
