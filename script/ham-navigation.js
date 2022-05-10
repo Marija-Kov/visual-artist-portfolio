@@ -10,8 +10,5 @@ hamMenu.addEventListener('click', ()=> {
       : nav.setAttribute("style", "display: none");
 })
 
-window.addEventListener('scroll', ()=> {
-    logo.classList.add('apart');
-    setTimeout(() => {logo.classList.remove('apart')}, 3000)
-})
+
 

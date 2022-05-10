@@ -76,6 +76,14 @@
 </footer>    
    
     
-<script src="/script/index.js"></script>
+<script src="/script/ham-navigation.js"></script>
+
+<script>
+    let logo = document.querySelector("#logo");
+    window.addEventListener('scroll', () => {
+            logo.classList.add('apart');
+            setTimeout(() => { logo.classList.remove('apart') }, 3000)
+        })
+</script>
 </body>
 </html>

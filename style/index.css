@@ -575,7 +575,6 @@ footer {
 
 .gallery .thumbs .thumb {
   min-height: 150px;
-  border: solid 1px gray;
   cursor: pointer;
   -webkit-filter: grayscale(0.8);
           filter: grayscale(0.8);
@@ -588,13 +587,26 @@ footer {
 .gallery .thumbs .thumb:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
-  background-position-y: 0;
+  background-position-y: 25%;
 }
 
 .gallery .large {
   height: 100%;
   width: 90vw;
-  border: solid 1px gray;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .large .fit-large {
+  height: 100%;
 }
 
 @media screen and (max-width: 984px) {

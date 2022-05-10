@@ -1,6 +1,7 @@
 let url = "/pages/data.json";
 
 let thumbs = document.querySelector('.thumbs');
+let largeImg = document.querySelector(".fit-large");
 
 fetch(url)
   .then((response) => {
@@ -11,6 +12,7 @@ fetch(url)
     }
   })
   .then(data => showData(data))
+  .then(initShowLarger)
   .catch(err => `Error: ${err}`);
   
 
@@ -22,3 +24,14 @@ fetch(url)
        thumbs.appendChild(thumb);
      } 
   }
+
+    async function initShowLarger() {
+      let thumbs = document.querySelectorAll(".thumb");
+      thumbs.forEach((thumb) =>
+        thumb.addEventListener("click", () => {
+          let style = window.getComputedStyle(thumb);
+          let image = style.backgroundImage.slice(5, -12) + ".jpg";
+          largeImg.setAttribute("src", `${image}`);
+        })
+      );
+    }
