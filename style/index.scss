@@ -277,7 +277,7 @@ video {
     z-index: 3;
     color:rgb(36, 23, 16);
     font-family: sans-serif;
-    font-size: clamp(90px, 30vw, 250px);  
+    font-size: clamp(90px, 30vw, 350px);  
     overflow: hidden;
     transition: 1s;
     white-space: nowrap;
@@ -363,7 +363,7 @@ main {
         background-position: center;
         border-right: solid 1px whitesmoke;
         border-left: solid 1px whitesmoke;
-        background:rgb(36, 23, 16);
+        //background:rgb(36, 23, 16);
         filter: grayscale(0.00001);
         }
         &:hover {
