@@ -151,7 +151,6 @@ body {
   background: #241710;
   font-family: hkgrotesk-light;
   font-size: clamp(14px, 1.5vw, 16px);
-  color: whitesmoke;
 }
 
 nav {
@@ -161,17 +160,21 @@ nav {
   display: inline-block;
   -webkit-animation: fadeInX 0.5s;
           animation: fadeInX 0.5s;
-  background: #1f1305;
+  font-size: 1.2em;
+  background: #241710;
   height: 80px;
   width: 100vw;
 }
 
 nav ul {
-  padding: 30px 100px 0 55vw;
+  padding: 40px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 3em;
 }
 
 nav ul li::first-letter {
@@ -301,7 +304,6 @@ header {
 }
 
 .video-container {
-  height: 79.5vh;
   width: 100vw;
   position: relative;
   top: 10%;
@@ -321,21 +323,27 @@ video {
 .video-overlay {
   height: 100%;
   width: 100%;
-  z-index: 2;
-  background: rgba(85, 23, 201, 0.137);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  background: rgba(106, 220, 248, 0.363);
   position: absolute;
   top: 0;
 }
 
 #logo {
   position: absolute;
-  display: inline-block;
   z-index: 3;
-  color: #312b24;
-  top: 30vh;
-  left: 30vw;
+  color: #241710;
   font-family: sans-serif;
-  font-size: clamp(90px, 30vw, 150px);
+  font-size: clamp(90px, 30vw, 250px);
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
@@ -346,7 +354,6 @@ video {
 }
 
 #logo.apart {
-  left: 10vw;
   letter-spacing: 150px;
   color: rgba(0, 0, 0, 0);
   -webkit-filter: blur(7px);
@@ -382,7 +389,7 @@ video {
 }
 
 main {
-  height: calc(190vh + 200px);
+  height: calc(190vh);
   background: #241710;
   color: whitesmoke;
   display: -webkit-box;
@@ -409,7 +416,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0;
-  height: calc(100vh + 200px);
+  height: calc(100vh);
   width: 100%;
   padding: 0 10vw;
 }
@@ -469,12 +476,13 @@ main {
 
 h3.artwork,
 h3.about {
-  text-align: center;
+  text-align: left;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   background: none;
-  color: rgba(245, 245, 245, 0.5);
-  top: 700px;
+  color: rgba(245, 245, 245, 0.137);
+  top: 200px;
+  font-size: clamp(100px, 99vw, 400px);
 }
 
 h3.about {
@@ -551,14 +559,14 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.5%;
+  padding: 1%;
 }
 
 .gallery .thumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -591,8 +599,7 @@ footer {
 }
 
 .gallery .large {
-  height: 100%;
-  width: 90vw;
+  width: clamp(300px, 90vw, 2000px);
   padding: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -609,22 +616,37 @@ footer {
   height: 100%;
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 1024px) {
+  .video-container {
+    height: 100vh;
+    top: 0;
+  }
   video {
     height: 100%;
     width: auto;
   }
-  .artwork-sections-wrapper > section {
-    height: 33vh;
-  }
-}
-
-@media screen and (max-width: 1024px) {
   #menu-toggle {
     display: inline-block;
   }
   nav {
     display: none;
+    width: 50%;
+    height: 55vh;
+    right: 0;
+  }
+  nav ul {
+    padding: 60px 0 60px 10vw;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .artwork-sections-wrapper > section {
+    height: 33vh;
   }
 }
 
@@ -633,11 +655,12 @@ footer {
     padding-top: 25vh;
   }
   nav {
-    width: 100%;
-    height: 250px;
+    width: 50%;
+    height: 55vh;
+    right: 0;
   }
   nav ul {
-    padding: 60px 40vw;
+    padding: 60px 0 60px 10vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
