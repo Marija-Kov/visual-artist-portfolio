@@ -1,6 +1,4 @@
 let hamMenu = document.querySelector('#menu-toggle');
-let logoParts = document.querySelectorAll('#logo>span');
-let logo = document.querySelector("#logo");
 let nav = document.querySelector('nav');
 
 hamMenu.addEventListener('click', ()=> {
