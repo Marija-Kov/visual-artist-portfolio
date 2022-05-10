@@ -18,7 +18,7 @@ fetch(url)
      for (let i = 0; i < data._3d.length; ++i) {
        let thumb = document.createElement("div");
        thumb.classList.add("thumb");
-       thumb.setAttribute('style', `background-image: url(${data._3d[i].images[0]}); background-size: 160%; background-position-x: center;`);
+       thumb.setAttribute('style', `background-image: url(${data._3d[i].images[0]});`);
        thumbs.appendChild(thumb);
      } 
   }

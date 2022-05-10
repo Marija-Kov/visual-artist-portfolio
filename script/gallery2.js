@@ -19,7 +19,7 @@ async function showData(data) {
     thumb.classList.add("thumb");
     thumb.setAttribute(
       "style",
-      `background-image: url(${data._2d[i].images[0]}); background-size: 160%; background-position-x: center;`
+      `background-image: url(${data._2d[i].images[0]});`
     );
     thumbs.appendChild(thumb);
   }

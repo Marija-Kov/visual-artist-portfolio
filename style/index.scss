@@ -455,8 +455,11 @@ padding: 0.5%;
     cursor: pointer;
     filter: grayscale(0.8);
     transition: 0.5s;
+    background-size: 160%; 
+    background-position-x: center;
     &:hover{
       filter: grayscale(0);
+      background-position-y: 0;
     }
   }
 

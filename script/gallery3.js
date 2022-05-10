@@ -18,7 +18,7 @@ fetch(url)
      for (let i = 0; i < data.embroidery.length; ++i) {
        let thumb = document.createElement("div");
        thumb.classList.add("thumb");
-       thumb.setAttribute('style', `background-image: url(${data.embroidery[i].images[0]}); background-size: 160%; background-position-x: center;`);
+       thumb.setAttribute('style', `background-image: url(${data.embroidery[i].images[0]});`);
        thumbs.appendChild(thumb);
      } 
   }

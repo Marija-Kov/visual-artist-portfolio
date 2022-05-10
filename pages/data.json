@@ -6,7 +6,8 @@
          "medium": "5l plastic bottles, vacuum pipe, tape, straw, sodium-bicarbonate, vinegar, blue ink",
          "size": "00 x 00 cm",
           "images": [
-            "/media/images/3d/mercy-0.jpg"       
+            "/media/images/3d/mercy-thumb.jpg", 
+            "/media/images/3d/mercy-0.jpg"      
        ],
          "description": "A functional construction for the performance of euthanasia on small animals directly poses the question of ethics and compassion in situations where the thought of effectively putting an end to someone's suffering seems counterintuitive. "
       },
@@ -16,7 +17,8 @@
          "medium": "glass jar, charred bits of plants and animal body parts",
          "size": "720ml",
           "images": [
-            "/media/images/3d/we-are-stardust-0.jpg"
+            "/media/images/3d/we-are-stardust-thumb.jpg",
+            "/media/images/3d/we-are-stardust.jpg"
          ],
          "description": "The concept was inspired by the lyrics of Joni Mitchell in the context of preservation of the life on Earth. The charred substance composed out of burnt animal body parts (byproducts of the food industry) and plants stand as the essentialist response to the illusionist ideas about existence, primarily that of humans and their consciousness - a cultural tendency that transcends the mere fight for survival and that might just be the one which makes humans the most invasive species on the planet. The project is a particularly uncharismatic allusion to the distant future."
       },
@@ -26,8 +28,8 @@
          "medium": "Acrylic, paper pulp, cement, salt crystals on chipwood board",
          "size": "00 x 00 cm",
           "images": [
-             "/media/images/3d/conflux-1.jpg",
-             "/media/images/3d/conflux-2.jpg"         
+             "/media/images/3d/conflux-1-thumb.jpg",
+             "/media/images/3d/conflux-1.jpg"         
          ],
          "description": " "
       }
