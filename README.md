@@ -20,7 +20,7 @@ The website consists of:
 
 - ham-navigation.js is reused on all pages
 
-- three "gallery" scripts for each artwork page (again, generic names were given for flexibility) as each of them uses a different portion of data.json via fetch(url)
+- three "artwork" scripts for each artwork page (again, generic names were given for flexibility) as each of them uses a different portion of data.json via fetch(url)
 
 ### JSON
 
