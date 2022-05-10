@@ -40,8 +40,8 @@
          "medium": "Hand embroidery mounted on canvas",
          "size": "20 x 20 cm",
          "images": [
-            "./media/images/embroidery/fusion-1.jpg",
-            "./media/images/embroidery/fusion-2.jpg"         
+            "/media/images/embroidery/fusion-1.jpg",
+            "/media/images/embroidery/fusion-2.jpg"         
          ],
 
          "description": " "
@@ -55,21 +55,23 @@
          "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
          "size": "100 x 150 cm",
          "images": [
-             "./media/images/on-canvas/purgatorium-1.jpg",
-             "./media/images/on-canvas/purgatorium-2.jpg",  
-             "./media/images/on-canvas/purg-closeup.jpg"    
+             "/media/images/on-canvas/purgatorium-1-thumb.jpg",
+             "/media/images/on-canvas/purgatorium-1.jpg" 
          ],
 
          "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
       },
-       {
-         "name": "View",
-         "year": "2020",
-         "medium": "Acrylic + grainy pigment on canvas",
-         "size": "20 x 20 cm",
-         "images": [ ],
+           {
+         "name": "Purgatorium",
+         "year": "2019 - 2020",
+         "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
+         "size": "100 x 150 cm",
+         "images": [
+             "/media/images/on-canvas/purgatorium-2-thumb.jpg",             
+             "/media/images/on-canvas/purgatorium-2.jpg"   
+         ],
 
-         "description": " "
+         "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
       },
       {
          "name": "Untitled",
@@ -77,7 +79,8 @@
          "medium": "Oil / acrylic monotype on paper",
          "size": "20 x 20 cm",
          "images": [
-            "./media/images/on-paper/monotype-1.jpg"      
+            "/media/images/on-paper/monotype-1-thumb.jpg",
+            "/media/images/on-paper/monotype-1.jpg"      
          ],
 
          "description": "Monotypes on paper."
@@ -87,7 +90,9 @@
          "year": "2020",
          "medium": "Oil pastel on paper",
          "size": "30 x 40cm",
-         "images": "/media/images/on-paper/pastel-1.jpg",
+         "images": [
+            "/media/images/on-paper/pastel-1-thumb.jpg",
+            "/media/images/on-paper/pastel-1.jpg"],
 
          "description": "Oil pastel on paper series."
       },
@@ -96,7 +101,9 @@
          "year": "2020",
          "medium": "Oil pastel on paper",
          "size": "30 x 40cm",
-         "images": "./media/images/on-paper/pastel-2.jpg",  
+         "images": [
+            "/media/images/on-paper/pastel-2-thumb.jpg",
+            "/media/images/on-paper/pastel-2.jpg"],  
 
          "description": "Oil pastel on paper series."
       },
@@ -105,7 +112,9 @@
          "year": "2020",
          "medium": "Oil pastel on paper",
          "size": "30 x 40cm",
-         "images": "./media/images/on-paper/pastel-3.jpg",
+         "images": [
+             "/media/images/on-paper/pastel-3-thumb.jpg",
+            "/media/images/on-paper/pastel-3.jpg"],
          "description": "Oil pastel on paper series."
       },
        {
@@ -113,7 +122,9 @@
          "year": "2020",
          "medium": "Oil pastel on paper",
          "size": "30 x 40cm",
-         "images": "./media/images/on-paper/pastel-4.jpg",
+         "images": [
+            "/media/images/on-paper/pastel-4-thumb.jpg",
+            "/media/images/on-paper/pastel-4.jpg"],
          "description": "Oil pastel on paper series."
       },
        {
@@ -121,7 +132,9 @@
          "year": "2020",
          "medium": "Oil pastel on paper",
          "size": "30 x 40cm",
-         "images": "./media/images/on-paper/pastel-5.jpg",
+         "images": [
+            "/media/images/on-paper/pastel-5-thumb.jpg",
+            "/media/images/on-paper/pastel-5.jpg"],
          "description": "Oil pastel on paper series."
       },
        {
@@ -129,7 +142,9 @@
          "year": "2020",
          "medium": "Oil pastel on paper",
          "size": "30 x 40cm",
-         "images": "./media/images/on-paper/pastel-6.jpg",
+         "images": [
+            "/media/images/on-paper/pastel-6-thumb.jpg",
+            "/media/images/on-paper/pastel-6.jpg"],
          "description": "Oil pastel on paper series."
       },
        {
@@ -137,7 +152,9 @@
          "year": "2020",
          "medium": "Oil pastel on paper",
          "size": "30 x 40cm",
-         "images": "./media/images/on-paper/pastel-7.jpg",
+         "images": [
+            "/media/images/on-paper/pastel-7-thumb.jpg",
+            "/media/images/on-paper/pastel-7.jpg"],
          "description": "Oil pastel on paper series."
       }
 

@@ -576,6 +576,16 @@ footer {
 .gallery .thumbs .thumb {
   min-height: 150px;
   border: solid 1px gray;
+  cursor: pointer;
+  -webkit-filter: grayscale(0.8);
+          filter: grayscale(0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery .thumbs .thumb:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .gallery .large {
