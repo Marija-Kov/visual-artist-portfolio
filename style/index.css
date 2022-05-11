@@ -343,7 +343,7 @@ video {
   z-index: 3;
   color: #241710;
   font-family: sans-serif;
-  font-size: clamp(90px, 30vw, 350px);
+  font-size: clamp(90px, 30vw, 270px);
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
@@ -515,6 +515,20 @@ footer {
   font-size: 11px;
 }
 
+h3.artwork-type {
+  overflow: hidden;
+  position: absolute;
+  background: none;
+  line-height: 55%;
+  text-align: right;
+  color: rgba(245, 245, 245, 0.137);
+  right: 0;
+  bottom: 0;
+  height: 45vh;
+  padding-top: 7vh;
+  font-size: 25vw;
+}
+
 .gallery {
   height: 100vh;
   display: -webkit-box;
@@ -532,6 +546,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   max-width: 200px;
   width: 15vw;
