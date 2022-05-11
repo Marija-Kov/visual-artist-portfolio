@@ -360,36 +360,8 @@ video {
           filter: blur(7px);
 }
 
-#scroll {
-  position: absolute;
-  top: 92vh;
-  display: inline-block;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: -1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: rgba(245, 245, 245, 0.5);
-}
-
-#scroll::after {
-  content: '';
-  border-bottom: solid 50px rgba(245, 245, 245, 0.5);
-  position: absolute;
-  top: 20px;
-  width: 5px;
-  height: 50px;
-  -webkit-animation: blink 5s infinite;
-          animation: blink 5s infinite;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-
 main {
-  height: calc(190vh);
+  height: 190vh;
   background: #241710;
   color: whitesmoke;
   display: -webkit-box;
@@ -416,7 +388,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0;
-  height: calc(100vh);
+  height: 100vh;
   width: 100%;
   padding: 0 10vw;
 }
@@ -475,37 +447,26 @@ main {
 
 h3.artwork,
 h3.about {
-  text-align: left;
   overflow: hidden;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   background: none;
   color: rgba(245, 245, 245, 0.137);
-  top: 200px;
-  font-size: clamp(100px, 99vw, 400px);
+  top: 0px;
+  height: 45vh;
+  font-size: 30vw;
 }
 
 h3.about {
-  top: 1500px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  visibility: hidden;
+  padding: 100px 10% 0 10%;
+  top: 1600px;
+  height: 300px;
 }
 
-.about {
+section.about {
   height: 90vh;
   border: dotted 1px rgba(245, 245, 245, 0.479);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -528,7 +489,7 @@ h3.about {
           flex: 1;
   border: dotted 1px rgba(245, 245, 245, 0.479);
   height: 100%;
-  min-width: 375px;
+  min-width: 365px;
 }
 
 .about > article > p {
@@ -547,6 +508,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .attribution {
@@ -641,6 +603,14 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .about > article > p,
+  .about > article > picture {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: dotted 1px rgba(245, 245, 245, 0.479);
+    height: 50%;
+  }
 }
 
 @media screen and (max-width: 984px) {
@@ -651,7 +621,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .about > article {
-    padding-top: 25vh;
+    padding-top: 0;
   }
   nav {
     width: 50%;
@@ -700,7 +670,7 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 20vh;
+    padding-top: 5vh;
   }
 }
 /*# sourceMappingURL=index.css.map */

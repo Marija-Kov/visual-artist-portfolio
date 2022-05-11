@@ -293,32 +293,32 @@ video {
     filter: blur(7px);
 }
 
-#scroll {
-  position: absolute;
-  top: 92vh;
-  display: inline-block;
-  width: 100%;
-  display: flex;
-  z-index: -1;
-  justify-content: center;
-  color:rgba(245, 245, 245, 0.5);
+// #scroll {
+//   position: absolute;
+//   top: 92vh;
+//   display: inline-block;
+//   width: 100%;
+//   display: flex;
+//   z-index: -1;
+//   justify-content: center;
+//   color:rgba(245, 245, 245, 0.5);
 
-  &::after {
-    content: '';
-    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
-    position: absolute;
-    top:20px;
-    width: 5px;
-    height: 50px;
-    animation: blink 5s infinite;
-    animation-delay: 5s;
-  }
-}
+//   &::after {
+//     content: '';
+//     border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+//     position: absolute;
+//     top:20px;
+//     width: 5px;
+//     height: 50px;
+//     animation: blink 5s infinite;
+//     animation-delay: 5s;
+//   }
+// }
 
 // <<<<  M A I N  /  C O N T E N T  S E C T I O N  >>>> //
                       
 main {
-  height: calc(190vh);
+  height: 190vh;
   background:rgb(36, 23, 16);
   color: whitesmoke;
   display: flex;
@@ -333,7 +333,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 0;
-    height: calc(100vh);
+    height: 100vh;
     width: 100%;
     padding: 0 10vw;
     
@@ -383,27 +383,29 @@ main {
 
 h3.artwork,
 h3.about {
-    text-align: left;
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     background: none;
     color: rgba(245, 245, 245, 0.137); 
-    top: 200px;
-    font-size: clamp(100px, 99vw, 400px) ;
+    top: 0px;
+    height: 45vh;
+    font-size: 30vw;
 }
 
 // <<<  B O T T O M  /  A B O U T  S E C T I O N  >>>> //
 
 h3.about {
-    top: 1500px;
-    height: max-content;
+  visibility: hidden;
+  padding: 100px 10% 0 10%;
+    top: 1600px;
+    height: 300px;
 }
 
-.about {
+section.about {
     height: 90vh;
     border: dotted 1px rgba(245, 245, 245, 0.479);
-    @include center-aligned;
-    justify-content: flex-start;
+    //@include center-aligned;
+    //justify-content: flex-start;
     flex-direction: column;
 }
 .about > article {
@@ -416,7 +418,7 @@ h3.about {
     flex: 1;
     border: dotted 1px rgba(245, 245, 245, 0.479);
     height: 100%;
-    min-width: 375px;
+    min-width: 365px;
 }
 .about > article > p {
   padding: 0 10vw;
@@ -426,6 +428,7 @@ footer {
     height: 10vh;
     background:rgb(68, 81, 107);
     @include center-aligned;
+    width: 100%;
 }
 .attribution {
     font-size: 11px;
@@ -504,6 +507,13 @@ padding: 1%;
       flex-direction: column;
     }
   }
+
+.about > article > p,
+.about > article > picture {
+    flex: 1;
+    border: dotted 1px rgba(245, 245, 245, 0.479);
+    height: 50%;
+ }
 }
 
 @media screen and (max-width: 984px) {
@@ -517,7 +527,7 @@ padding: 1%;
 
 @media screen and (max-width: 768px) {
     .about > article {
-        padding-top: 25vh;
+        padding-top: 0;
     }
     nav{ 
       width: 50%;
@@ -562,6 +572,6 @@ padding: 1%;
 @media screen and (max-width: 1143px) {
   .artwork {
     align-items: flex-start;
-    padding-top: 20vh;
+    padding-top: 5vh;
   }
 }
