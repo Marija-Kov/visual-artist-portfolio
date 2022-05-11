@@ -444,9 +444,10 @@ h3.artwork-type {
     color: rgba(245, 245, 245, 0.137);
     right: 0; 
     bottom: 0;
-    height: 45vh;
+    height: 75vh;
     padding-top: 7vh;
-    font-size: 25vw;
+    font-size: 16vw;
+    z-index: -1;
     
 }
 .gallery {
@@ -459,7 +460,6 @@ padding: 1%;
   display: flex;
   gap: 10px;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
   max-width: 200px;
   width: 15vw;

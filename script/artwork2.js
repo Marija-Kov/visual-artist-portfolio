@@ -2,6 +2,7 @@ let url = "/pages/data.json";
 
 let thumbs = document.querySelector(".thumbs");
 let largeImg = document.querySelector(".fit-large");
+let gallery = document.querySelector(".gallery");
 
 fetch(url)
   .then((response) => {
@@ -35,6 +36,7 @@ async function showData(data) {
         let style = window.getComputedStyle(thumb);
         let image = style.backgroundImage.slice(5, -12) + ".jpg";
         largeImg.setAttribute("src", `${image}`);
+        gallery.style.background = "rgba(36, 23, 16, 0.8)";
       })
     );
   }
