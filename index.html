@@ -51,8 +51,10 @@
 </header>
 
 <main>
-    <h3 class="artwork">artwork</h3>
-<section class="artwork">
+
+
+<h3 class="artwork">artwork</h3>
+<section id="artwork" class="art-abt">
 <div class="artwork-sections-wrapper">
  <a href="/pages/artwork1.html"><section><span>3D</span></section></a>
  <a href="/pages/artwork2.html"><section><span>2D</span></section></a>
@@ -61,18 +63,17 @@
 </section>
 
 
-
-<section class="about"> 
-<h3 class="about">about</h3>      
+<h3 class="about">about</h3>  
+<section id="about" class="art-abt">    
 <article>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta dolorum hic sunt facilis voluptatibus amet recusandae quas suscipit aliquid magni!Asperiores fugit accusamus dicta corporis ut alias incidunt culpa a ducimus sapiente explicabo, commodi harum, voluptas iure numquam recusandae sequi dolor architecto suscipit, nemo fuga modi? Itaque eveniet maxime quis culpa? Quidem itaque repellendus quas quae odit nam fuga aliquam delectus voluptate.</p> 
 <picture></picture>     
 </article>
-
 </section>
 
 </main>
+
 <footer>
 <p class="attribution">Designed and coded by Marija Kovacevic, 2022.</p>
 </footer>    
@@ -81,11 +82,49 @@
 <script src="/script/ham-navigation.js"></script>
 
 <script>
+    let sections = document.querySelectorAll('.art-abt');
+    let header = document.querySelector('header');
     let logo = document.querySelector("#logo");
+
     window.addEventListener('scroll', () => {
             logo.classList.add('apart');
             setTimeout(() => { logo.classList.remove('apart') }, 3000)
         })
+
+    const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return
+                }
+                let current = entry.target.getAttribute('id');
+                document.querySelector('h3').textContent = current;
+                document.querySelector('nav').style.visibility = 'hidden';
+            })
+        },
+            {
+                threshold: 0.6
+            }
+        )
+        sections.forEach(section => {
+            observer.observe(section)
+        })
+
+    const observer1 = new IntersectionObserver(entry => {
+            if (!entry.isIntersecting) {
+                document.querySelector('nav').style.visibility = 'visible';
+                return
+            }
+            document.querySelector('nav').style.visibility = 'hidden';
+    
+    },
+        {
+            threshold: 0.7
+        }
+    )
+   
+    observer1.observe(header);
+    
+
 </script>
 </body>
 </html>

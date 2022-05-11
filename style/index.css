@@ -161,7 +161,7 @@ nav {
   -webkit-animation: fadeInX 0.5s;
           animation: fadeInX 0.5s;
   font-size: 1.2em;
-  background: #241710;
+  background: rgba(36, 23, 16, 0.7);
   height: 80px;
   width: 100vw;
 }
@@ -375,6 +375,7 @@ main {
   letter-spacing: 110%;
 }
 
+#artwork,
 .artwork {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,7 +465,7 @@ h3.about {
   height: 300px;
 }
 
-section.about {
+#about {
   height: 90vh;
   border: dotted 1px rgba(245, 245, 245, 0.479);
   -webkit-box-orient: vertical;
@@ -473,7 +474,7 @@ section.about {
           flex-direction: column;
 }
 
-.about > article {
+#about > article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,8 +483,8 @@ section.about {
   max-width: 1200px;
 }
 
-.about > article > p,
-.about > article > picture {
+#about > article > p,
+#about > article > picture {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -492,7 +493,7 @@ section.about {
   min-width: 365px;
 }
 
-.about > article > p {
+#about > article > p {
   padding: 0 10vw;
 }
 

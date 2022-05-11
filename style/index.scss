@@ -115,7 +115,7 @@ nav {
     display: inline-block;
     animation: fadeInX 0.5s;
     font-size: 1.2em;
-    background:rgb(36, 23, 16);
+    background:rgba(36, 23, 16, 0.7);
     height: 80px;
     width: 100vw;
     ul {
@@ -327,6 +327,7 @@ main {
   letter-spacing: 110%;
   
 }
+#artwork,
 .artwork {
     display: flex;
     flex-wrap: wrap;
@@ -401,26 +402,26 @@ h3.about {
     height: 300px;
 }
 
-section.about {
+#about {
     height: 90vh;
     border: dotted 1px rgba(245, 245, 245, 0.479);
     //@include center-aligned;
     //justify-content: flex-start;
     flex-direction: column;
 }
-.about > article {
+#about > article {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
 }
-.about > article > p,
-.about > article > picture {
+#about > article > p,
+#about > article > picture {
     flex: 1;
     border: dotted 1px rgba(245, 245, 245, 0.479);
     height: 100%;
     min-width: 365px;
 }
-.about > article > p {
+#about > article > p {
   padding: 0 10vw;
 }
 
