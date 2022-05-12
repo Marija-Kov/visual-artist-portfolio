@@ -453,8 +453,9 @@ h3.about {
   position: sticky;
   background: none;
   color: rgba(245, 245, 245, 0.137);
-  top: 0px;
-  height: 45vh;
+  top: 0;
+  height: 65vh;
+  padding-bottom: 7vh;
   font-size: 30vw;
 }
 
@@ -513,7 +514,12 @@ footer {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+.attribution a {
+  text-decoration: underline;
 }
 
 h3.artwork-type {
