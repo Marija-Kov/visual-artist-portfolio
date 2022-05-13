@@ -596,6 +596,45 @@ h3.artwork-type {
   height: 100%;
 }
 
+.gallery .large .show-details {
+  visibility: hidden;
+  position: absolute;
+  z-index: 400;
+  bottom: 100px;
+  padding: 5px 20px;
+  border: solid 1px whitesmoke;
+  border-radius: 4px;
+  font-family: hkgrotesk-light;
+  color: whitesmoke;
+  background: #241710;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery .large .show-details:hover {
+  padding: 5px 22px;
+  color: #241710;
+  background: whitesmoke;
+}
+
+.gallery .details {
+  z-index: 300;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  background: #241710;
+  color: wheat;
+  min-width: 300px;
+  max-width: 500px;
+  border: solid 1px gray;
+  padding: 1vw;
+  overflow-y: scroll;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media screen and (max-width: 1024px) {
   .video-container {
     height: 100vh;
@@ -682,6 +721,7 @@ h3.artwork-type {
   .gallery .large {
     width: 100%;
     height: 80vh;
+    overflow-x: hidden;
   }
 }
 
