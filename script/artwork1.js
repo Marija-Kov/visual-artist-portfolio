@@ -1,7 +1,7 @@
 let url = "/pages/data.json";
 
 let thumbs = document.querySelector('.thumbs');
-let largeImg = document.querySelector('.fit-large');
+let largeImg = document.querySelector('.large');
 let gallery = document.querySelector('.gallery');
 let showDetails = document.querySelector('.show-details');
 
@@ -25,7 +25,7 @@ fetch(url)
     for (let i = 0; i < data._3d.length; ++i) {
       let thumb = document.createElement("div");
       thumb.classList.add("thumb");
-      thumb.setAttribute("id", `${i}`);
+      thumb.setAttribute("id", `a${i}`);
       thumb.setAttribute("style",`background-image: url(${data._3d[i].images[0]});`);
       thumbs.appendChild(thumb);
       let details = document.createElement("article");
@@ -39,20 +39,30 @@ fetch(url)
 
                              ${data._3d[i].description}`;
       gallery.appendChild(details);
+      let large = document.createElement('img');
+      large.setAttribute("src", `${data._3d[i].images[1]}`);
+      large.setAttribute("id", `a${i}`);
+      largeImg.appendChild(large);
     }
   }
 
   async function initShowLarger() {
     let thumbs = document.querySelectorAll(".thumb");
+    let larges = document.querySelectorAll(".large>img");
     let articles = document.querySelectorAll(".details");
     thumbs.forEach((thumb) =>
       thumb.addEventListener("click", () => {
-        let style = window.getComputedStyle(thumb);
-        let image = style.backgroundImage.slice(5, -12) + ".jpg";
-        let artId = thumb.getAttribute('id');
-        largeImg.setAttribute("src", `${image}`);
+        // let style = window.getComputedStyle(thumb);
+        // let image = style.backgroundImage.slice(5
+        let artId = thumb.getAttribute("id");
+        larges.forEach(large => {
+          large.getAttribute("id") === artId ?
+          large.style.filter = "opacity(1)" :
+          large.style.filter = "opacity(0)"
+        })
+        
         gallery.style.background = "rgba(36, 23, 16, 0.8)";
-        showDetails.setAttribute('id', `a${artId}`);
+        showDetails.setAttribute('id', `${artId}`);
         showDetails.style.filter = "opacity(1)";
         showDetails.innerText = 'details';
          articles.forEach((article) => {
