@@ -42,6 +42,9 @@ fetch(url)
       let large = document.createElement('img');
       large.setAttribute("src", `${data._3d[i].images[1]}`);
       large.setAttribute("id", `a${i}`);
+      large.innerWidth > large.innerHeight
+        ? (large.style.width = "100%")
+        : (large.style.height = "100%");
       largeImg.appendChild(large);
     }
   }
@@ -58,7 +61,8 @@ fetch(url)
         larges.forEach(large => {
           large.getAttribute("id") === artId ?
           large.style.filter = "opacity(1)" :
-          large.style.filter = "opacity(0)"
+          large.style.filter = "opacity(0)";
+          
         })
         
         gallery.style.background = "rgba(36, 23, 16, 0.8)";

@@ -579,7 +579,7 @@ h3.artwork-type {
 }
 
 .gallery .large {
-  width: clamp(300px, 90vw, 2000px);
+  width: clamp(300px, 80vw, 1500px);
   padding: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,9 +595,8 @@ h3.artwork-type {
 
 .gallery .large img {
   position: absolute;
-  height: 90%;
-  -webkit-filter: opacity(0.5);
-          filter: opacity(0.5);
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

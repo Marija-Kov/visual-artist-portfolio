@@ -495,15 +495,14 @@ h3.artwork-type {
 } // THUMBS
 
 .large {
-  width: clamp(300px, 90vw, 2000px);
+  width: clamp(300px, 80vw, 1500px);
   padding: 5% 0;
   @include center-aligned;
   height: 80vh;
   
    img {
     position: absolute;
-    height: 90%;
-    filter: opacity(0.5);
+    filter: opacity(0);
     transition: 0.5s;
   }
   .show-details {
