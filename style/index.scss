@@ -495,16 +495,14 @@ h3.artwork-type {
 } // THUMBS
 
 .large {
-  //height: 100%;
   width: clamp(300px, 90vw, 2000px);
   padding: 5% 0;
-  //border: solid 1px gray;
   @include center-aligned;
   .fit-large {
     height: 100%;
   }
   .show-details {
-    visibility: hidden;
+    filter: opacity(0);
     position: absolute;
     z-index: 400;
     bottom: 100px;
@@ -527,7 +525,7 @@ h3.artwork-type {
 
 .details {
   z-index: 300;
-  visibility: hidden;
+  filter: opacity(0);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -540,11 +538,18 @@ h3.artwork-type {
   padding: 1vw;
   overflow-y: scroll;
   transition: 0.5s;
+  
 }
 
-}  // <<<<<<  G A L L E R Y  >>>>>
+}  
 
+.visible{
+  filter: opacity(1) !important;
+  
+  
+}
 
+// <<<<<<  G A L L E R Y  >>>>>
 @media screen and (max-width: 1024px) {
   .video-container{
     height: 100vh;

@@ -597,7 +597,8 @@ h3.artwork-type {
 }
 
 .gallery .large .show-details {
-  visibility: hidden;
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
   position: absolute;
   z-index: 400;
   bottom: 100px;
@@ -619,7 +620,8 @@ h3.artwork-type {
 
 .gallery .details {
   z-index: 300;
-  visibility: hidden;
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -633,6 +635,11 @@ h3.artwork-type {
   overflow-y: scroll;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.visible {
+  -webkit-filter: opacity(1) !important;
+          filter: opacity(1) !important;
 }
 
 @media screen and (max-width: 1024px) {
