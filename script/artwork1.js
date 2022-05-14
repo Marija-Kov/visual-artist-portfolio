@@ -5,9 +5,6 @@ let largeImg = document.querySelector('.large');
 let gallery = document.querySelector('.gallery');
 let showDetails = document.querySelector('.show-details');
 
-
-
-
 fetch(url)
   .then((response) => {
     if (!response.ok) {

@@ -591,6 +591,7 @@ h3.artwork-type {
       -ms-flex-align: center;
           align-items: center;
   height: 80vh;
+  padding-top: 20vh;
 }
 
 .gallery .large img {
