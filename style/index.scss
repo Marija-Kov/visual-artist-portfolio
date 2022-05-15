@@ -498,8 +498,7 @@ h3.artwork-type {
   width: clamp(300px, 80vw, 1500px);
   padding: 5% 0;
   @include center-aligned;
-  height: 80vh;
-  padding-top: 20vh;
+  width: 80vw;
   
    img {
     position: absolute;
@@ -510,7 +509,7 @@ h3.artwork-type {
     filter: opacity(0);
     position: absolute;
     z-index: 400;
-    bottom: 100px;
+    bottom: 45px;
     padding: 5px 20px;
     border: solid 1px whitesmoke;
     border-radius: 4px;
@@ -634,8 +633,11 @@ h3.artwork-type {
         width: 100%;
         height: 80vh;
         overflow-x: hidden;
-
+      .show-details {
+        bottom: 145px;
+        }
       }
+      
     }
 }
 

@@ -39,9 +39,10 @@ fetch(url)
       let large = document.createElement('img');
       large.setAttribute("src", `${data._3d[i].images[1]}`);
       large.setAttribute("id", `a${i}`);
-      large.innerWidth > large.innerHeight
-        ? (large.style.width = "100%")
-        : (large.style.height = "100%");
+      large.width > large.height
+        ? (large.style.width = "75%")
+        : (large.style.height = "75%");
+    
       largeImg.appendChild(large);
     }
   }

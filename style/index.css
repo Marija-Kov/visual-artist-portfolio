@@ -590,8 +590,7 @@ h3.artwork-type {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
-  padding-top: 20vh;
+  width: 80vw;
 }
 
 .gallery .large img {
@@ -607,7 +606,7 @@ h3.artwork-type {
           filter: opacity(0);
   position: absolute;
   z-index: 400;
-  bottom: 100px;
+  bottom: 45px;
   padding: 5px 20px;
   border: solid 1px whitesmoke;
   border-radius: 4px;
@@ -735,6 +734,9 @@ h3.artwork-type {
     width: 100%;
     height: 80vh;
     overflow-x: hidden;
+  }
+  .gallery .large .show-details {
+    bottom: 145px;
   }
 }
 
