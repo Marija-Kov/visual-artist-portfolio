@@ -41,9 +41,8 @@ fetch(url)
       large.setAttribute("alt", `${data._3d[i].description}`);
       large.setAttribute("id", `a${i}`);
       large.width > large.height
-        ? (large.style.width = "75%")
-        : (large.style.height = "75%");
-    
+        ? ((large.style.width = "75%"), (large.style.maxWidth = "900px"))
+        : ((large.style.height = "75%"), (large.style.maxHeight = "600px"));
       largeImg.appendChild(large);
     }
   }

@@ -604,11 +604,14 @@ h3.artwork-type {
       flex-direction: column;
       justify-content: flex-start;
     }
-
+    body {
+      overflow-x: hidden;
+    }
     .gallery {
       width: 100vw;
-      //height: 100vh;
       flex-direction: column-reverse;
+      overflow-x: hidden;
+      padding: 0;
 
       .thumbs {
         flex-direction: row;
@@ -628,12 +631,17 @@ h3.artwork-type {
       }
 
       .large {
+       // position: absolute;
         width: 100%;
         height: 80vh;
         overflow-x: hidden;
-      
-      .show-details {
-        bottom: 145px;
+        padding-bottom: 100px;
+        img {
+          //max-width: 370px !important;
+          max-height: 400px !important;
+        }
+        .show-details {
+        bottom: 180px;
         }
       }
       .details {
