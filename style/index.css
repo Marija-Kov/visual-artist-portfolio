@@ -631,12 +631,9 @@ h3.artwork-type {
   bottom: 11%;
   left: 50%;
   height: 30%;
-  aspect-ratio: 1;
   background: #241710;
   color: wheat;
-  min-width: 300px;
-  max-width: 500px;
-  border: solid 1px gray;
+  width: clamp(300px 17vw 500px);
   padding: 1vw;
   overflow-y: scroll;
   -webkit-transition: 0.5s;
@@ -644,8 +641,8 @@ h3.artwork-type {
 }
 
 .visible {
-  -webkit-filter: opacity(1) !important;
-          filter: opacity(1) !important;
+  -webkit-filter: opacity(0.9) !important;
+          filter: opacity(0.9) !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -736,11 +733,11 @@ h3.artwork-type {
     height: 80vh;
     overflow-x: hidden;
   }
-  .gallery .large .details {
-    bottom: 25%;
-  }
   .gallery .large .show-details {
     bottom: 145px;
+  }
+  .gallery .details {
+    bottom: 22%;
   }
 }
 
