@@ -42,6 +42,7 @@ async function showData(data) {
     let large = document.createElement("img");
     large.setAttribute("src", `${data.embroidery[i].images[1]}`);
     large.setAttribute("id", `a${i}`);
+    large.setAttribute("alt", `${data.embroidery[i].description}`);
     large.width > large.height
       ? (large.style.width = "75%")
       : (large.style.height = "75%");
