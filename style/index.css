@@ -406,6 +406,24 @@ main {
       flex-wrap: wrap;
 }
 
+#art-3d {
+  background: #302b2b;
+}
+
+#art-2d {
+  background-image: url("texture.jpeg");
+  background-position-y: 100%;
+}
+
+#art-2d:hover {
+  background-position-x: 70%;
+  background-position-y: center;
+}
+
+#art-embro {
+  background: #949494;
+}
+
 .artwork-sections-wrapper > a > section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,26 +442,22 @@ main {
   height: 30vh;
   font-size: 30px;
   line-height: 40px;
+  -webkit-filter: grayscale(0.9);
+          filter: grayscale(0.9);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .artwork-sections-wrapper > a > section:nth-child(1), .artwork-sections-wrapper > a > section:nth-child(2), .artwork-sections-wrapper > a > section:nth-child(3) {
-  background-size: 180%;
-  background-position: center;
   border-right: solid 1px whitesmoke;
   border-left: solid 1px whitesmoke;
-  -webkit-filter: grayscale(0.00001);
-          filter: grayscale(0.00001);
 }
 
 .artwork-sections-wrapper > a > section:hover {
+  font-size: 300%;
   cursor: pointer;
-  -webkit-transition: 20s ease-out;
-  transition: 20s ease-out;
-  background-size: 140%;
-  background-position: auto;
-  background-position-x: 20%;
-  background-position-y: 45%;
-  background-repeat: no-repeat;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 h3.artwork,

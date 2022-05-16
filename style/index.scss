@@ -343,10 +343,24 @@ main {
     height: 33vh;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;   
 }
+
+#art-3d {
+   background:rgb(48, 43, 43)
+    }
+    #art-2d {
+    background-image: url('texture.jpeg');
+    background-position-y: 100%;
+    
+    &:hover {
+     background-position-x: 70%; 
+     background-position-y: center;
+    }
+    }
+    #art-embro {
+background:rgb(148, 148, 148)
+    }
 
 .artwork-sections-wrapper > a > section {
      @include center-aligned;
@@ -356,31 +370,23 @@ main {
         height: 30vh;
         font-size: 30px;
         line-height: 40px;
-        
+        filter: grayscale(0.9);
+        transition: 1s ease-in-out;
         &:nth-child(1),
         &:nth-child(2),
         &:nth-child(3) {
-        background-size: 180%;
-        background-position: center;
         border-right: solid 1px whitesmoke;
         border-left: solid 1px whitesmoke;
-        //background:rgb(36, 23, 16);
-        filter: grayscale(0.00001);
+        
         }
         &:hover {
+            font-size: 300%;
             cursor: pointer;
-            transition: 20s ease-out;
-            background-size: 140%;
-            background-position: auto;
-            background-position-x: 20%;
-            background-position-y: 45%;
-            background-repeat: no-repeat;
+            transition: 1s ease-in-out;
             
-        }
-        
-        
-    }
-
+      }
+            
+}
 
 h3.artwork,
 h3.about {
@@ -392,6 +398,7 @@ h3.about {
     height: 65vh;
     padding-bottom: 7vh;
     font-size: 30vw;
+
 }
 
 // <<<  B O T T O M  /  A B O U T  S E C T I O N  >>>> //
