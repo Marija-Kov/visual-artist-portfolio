@@ -205,7 +205,7 @@ li > a:hover {
   position: fixed;
   right: 0;
   top: -6px;
-  z-index: 99;
+  z-index: 9999;
   -webkit-animation: fadeInX 0.3s;
           animation: fadeInX 0.3s;
   cursor: pointer;
@@ -452,7 +452,7 @@ h3.about {
   position: -webkit-sticky;
   position: sticky;
   background: none;
-  color: rgba(245, 245, 245, 0.137);
+  color: rgba(245, 245, 245, 0.337);
   top: 0;
   height: 65vh;
   padding-bottom: 7vh;
@@ -486,18 +486,18 @@ h3.about {
 
 #about > article > p,
 #about > article > picture {
-  border: dotted 1px rgba(245, 245, 245, 0.479);
+  border: dotted 1px rgba(245, 245, 245, 0.179);
   height: 70vh;
   min-width: 365px;
 }
 
 #about > article > p {
-  padding: 0 10vw;
+  padding: 20vh 10vw 0 10vw;
 }
 
 footer {
   height: 10vh;
-  background: #44516b;
+  background: #2a416e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,7 +512,7 @@ footer {
 
 .attribution {
   font-size: 12px;
-  color: whitesmoke;
+  color: #bad9f7;
 }
 
 .attribution a {
@@ -525,13 +525,15 @@ h3.artwork-type {
   background: none;
   line-height: 55%;
   text-align: right;
-  color: rgba(245, 245, 245, 0.137);
+  color: #949494;
   right: 0;
   bottom: 0;
   height: 75vh;
   padding-top: 7vh;
   font-size: 16vw;
   z-index: -1;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
 }
 
 .gallery {
@@ -559,6 +561,8 @@ h3.artwork-type {
   z-index: 250;
   overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
 }
 
 .gallery .thumbs .thumb {
@@ -570,6 +574,8 @@ h3.artwork-type {
   transition: 0.5s;
   background-size: 160%;
   background-position-x: center;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
 }
 
 .gallery .thumbs .thumb:hover {
@@ -662,6 +668,7 @@ h3.artwork-type {
     width: 50%;
     height: 55vh;
     right: 0;
+    border-left: solid 1px #969696;
   }
   nav ul {
     padding: 60px 0 60px 10vw;
@@ -748,10 +755,22 @@ h3.artwork-type {
   .gallery .details {
     bottom: 22%;
   }
+  .artwork-sections-wrapper > a > section:nth-child(1), .artwork-sections-wrapper > a > section:nth-child(2), .artwork-sections-wrapper > a > section:nth-child(3) {
+    border-left: none;
+    border-right: none;
+    border-top: solid 1px whitesmoke;
+    border-bottom: solid 1px whitesmoke;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about > article > p {
+    padding: 10vh 10vw 0 10vw;
+  }
 }
 
 @media screen and (max-width: 1143px) {
-  .artwork {
+  #artwork {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;

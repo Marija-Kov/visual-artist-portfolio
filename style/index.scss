@@ -26,9 +26,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    //transition: .25s ease-in-out;
     text-decoration: none; 
 }
+
 li {
     list-style: none;
 }
@@ -156,7 +156,7 @@ li > a {
   position:fixed;
   right: 0;
   top: -6px;
-  z-index: 99;
+  z-index: 9999;
   animation: fadeInX 0.3s;
   cursor:pointer;
   #ham {
@@ -387,7 +387,7 @@ h3.about {
     overflow: hidden;
     position: sticky;
     background: none;
-    color: rgba(245, 245, 245, 0.137); 
+    color: rgba(245, 245, 245, 0.337); 
     top:0;
     height: 65vh;
     padding-bottom: 7vh;
@@ -404,34 +404,29 @@ h3.about {
 }
 
 #about {
+  
     height: 90vh;
     @include center-aligned;
-    //@include center-aligned;
-    //justify-content: flex-start;
-    // flex-direction: column;
 }
 #about > article {
-    // display: flex;
-    // flex-wrap: wrap;
     max-width: 1200px;
     height: 100%;
 }
 #about > article > p,
 #about > article > picture {
-    // flex: 1;
-    border: dotted 1px rgba(245, 245, 245, 0.479);
+    border: dotted 1px rgba(245, 245, 245, 0.179);
     height: 70vh;
     min-width: 365px;
 }
 #about > article > p {
-  padding: 0 10vw;
+  padding: 20vh 10vw 0 10vw;
 }
 
 
 
 footer {
     height: 10vh;
-    background:rgb(68, 81, 107);
+    background:rgb(42, 65, 110);
     @include center-aligned;
     width: 100%;
 }
@@ -440,7 +435,7 @@ footer {
      a {
       text-decoration: underline;
     }
-    color: whitesmoke;
+    color: rgb(186, 217, 247);
 }
 // <<<< A R T W O R K  P A G E S >>>> //
 
@@ -450,13 +445,14 @@ h3.artwork-type {
     background: none;
     line-height: 55%;
     text-align: right;
-    color: rgba(245, 245, 245, 0.137);
+    color: rgb(148, 148, 148);
     right: 0; 
     bottom: 0;
     height: 75vh;
     padding-top: 7vh;
     font-size: 16vw;
     z-index: -1;
+    animation: fadeIn 0.5s;
     
 }
 .gallery {
@@ -477,15 +473,15 @@ h3.artwork-type {
   z-index: 250;
   overflow-y: scroll;
   overflow-x: hidden;
-
+  animation: fadeIn 0.5s;
   .thumb {
     min-height: 150px;
-    //border: solid 1px gray;
     cursor: pointer;
     filter: grayscale(0.8);
     transition: 0.5s;
     background-size: 160%; 
     background-position-x: center;
+    animation: fadeIn 0.5s;
     &:hover{
       filter: grayscale(0);
       background-position-y: 25%;
@@ -569,6 +565,7 @@ h3.artwork-type {
     width: 50%;
     height: 55vh;
     right: 0;
+    border-left: solid 1px rgb(150, 150, 150);
     ul {
       padding: 60px 0 60px 10vw;
       margin: 0 auto;
@@ -647,10 +644,26 @@ h3.artwork-type {
       }
       
     }
+    .artwork-sections-wrapper > a > section {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+        border-left: none;
+        border-right: none;
+        border-top: solid 1px whitesmoke;
+        border-bottom: solid 1px whitesmoke;
+        }
+      }
+}
+
+@media screen and (max-width: 500px){
+  #about > article > p {
+  padding: 10vh 10vw 0 10vw;
+}
 }
 
 @media screen and (max-width: 1143px) {
-  .artwork {
+  #artwork {
     align-items: flex-start;
     padding-top: 5vh;
   }

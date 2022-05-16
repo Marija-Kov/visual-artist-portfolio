@@ -1,10 +1,8 @@
 let url = "/pages/data.json";
-
 let thumbs = document.querySelector(".thumbs");
 let largeImg = document.querySelector(".large");
 let gallery = document.querySelector(".gallery");
 let showDetails = document.querySelector(".show-details");
-
 fetch(url)
   .then((response) => {
     if (!response.ok) {
@@ -17,7 +15,6 @@ fetch(url)
   .then(initShowLarger)
   .then(initShowDetails)
   .catch((err) => `Error: ${err}`);
-
 async function showData(data) {
   for (let i = 0; i < data.embroidery.length; ++i) {
     let thumb = document.createElement("div");
@@ -49,7 +46,6 @@ async function showData(data) {
     largeImg.appendChild(large);
   }
 }
-
 async function initShowLarger() {
   let thumbs = document.querySelectorAll(".thumb");
   let larges = document.querySelectorAll(".large>img");
@@ -75,7 +71,6 @@ async function initShowLarger() {
     })
   );
 }
-
 async function initShowDetails() {
   let articles = document.querySelectorAll(".details");
   showDetails.addEventListener("click", () => {

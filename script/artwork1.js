@@ -1,10 +1,8 @@
 let url = "/pages/data.json";
-
 let thumbs = document.querySelector('.thumbs');
 let largeImg = document.querySelector('.large');
 let gallery = document.querySelector('.gallery');
 let showDetails = document.querySelector('.show-details');
-
 fetch(url)
   .then((response) => {
     if (!response.ok) {
@@ -17,7 +15,6 @@ fetch(url)
   .then(initShowLarger)
   .then(initShowDetails)
   .catch((err) => `Error: ${err}`);
-  
   async function showData(data) {
     for (let i = 0; i < data._3d.length; ++i) {
       let thumb = document.createElement("div");
@@ -60,9 +57,7 @@ fetch(url)
           large.getAttribute("id") === artId ?
           large.style.filter = "opacity(1)" :
           large.style.filter = "opacity(0)";
-          
         })
-        
         gallery.style.background = "rgba(36, 23, 16, 0.8)";
         showDetails.setAttribute('id', `${artId}`);
         showDetails.style.filter = "opacity(1)";
@@ -72,11 +67,9 @@ fetch(url)
              ? article.classList.remove("visible")
              : null;
          });
-
       })
     );
   }
-  
   async function initShowDetails(){
     let articles = document.querySelectorAll(".details");
    showDetails.addEventListener('click', () => {
