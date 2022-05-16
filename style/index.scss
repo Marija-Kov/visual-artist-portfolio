@@ -347,19 +347,29 @@ main {
 }
 
 #art-3d {
-   background:rgb(48, 43, 43)
+   background-image: url('texture3d.jpg');
+   background-size: 100%;
+   background-position-y: 100%;
+   &:hover {
+     background-position-y: 1%; 
     }
+  }
     #art-2d {
-    background-image: url('texture.jpeg');
+    background-image: url('texture2d.jpeg');
     background-position-y: 100%;
-    
     &:hover {
      background-position-x: 70%; 
      background-position-y: center;
     }
-    }
+  }
     #art-embro {
-background:rgb(148, 148, 148)
+    background-image: url('texturembro.jpeg');
+    background-position-y: 1%;
+    background-position-x: 10%;
+    &:hover {
+     background-position-x: center; 
+     background-position-y: 90%;
+     }
     }
 
 .artwork-sections-wrapper > a > section {
@@ -377,7 +387,6 @@ background:rgb(148, 148, 148)
         &:nth-child(3) {
         border-right: solid 1px whitesmoke;
         border-left: solid 1px whitesmoke;
-        
         }
         &:hover {
             font-size: 300%;

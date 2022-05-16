@@ -407,11 +407,17 @@ main {
 }
 
 #art-3d {
-  background: #302b2b;
+  background-image: url("texture3d.jpg");
+  background-size: 100%;
+  background-position-y: 100%;
+}
+
+#art-3d:hover {
+  background-position-y: 1%;
 }
 
 #art-2d {
-  background-image: url("texture.jpeg");
+  background-image: url("texture2d.jpeg");
   background-position-y: 100%;
 }
 
@@ -421,7 +427,14 @@ main {
 }
 
 #art-embro {
-  background: #949494;
+  background-image: url("texturembro.jpeg");
+  background-position-y: 1%;
+  background-position-x: 10%;
+}
+
+#art-embro:hover {
+  background-position-x: center;
+  background-position-y: 90%;
 }
 
 .artwork-sections-wrapper > a > section {
