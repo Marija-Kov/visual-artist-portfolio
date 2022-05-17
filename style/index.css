@@ -612,7 +612,6 @@ h3.artwork-type {
 }
 
 .gallery .large {
-  width: clamp(300px, 80vw, 1500px);
   padding: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;

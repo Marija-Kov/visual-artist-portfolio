@@ -419,8 +419,7 @@ h3.about {
     height: 300px;
 }
 
-#about {
-  
+#about { 
     height: 90vh;
     @include center-aligned;
 }
@@ -507,7 +506,7 @@ h3.artwork-type {
 } // THUMBS
 
 .large {
-  width: clamp(300px, 80vw, 1500px);
+  //width: clamp(300px, 80vw, 1500px);
   padding: 5% 0;
   @include center-aligned;
   width: 80vw;
