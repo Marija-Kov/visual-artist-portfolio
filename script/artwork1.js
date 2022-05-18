@@ -1,3 +1,4 @@
+
 let url = "/pages/data.json";
 let thumbs = document.querySelector('.thumbs');
 let largeImg = document.querySelector('.large');
@@ -12,8 +13,8 @@ fetch(url)
     }
   })
   .then((data) => showData(data))
-  .then(initShowLarger)
-  .then(initShowDetails)
+  .then(init1)
+  .then(init2)
   .catch((err) => `Error: ${err}`);
   async function showData(data) {
     for (let i = 0; i < data._3d.length; ++i) {
@@ -43,50 +44,6 @@ fetch(url)
       largeImg.appendChild(large);
     }
   }
-
-  async function initShowLarger() {
-    let thumbs = document.querySelectorAll(".thumb");
-    let larges = document.querySelectorAll(".large>img");
-    let articles = document.querySelectorAll(".details");
-    thumbs.forEach((thumb) =>
-      thumb.addEventListener("click", () => {
-        // let style = window.getComputedStyle(thumb);
-        // let image = style.backgroundImage.slice(5
-        let artId = thumb.getAttribute("id");
-        larges.forEach(large => {
-          large.getAttribute("id") === artId ?
-          large.style.filter = "opacity(1)" :
-          large.style.filter = "opacity(0)";
-        })
-        gallery.style.background = "rgba(36, 23, 16, 0.8)";
-        showDetails.setAttribute('id', `${artId}`);
-        showDetails.style.filter = "opacity(1)";
-        showDetails.innerText = 'details';
-         articles.forEach((article) => {
-           article.classList.contains("visible")
-             ? article.classList.remove("visible")
-             : null;
-         });
-      })
-    );
-  }
-  async function initShowDetails(){
-    let articles = document.querySelectorAll(".details");
-   showDetails.addEventListener('click', () => {
-     console.log(`clicked  ${showDetails.getAttribute('id')}`);
-           articles.forEach(article => {
-             article.getAttribute('id') === showDetails.getAttribute('id') ?
-             article.classList.add('visible') :
-             article.classList.remove('visible');
-           })
-          showDetails.innerText === 'details' ?
-          showDetails.innerText = 'collapse' :
-          (showDetails.innerText = 'details', 
-          articles.forEach(article => {
-            article.classList.contains('visible') ?
-            article.classList.remove('visible') :
-            null
-          })) 
-         })
-    }
  
+
+  import {init1, init2} from "./artDisplay.js";
