@@ -539,7 +539,6 @@ h3.artwork-type {
 } // LARGE
 
 .details {
-  z-index: 300;
   filter: opacity(0);
   position: absolute;
   bottom: 11%;
@@ -551,13 +550,13 @@ h3.artwork-type {
   padding: 1vw;
   overflow-y: scroll;
   transition: 0.5s;
-  
 }
 
 }  
 
 .visible{
   filter: opacity(0.9) !important;
+  z-index: 300;
   
   
 }

@@ -31,19 +31,18 @@ export const init1 = async function initShowLarger() {
 export const init2 = async function initShowDetails() {
   let articles = document.querySelectorAll(".details");
   showDetails.addEventListener("click", () => {
-    console.log(`clicked  ${showDetails.getAttribute("id")}`);
     articles.forEach((article) => {
       article.getAttribute("id") === showDetails.getAttribute("id")
         ? article.classList.add("visible")
         : article.classList.remove("visible");
     });
-    showDetails.innerText === "details"
-      ? (showDetails.innerText = "collapse")
-      : ((showDetails.innerText = "details"),
-        articles.forEach((article) => {
-          article.classList.contains("visible")
-            ? article.classList.remove("visible")
-            : null;
-        }));
+  showDetails.innerText === "details"
+    ? (showDetails.innerText = "collapse")
+    : ((showDetails.innerText = "details"),
+  articles.forEach((article) => {
+    article.classList.contains("visible")
+      ? article.classList.remove("visible")
+      : null;
+      }));
   });
 };

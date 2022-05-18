@@ -35,7 +35,7 @@ fetch(url)
       gallery.appendChild(details);
       let large = document.createElement('img');
       large.setAttribute("src", `${data._3d[i].images[1]}`);
-      large.setAttribute("alt", `${data._3d[i].description}`);
+      large.setAttribute("alt", `${data._3d[i].alt}`);
       large.setAttribute("id", `a${i}`);
       large.width > large.height
         ? ((large.style.width = "75%"), (large.style.maxWidth = "900px"))
