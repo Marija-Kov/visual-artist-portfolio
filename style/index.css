@@ -189,6 +189,29 @@ li > a:hover {
   color: whitesmoke;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  width: 50px;
+  margin-left: 40px;
+}
+
+.social ul li:nth-child(2), .social ul li:nth-child(3), .social ul li:nth-child(4) {
+  margin-bottom: 0.5em;
+}
+
 #ham > span,
 #cross > span {
   display: block;

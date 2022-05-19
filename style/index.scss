@@ -139,6 +139,26 @@ li > a {
   color:rgba(245, 245, 245, 1);
   }
 }
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  top: 80px;
+  width: 50px;
+  margin-left: 40px;
+  ul {
+   li {
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4){
+    margin-bottom: 0.5em;
+    }
+  }
+  }
+  
+}
 // <<<<  T O P  /  H E A D E R  S E C T I O N  >>>> //
 
 // HAMBURGER MENU //
