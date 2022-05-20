@@ -39,7 +39,7 @@ fetch(url)
       large.setAttribute("id", `a${i}`);
       large.width > large.height
         ? ((large.style.width = "75%"), (large.style.maxWidth = "900px"))
-        : ((large.style.height = "75%"), (large.style.maxHeight = "600px"));
+        : ((large.style.height = "75vh"), (large.style.maxHeight = "400px"));
       largeImg.appendChild(large);
     }
   }
