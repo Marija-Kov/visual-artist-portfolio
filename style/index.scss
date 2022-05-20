@@ -148,15 +148,24 @@ li > a {
   top: 80px;
   width: 50px;
   margin-left: 40px;
+  transition: 0.5s;
   ul {
    li {
+    &:nth-child(1){
+     margin-bottom: 0.5em; 
+    }
     &:nth-child(2),
     &:nth-child(3),
     &:nth-child(4){
-    margin-bottom: 0.5em;
-    }
+    margin-bottom: 1em;
+    
   }
+   &:hover {
+   filter: brightness(2); 
   }
+   }
+  }
+  
   
 }
 // <<<<  T O P  /  H E A D E R  S E C T I O N  >>>> //
@@ -291,9 +300,7 @@ video {
 }
 
 #logo {
-    
     position: absolute;
-    //display: inline-block;
     z-index: 3;
     color:rgb(36, 23, 16);
     font-family: sans-serif;
@@ -302,8 +309,7 @@ video {
     transition: 1s;
     white-space: nowrap;
     word-wrap: nowrap;
-    animation: fadeIn 3s;
-    
+    animation: fadeIn 3s;  
 }
 
 #logo.apart {

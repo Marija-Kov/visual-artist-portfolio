@@ -206,10 +206,21 @@ li > a:hover {
   top: 80px;
   width: 50px;
   margin-left: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social ul li:nth-child(1) {
+  margin-bottom: 0.5em;
 }
 
 .social ul li:nth-child(2), .social ul li:nth-child(3), .social ul li:nth-child(4) {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.social ul li:hover {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
 }
 
 #ham > span,

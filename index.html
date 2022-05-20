@@ -27,10 +27,10 @@
     </ul>
     </nav>
 
-    <div class="social">
+    <div class="social" style="opacity: 0">
         <ul>
             <li><a href="https://www.instagram.com/recyclebin499/">
-                <svg width="40px" height="40px" viewBox="0 0 512 512" fill="rgb(36, 23, 16)">
+                <svg width="30px" viewBox="0 0 512 512" fill="rgb(36, 23, 16)">
                 <path
                     d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z" />
                 <path d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z" />
@@ -40,7 +40,8 @@
             </a>
          </li>
             <li>
-              <a href="https://www.behance.net/gobbledigodb22"><svg width="35px" height="35px" viewBox="0 0 95.802 95.802" fill="rgb(36, 23, 16)" xml:space="preserve">
+              <a href="https://www.behance.net/gobbledigodb22">
+                <svg width="25px" viewBox="0 0 95.802 95.802" fill="rgb(36, 23, 16)" xml:space="preserve">
                         <path d="M38.664,44.689c0,0,9.065-0.673,9.065-11.306c0-10.632-7.417-15.819-16.813-15.819H13.622h-0.508H0v59.414h13.114h0.508
             			h17.294c0,0,18.873,0.597,18.873-17.536C49.79,59.442,50.613,44.689,38.664,44.689z M13.622,28.125h15.069h2.226
             			c0,0,4.203,0,4.203,6.181c0,6.181-2.473,7.077-5.275,7.077H13.622V28.125z M30.119,66.42H13.622V50.541h17.294
@@ -53,7 +54,8 @@
                 </a>
             </li>
             <li>
-              <a href="https://www.redbubble.com/people/cashewface/shop"><svg width="35px"viewBox="0 0 78.9599 46.195465" version="1.1" id="redbubble">
+              <a href="https://www.redbubble.com/people/cashewface/shop">
+                <svg width="25px"viewBox="0 0 78.9599 46.195465" id="redbubble">
                 <defs id="defs2" />
                 <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-76.451977,-83.9542)">
                     <path style="fill:rgb(36, 23, 16);stroke-width:0.128329"
@@ -61,7 +63,7 @@
                         id="path836" />
                     </g></svg></a></li>
             <li><a href="https://www.saatchiart.com/marija_kov">
-                <svg width="35px" viewBox="0 0 86.080071 92.053322"> 
+                <svg width="25px" viewBox="0 0 86.080071 92.053322"> 
                     <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-377.22869,-43.114762)">
                         <g id="g17532" transform="translate(-117.43618,-2.1368208)">
                             <g id="g17575" />
@@ -93,7 +95,8 @@
                         </g>
                     </g>
                 </svg>
-            </a></li>
+            </a>
+          </li>
         </ul>
     </div>
 
@@ -197,6 +200,10 @@
         }
     )
     observer1.observe(header);
+
+    setTimeout(()=>{
+        document.querySelector('.social').style.opacity = "1";
+    }, 1200)
 
 </script>
 </body>
