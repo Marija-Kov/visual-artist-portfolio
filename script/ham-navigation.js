@@ -8,5 +8,6 @@ hamMenu.addEventListener('click', ()=> {
       : nav.setAttribute("style", "display: none");
 })
 
+document.querySelector('#contact').style = "display: none";
 
 
