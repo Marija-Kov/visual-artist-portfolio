@@ -45,12 +45,8 @@ a {
 }
 
 @font-face {
-    font-family: essence-sans;
-    src: url("/fonts/Essence-Sans.ttf");
-}
-@font-face {
-    font-family: menlo-regular;
-    src: url("/fonts/Menlo.ttc");
+    font-family: florence-sans-shadow;
+    src: url("/fonts/Florsn41.ttf");
 }
 
 @mixin center-aligned {
@@ -363,12 +359,15 @@ main {
     width: 100%;
     padding: 0 10vw;
     
+    
 }
 .artwork-sections-wrapper {
-    height: 33vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
+    font-family: florence-sans-shadow;  
+    color:rgb(36, 23, 16);
 }
 
 #art-3d {
@@ -400,18 +399,16 @@ main {
 .artwork-sections-wrapper > a > section {
      @include center-aligned;
         flex: 1;
-        min-width: 300px;
+        min-width: 320px;
         max-width: 500px;
-        height: 30vh;
-        font-size: 30px;
+        height: 40vh;
+        font-size: 50px;
         line-height: 40px;
         filter: grayscale(0.9);
         transition: 1s ease-in-out;
         &:nth-child(1),
         &:nth-child(2),
         &:nth-child(3) {
-        border-right: solid 1px whitesmoke;
-        border-left: solid 1px whitesmoke;
         }
         &:hover {
             font-size: 300%;
@@ -639,6 +636,7 @@ h3.artwork-type {
     #artwork {
       flex-direction: column;
       justify-content: flex-start;
+      
     }
     body {
       overflow-x: hidden;
@@ -671,9 +669,7 @@ h3.artwork-type {
         height: 80vh;
         overflow-x: hidden;
         padding-bottom: 100px;
-        img {
-          // max-height: 400px !important;
-        }
+
         .show-details {
         bottom: 180px;
         }
@@ -689,7 +685,7 @@ h3.artwork-type {
         &:nth-child(3) {
         border-left: none;
         border-right: none;
-        border-top: solid 1px whitesmoke;
+        border-top: solid 1px rgb(97, 86, 86);
         border-bottom: solid 1px whitesmoke;
         }
       }

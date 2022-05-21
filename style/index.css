@@ -44,13 +44,8 @@ a {
 }
 
 @font-face {
-  font-family: essence-sans;
-  src: url("/fonts/Essence-Sans.ttf");
-}
-
-@font-face {
-  font-family: menlo-regular;
-  src: url("/fonts/Menlo.ttc");
+  font-family: florence-sans-shadow;
+  src: url("/fonts/Florsn41.ttf");
 }
 
 @-webkit-keyframes fadeInY {
@@ -429,7 +424,7 @@ main {
 }
 
 .artwork-sections-wrapper {
-  height: 33vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,6 +433,8 @@ main {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-family: florence-sans-shadow;
+  color: #241710;
 }
 
 #art-3d {
@@ -484,20 +481,15 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-width: 300px;
+  min-width: 320px;
   max-width: 500px;
-  height: 30vh;
-  font-size: 30px;
+  height: 40vh;
+  font-size: 50px;
   line-height: 40px;
   -webkit-filter: grayscale(0.9);
           filter: grayscale(0.9);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-}
-
-.artwork-sections-wrapper > a > section:nth-child(1), .artwork-sections-wrapper > a > section:nth-child(2), .artwork-sections-wrapper > a > section:nth-child(3) {
-  border-right: solid 1px whitesmoke;
-  border-left: solid 1px whitesmoke;
 }
 
 .artwork-sections-wrapper > a > section:hover {
@@ -815,7 +807,7 @@ h3.artwork-type {
   .artwork-sections-wrapper > a > section:nth-child(1), .artwork-sections-wrapper > a > section:nth-child(2), .artwork-sections-wrapper > a > section:nth-child(3) {
     border-left: none;
     border-right: none;
-    border-top: solid 1px whitesmoke;
+    border-top: solid 1px #615656;
     border-bottom: solid 1px whitesmoke;
   }
 }
