@@ -409,31 +409,27 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0;
   height: 160vh;
-  width: 100%;
   padding: 0 10vw;
 }
 
 .artwork-sections-wrapper {
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 0.5em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-family: florence-sans-shadow;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100vw;
   color: #241710;
 }
 
@@ -478,12 +474,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 320px;
-  max-width: 500px;
-  height: 40vh;
+  min-width: 350px;
+  width: 33vw;
+  max-width: 100%;
+  height: 50vh;
   font-size: 50px;
   line-height: 40px;
   -webkit-filter: grayscale(0.9);
@@ -493,10 +487,13 @@ main {
 }
 
 .artwork-sections-wrapper > a > section:hover {
-  font-size: 300%;
+  font-size: 600%;
+  color: black;
   cursor: pointer;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
 h3.artwork,
@@ -733,8 +730,12 @@ h3.artwork-type {
 }
 
 @media screen and (max-width: 984px) {
-  .artwork-sections-wrapper > section {
-    height: 33vh;
+  .artwork-sections-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .artwork-sections-wrapper > a > section {
+    height: 45vh;
   }
 }
 
@@ -753,15 +754,6 @@ h3.artwork-type {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  #artwork {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   body {
     overflow-x: hidden;
@@ -804,11 +796,8 @@ h3.artwork-type {
   .gallery .details {
     bottom: 22%;
   }
-  .artwork-sections-wrapper > a > section:nth-child(1), .artwork-sections-wrapper > a > section:nth-child(2), .artwork-sections-wrapper > a > section:nth-child(3) {
-    border-left: none;
-    border-right: none;
-    border-top: solid 1px #615656;
-    border-bottom: solid 1px whitesmoke;
+  .artwork-sections-wrapper > a > section {
+    height: 35vh;
   }
 }
 
