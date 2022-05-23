@@ -1,4 +1,8 @@
 
+$main-color: rgb(27, 27, 27);
+$main-color-gallery: rgb(36, 23, 16);
+$text-color:whitesmoke;
+$large-heading: rgba(255, 255, 255, 0.5);
 
 ::-webkit-scrollbar {
   width: 1em;
@@ -12,7 +16,7 @@
 ::-webkit-scrollbar-thumb {
   background: rgba(245, 245, 245, 0.76);
   border-radius: 50px;
-  border: solid 0.25em rgb(36, 23, 16);
+  border: solid 0.25em $main-color;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -98,7 +102,7 @@ a {
 }
 
 body {
-    background: rgb(36, 23, 16);
+    background: $main-color;
     font-family: hkgrotesk-light;
     font-size: clamp(14px, 1.5vw, 16px);
     
@@ -110,8 +114,8 @@ nav {
     top:0;
     display: inline-block;
     animation: fadeInX 0.5s;
-    font-size: 1.2em;
-    background:rgb(36, 23, 16);
+    font-size: 1em;
+    background:$main-color;
     height: 80px;
     width: 100vw;
     ul {
@@ -141,7 +145,7 @@ li > a {
   justify-content: center;
   text-align: center;
   position: sticky;
-  top: 80px;
+  top: 110px;
   width: 50px;
   margin-left: 40px;
   transition: 0.5s;
@@ -297,7 +301,7 @@ video {
 #logo {
     position: absolute;
     z-index: 3;
-    color:rgb(36, 23, 16);
+    color:$main-color;
     font-family: sans-serif;
     font-size: clamp(90px, 30vw, 270px);  
     overflow: hidden;
@@ -318,7 +322,7 @@ video {
                       
 main {
   height: 330vh;
-  background:rgb(36, 23, 16);
+  background:$main-color;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -343,7 +347,7 @@ main {
     flex-wrap: nowrap; 
     width: 100vw;
     font-family: semplicita-ombra;  
-    color:rgb(36, 23, 16);
+    color:$main-color-gallery;
     margin-top: 30vh;
 }
 
@@ -356,6 +360,7 @@ main {
     }
   }
     #art-2d {
+    margin-top: 30vh;
     background-image: url('texture2d.jpeg');
     background-position-y: 100%;
     &:hover {
@@ -364,6 +369,7 @@ main {
     }
   }
     #art-embro {
+    margin-top: 50vh;
     background-image: url('texturembro.jpeg');
     background-position-y: 1%;
     background-position-x: 10%;
@@ -375,14 +381,12 @@ main {
 
 .artwork-sections-wrapper > a > section {
      @include center-aligned;
-        min-width: 350px;
-        width: 32vw;
-        max-width: 100%;
+        width: clamp(320px, 30vw, 500px);
         height: 50vh;
         font-size: 50px;
         line-height: 40px;
         filter: grayscale(0.9);
-        color: rgb(36, 23, 16);
+        color: $main-color-gallery;
         transition: 1s ease-in-out;
         // &:nth-child(1),
         // &:nth-child(2),
@@ -392,7 +396,7 @@ main {
             font-size: 400%;
             color: whitesmoke;
             cursor: pointer;
-            transition: 1s ease-in-out;
+            transition: 0.5s ease-in-out;
             border-top-left-radius: 2em;
             border-bottom-right-radius: 2em;
             
@@ -406,7 +410,7 @@ h3.about {
     overflow: hidden;
     position: sticky;
     background: none;
-    color: rgba(245, 245, 245, 0.337); 
+    color: $large-heading; 
     top:0;
     height: 65vh;
     padding-bottom: 7vh;
@@ -440,17 +444,17 @@ h3.about {
     padding: 60vh 10vw 10vh 10vw;
   }
   picture {
+  filter: saturate(0.4);
   position: absolute;
   right: 0;
   height: fit-content;
-  width: 70vw;
+  width: 90vw;
   max-width: 1200px;
   top: 330vh;
   z-index: 3;
   margin-bottom: 10vh;
   img {
   width: 100%;
-  filter: grayscale(0.5) opacity(0.8)
   }
  }
 }
@@ -461,7 +465,7 @@ footer {
     height: 10vh;
     @include center-aligned;
     width: 100%;
-    background: rgb(36, 23, 16); 
+    background: $main-color; 
 }
 .attribution {
     font-size: 12px;
@@ -503,7 +507,7 @@ h3.artwork-type {
   max-width: 200px;
   width: 15vw;
   min-width: 180px;
-  background:rgb(36, 23, 16);
+  background:$main-color-gallery;
   z-index: 250;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -526,6 +530,7 @@ h3.artwork-type {
 
 .large {
   //width: clamp(300px, 80vw, 1500px);
+  
   padding: 5% 0;
   @include center-aligned;
   width: 80vw;
@@ -545,11 +550,11 @@ h3.artwork-type {
     border-radius: 4px;
     font-family: hkgrotesk-light;
     color: whitesmoke;
-    background:rgb(36, 23, 16);
+    background:$main-color-gallery;
     transition: 0.5s;
     &:hover {
       padding: 5px 22px;
-      color:rgb(36, 23, 16);
+      color:$main-color-gallery;
       background: whitesmoke;
       
     }
@@ -563,7 +568,7 @@ h3.artwork-type {
   bottom: 11%;
   left: 50%;
   height: 30%;
-  background:rgb(36, 23, 16);
+  background:$main-color-gallery;
   color: wheat;
   width: clamp(300px 17vw 500px);
   padding: 1vw;
@@ -582,6 +587,9 @@ h3.artwork-type {
 
 // <<<<<<  G A L L E R Y  >>>>>
 @media screen and (max-width: 1024px) {
+  #art-2d, #art-3d, #art-embro {
+    margin: 0;
+  }
   .video-container{
     height: 100vh;
     top:0;
