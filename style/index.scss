@@ -317,7 +317,7 @@ video {
 // <<<<  M A I N  /  C O N T E N T  S E C T I O N  >>>> //
                       
 main {
-  height: 290vh;
+  height: 330vh;
   background:rgb(36, 23, 16);
   color: whitesmoke;
   display: flex;
@@ -333,6 +333,7 @@ main {
     justify-content: center;
     height: 200vh;
     padding: 0 10vw;
+    z-index: 6;
     
 }
 .artwork-sections-wrapper {
@@ -409,7 +410,8 @@ h3.about {
     top:0;
     height: 65vh;
     padding-bottom: 7vh;
-    font-size: 30vw;
+    font-size: clamp(50px, 27vw, 400px);
+    z-index: 5;
 
 }
 
@@ -423,33 +425,47 @@ h3.about {
 }
 
 #about { 
-    height: 90vh;
+    height: 130vh;
     @include center-aligned;
 }
 #about > article {
     max-width: 1200px;
     height: 100%;
-}
-#about > article > p,
-#about > article > picture {
-    border: dotted 1px rgba(245, 245, 245, 0.179);
-    height: 70vh;
-    min-width: 365px;
-}
-#about > article > p {
-  padding: 20vh 10vw 0 10vw;
+    p {
+    //border: dotted 1px rgba(245, 245, 245, 0.179);
+    height: 90vh;
+    min-width: 365px; 
+    position: relative;
+    z-index: 4;
+    padding: 60vh 10vw 10vh 10vw;
+  }
+  picture {
+  position: absolute;
+  right: 0;
+  height: fit-content;
+  width: 70vw;
+  max-width: 1200px;
+  top: 330vh;
+  z-index: 3;
+  margin-bottom: 10vh;
+  img {
+  width: 100%;
+  filter: grayscale(0.5) opacity(0.8)
+  }
+ }
 }
 
 
 
 footer {
     height: 10vh;
-    background:rgb(42, 65, 110);
     @include center-aligned;
     width: 100%;
+    background: rgb(36, 23, 16); 
 }
 .attribution {
     font-size: 12px;
+    
      a {
       text-decoration: underline;
     }
@@ -596,6 +612,7 @@ h3.artwork-type {
     .artwork-sections-wrapper {
       flex-wrap: wrap;
     }
+    
     .artwork-sections-wrapper > a > section  {
        height: 45vh;
     }
@@ -604,9 +621,12 @@ h3.artwork-type {
 
 
 @media screen and (max-width: 768px) {
-    .about > article {
-        padding-top: 0;
-    }
+  #about > article > p {
+  padding: 40vh 10vw 0 10vw;
+}
+  #about > article > picture {
+    width: 100vw;
+  }
     nav{ 
       width: 50%;
       height: 55vh;
@@ -664,9 +684,10 @@ h3.artwork-type {
 }
 
 @media screen and (max-width: 500px){
-  #about > article > p {
-  padding: 10vh 10vw 0 10vw;
-}
+#about > article > picture {
+    width: 120vw;
+    top: 350vh;
+  }
 }
 
 @media screen and (max-width: 1143px) {
