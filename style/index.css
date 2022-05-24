@@ -159,8 +159,12 @@ nav {
           animation: fadeInX 0.5s;
   font-size: 1em;
   background: #1b1b1b;
+  background-image: url("/style/ornament-nav.png");
+  background-size: 100%;
+  background-position-y: 90%;
   height: 80px;
   width: 100vw;
+  overflow: hidden;
 }
 
 nav ul {
@@ -426,7 +430,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2em;
+  gap: 1.2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -435,10 +439,11 @@ main {
   width: 100vw;
   font-family: semplicita-ombra;
   color: #241710;
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 
 #art-3d {
+  margin-left: 7vw;
   background-image: url("texture3d.jpg");
   background-size: 100%;
   background-position-y: 100%;
@@ -449,7 +454,7 @@ main {
 }
 
 #art-2d {
-  margin-top: 30vh;
+  margin-top: 40vh;
   background-image: url("texture2d.jpeg");
   background-position-y: 100%;
 }
@@ -460,7 +465,8 @@ main {
 }
 
 #art-embro {
-  margin-top: 50vh;
+  margin-right: 5vw;
+  margin-top: 30vh;
   background-image: url("texturembro.jpeg");
   background-position-y: 1%;
   background-position-x: 10%;
@@ -481,7 +487,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: clamp(320px, 30vw, 400px);
+  width: clamp(300px, 30vw, 350px);
   height: 40vh;
   font-size: 50px;
   line-height: 40px;
@@ -492,6 +498,8 @@ main {
   transition: 1s ease-in-out;
   -webkit-box-shadow: 10px 10px 8px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 10px 10px 8px 4px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
 .artwork-sections-wrapper > a > section:hover {
@@ -500,8 +508,6 @@ main {
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  border-top-left-radius: 2em;
-  border-bottom-right-radius: 2em;
 }
 
 h3.artwork,
@@ -522,6 +528,7 @@ h3.about {
 h3.artwork::before,
 h3.about::before {
   content: "··";
+  font-size: 90%;
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
   color: whitesmoke;
@@ -562,17 +569,16 @@ h3.about {
 
 #about > article picture {
   position: absolute;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 330vh;
   width: inherit;
-  top: 130vh;
+  top: 100vh;
   z-index: 3;
   left: 0;
+  overflow: hidden;
 }
 
 #about > article picture img {
-  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -604,14 +610,14 @@ h3.artwork-type {
   overflow: hidden;
   position: absolute;
   background: none;
-  line-height: 55%;
+  line-height: 65%;
   text-align: right;
   color: #949494;
-  right: 0;
+  right: 1vw;
   bottom: 0;
   height: 75vh;
   padding-top: 7vh;
-  font-size: 16vw;
+  font-size: clamp(70px, 16vw, 120px);
   z-index: -1;
   -webkit-animation: fadeIn 0.5s;
           animation: fadeIn 0.5s;
@@ -752,6 +758,8 @@ h3.artwork-type {
     height: 55vh;
     right: 0;
     border-left: solid 1px #969696;
+    background-image: none;
+    font-size: 1.2em;
   }
   nav ul {
     padding: 60px 0 60px 10vw;
@@ -765,12 +773,9 @@ h3.artwork-type {
   h3.about {
     margin-right: 0;
   }
-  h3.artwork::before, h3.artwork::after,
-  h3.about::before,
-  h3.about::after {
-    content: '·';
-    position: relative;
-    top: 5%;
+  h3.artwork::before,
+  h3.about::before {
+    font-size: 40%;
   }
 }
 
@@ -781,9 +786,6 @@ h3.artwork-type {
   }
   .artwork-sections-wrapper > a > section {
     height: 45vh;
-  }
-  #about > article > picture {
-    width: 130vw;
   }
   #about > article > p {
     padding: 40vh 10vw 0 10vw;
@@ -844,34 +846,18 @@ h3.artwork-type {
   .artwork-sections-wrapper > a > section {
     height: 35vh;
   }
-  #about > article > picture {
-    width: 180vw;
-  }
   #about > article > p {
     padding: 40vh 10vw 0 10vw;
     margin-top: 0;
   }
-}
-
-@media screen and (max-width: 500px) {
-  #about > article > picture {
-    width: 200vw;
+  #art-3d {
+    margin-right: 8vw;
   }
-}
-
-@media screen and (max-width: 1143px) {
-  #artwork {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding-top: 5vh;
+  #art-2d {
+    margin-left: 16vw;
   }
-}
-
-@media (min-width: 1406px) {
-  #about > article > picture {
-    top: 100vh;
-    max-height: 2531.66px;
+  #art-embro {
+    margin-right: 8vw;
   }
 }
 /*# sourceMappingURL=index.css.map */
