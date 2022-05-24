@@ -25,6 +25,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 li {
@@ -488,7 +489,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: clamp(300px, 30vw, 350px);
-  height: 40vh;
+  aspect-ratio: 1;
   font-size: 50px;
   line-height: 40px;
   -webkit-filter: grayscale(0.9);
@@ -570,7 +571,7 @@ h3.about {
 #about > article picture {
   position: absolute;
   height: 330vh;
-  width: inherit;
+  width: 100vw;
   top: 100vh;
   z-index: 3;
   left: 0;

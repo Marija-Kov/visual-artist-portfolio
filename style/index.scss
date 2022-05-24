@@ -30,13 +30,13 @@ $large-heading: rgba(255, 255, 255, 0.5);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none; 
+    text-decoration: none;
+    overflow-x: hidden; 
 }
 
 li {
     list-style: none;
 }
-
 html {
    scroll-behavior: smooth; 
 }
@@ -389,7 +389,7 @@ main {
 .artwork-sections-wrapper > a > section {
      @include center-aligned;
         width: clamp(300px, 30vw, 350px);
-        height: 40vh;
+        aspect-ratio: 1;
         font-size: 50px;
         line-height: 40px;
         filter: grayscale(0.9);
@@ -453,7 +453,6 @@ h3.about {
     max-width: 1200px;
     height: 100%;
     p {
-    //border: dotted 1px rgba(245, 245, 245, 0.179);
     height: 90vh;
     min-width: 365px; 
     position: relative;
@@ -463,7 +462,7 @@ h3.about {
   picture {
   position: absolute;
   height: 330vh;
-  width: inherit;
+  width: 100vw;;
   top: 100vh;
   z-index: 3;
   left: 0;
