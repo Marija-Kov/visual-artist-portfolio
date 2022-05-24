@@ -343,7 +343,7 @@ main {
 }
 .artwork-sections-wrapper {
     display: flex;
-    gap: 0.5em;
+    gap: 2em;
     justify-content: center;
     flex-wrap: nowrap; 
     width: 100vw;
@@ -382,13 +382,14 @@ main {
 
 .artwork-sections-wrapper > a > section {
      @include center-aligned;
-        width: clamp(320px, 30vw, 500px);
-        height: 50vh;
+        width: clamp(320px, 30vw, 400px);
+        height: 40vh;
         font-size: 50px;
         line-height: 40px;
         filter: grayscale(0.9);
         color: $main-color-gallery;
         transition: 1s ease-in-out;
+        box-shadow: 10px 10px 8px 4px rgba(0,0,0,0.5);
         // &:nth-child(1),
         // &:nth-child(2),
         // &:nth-child(3) {
@@ -415,8 +416,15 @@ h3.about {
     top:0;
     height: 65vh;
     padding-bottom: 7vh;
-    font-size: clamp(50px, 27vw, 400px);
+    font-size: clamp(28px, 24vw, 150px);
     z-index: 5;
+    margin-right: 40%;
+    &::before {
+      content: "··";
+      filter: opacity(0.7);
+      color: whitesmoke;
+    }
+
 
 }
 
@@ -445,6 +453,7 @@ h3.about {
     padding: 50vh 10vw 10vh 10vw;
   }
   picture {
+  
   position: absolute;
   height: fit-content;
   width: inherit;
@@ -474,7 +483,7 @@ footer {
     }
     color: rgb(186, 217, 247);
 }
-// <<<< A R T W O R K  P A G E S >>>> //
+// <<<< G A L L E R Y  P A G E S >>>> //
 
 h3.artwork-type {
     overflow: hidden;
@@ -506,7 +515,7 @@ h3.artwork-type {
   max-width: 200px;
   width: 15vw;
   min-width: 180px;
-  background:$main-color-gallery;
+  background:$main-color;
   z-index: 250;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -612,7 +621,17 @@ h3.artwork-type {
       flex-direction: column;
     }
   }
+  h3.artwork,
+  h3.about {
+  margin-right: 0;
+  &::before,
+  &::after {
+    content: '·';
+    position: relative;
+    top: 5%;
+  }
   
+ }
 }
 
 @media screen and (max-width: 984px) {
@@ -629,7 +648,6 @@ h3.artwork-type {
     #about > article > p {
   padding: 40vh 10vw 0 10vw;
 }
-
 }
 
 
@@ -707,4 +725,11 @@ h3.artwork-type {
     align-items: flex-start;
     padding-top: 5vh;
   }
+}
+
+@media (min-width: 1406px) {
+  #about > article > picture {
+    top: 100vh;
+    max-height: 2531.66px;
+  } 
 }
