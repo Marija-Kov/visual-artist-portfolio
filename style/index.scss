@@ -444,15 +444,12 @@ h3.about {
     padding: 60vh 10vw 10vh 10vw;
   }
   picture {
-  filter: saturate(0.4);
   position: absolute;
-  right: 0;
   height: fit-content;
-  width: 90vw;
-  max-width: 900px;
-  top: 330vh;
+  width: 100vw;
+  overflow: hidden;
+  top: 320vh;
   z-index: 3;
-  margin-bottom: 10vh;
   img {
   width: 100%;
   }
@@ -466,6 +463,7 @@ footer {
     @include center-aligned;
     width: 100%;
     background: $main-color; 
+    z-index: 7;
 }
 .attribution {
     font-size: 12px;
@@ -633,7 +631,7 @@ h3.artwork-type {
   padding: 40vh 10vw 0 10vw;
 }
   #about > article > picture {
-    width: 100vw;
+    top: 330vh;
   }
     nav{ 
       width: 50%;
