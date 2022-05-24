@@ -552,10 +552,10 @@ h3.about {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 100vw;
-  overflow: hidden;
+  width: inherit;
   top: 320vh;
   z-index: 3;
+  left: 0;
 }
 
 #about > article picture img {
@@ -764,8 +764,8 @@ h3.artwork-type {
   #about > article > p {
     padding: 40vh 10vw 0 10vw;
   }
-  #about > article > picture {
-    top: 330vh;
+  #about > article > picture img {
+    width: 150%;
   }
   nav {
     width: 50%;
@@ -828,7 +828,7 @@ h3.artwork-type {
 @media screen and (max-width: 500px) {
   #about > article > picture {
     width: 120vw;
-    top: 350vh;
+    top: 310vh;
   }
 }
 
