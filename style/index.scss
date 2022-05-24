@@ -105,6 +105,7 @@ body {
     background: $main-color;
     font-family: hkgrotesk-light;
     font-size: clamp(14px, 1.5vw, 16px);
+    overflow-x: hidden;
     
 }
 
@@ -447,7 +448,7 @@ h3.about {
   position: absolute;
   height: fit-content;
   width: inherit;
-  top: 320vh;
+  top: 130vh;
   z-index: 3;
   left: 0;
   img {
@@ -588,6 +589,9 @@ h3.artwork-type {
   #art-2d, #art-3d, #art-embro {
     margin: 0;
   }
+  body {
+      overflow-x: hidden;
+    }
   .video-container{
     height: 100vh;
     top:0;
@@ -622,6 +626,9 @@ h3.artwork-type {
     .artwork-sections-wrapper > a > section  {
        height: 45vh;
     }
+      #about > article > picture {
+    width: 150vw;
+  } 
 }
 
 
@@ -630,11 +637,7 @@ h3.artwork-type {
   #about > article > p {
   padding: 40vh 10vw 0 10vw;
 }
-  #about > article > picture {
-    img{
-      width: 150%;
-    }
-  }
+
     nav{ 
       width: 50%;
       height: 55vh;
@@ -644,9 +647,7 @@ h3.artwork-type {
         flex-direction: column;
       }
     }
-    body {
-      overflow-x: hidden;
-    }
+    
     .gallery {
       width: 100vw;
       flex-direction: column-reverse;
@@ -688,14 +689,15 @@ h3.artwork-type {
     .artwork-sections-wrapper > a > section  {
        height: 35vh;
     }
-    
+   #about > article > picture {
+    width: 150vw;
+  } 
 }
 
 @media screen and (max-width: 500px){
 #about > article > picture {
-    width: 120vw;
-    top: 310vh;
-  }
+    width: 200vw;
+  } 
 }
 
 @media screen and (max-width: 1143px) {
