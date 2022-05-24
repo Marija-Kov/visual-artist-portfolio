@@ -545,7 +545,7 @@ h3.about {
   min-width: 365px;
   position: relative;
   z-index: 4;
-  padding: 60vh 10vw 10vh 10vw;
+  padding: 50vh 10vw 10vh 10vw;
 }
 
 #about > article picture {
@@ -723,9 +723,6 @@ h3.artwork-type {
   #art-2d, #art-3d, #art-embro {
     margin: 0;
   }
-  body {
-    overflow-x: hidden;
-  }
   .video-container {
     height: 100vh;
     top: 0;
@@ -763,14 +760,14 @@ h3.artwork-type {
     height: 45vh;
   }
   #about > article > picture {
-    width: 150vw;
+    width: 130vw;
+  }
+  #about > article > p {
+    padding: 40vh 10vw 0 10vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #about > article > p {
-    padding: 40vh 10vw 0 10vw;
-  }
   nav {
     width: 50%;
     height: 55vh;
@@ -825,7 +822,11 @@ h3.artwork-type {
     height: 35vh;
   }
   #about > article > picture {
-    width: 150vw;
+    width: 180vw;
+  }
+  #about > article > p {
+    padding: 40vh 10vw 0 10vw;
+    margin-top: 0;
   }
 }
 
