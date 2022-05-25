@@ -31,10 +31,8 @@ li {
   list-style: none;
 }
 
-html,
-body {
+html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 a {
@@ -529,11 +527,11 @@ h3.about {
   background: none;
   color: rgba(255, 255, 255, 0.5);
   top: 0;
-  height: 65vh;
-  padding-bottom: 7vh;
+  height: 22vh;
+  padding: 15vh 0 7vh 0;
   font-size: clamp(28px, 24vw, 150px);
   z-index: 5;
-  margin-right: 40%;
+  margin-right: 30%;
 }
 
 h3.artwork::before,
@@ -566,7 +564,7 @@ h3.about {
 }
 
 #about > article {
-  max-width: 1200px;
+  max-width: 1000px;
   height: 100%;
 }
 
@@ -624,7 +622,7 @@ h3.artwork-type {
   line-height: 65%;
   text-align: right;
   color: #949494;
-  right: 1vw;
+  right: 0.5vw;
   bottom: 0;
   height: 75vh;
   padding-top: 7vh;
@@ -798,9 +796,6 @@ h3.artwork-type {
   .artwork-sections-wrapper > a > section {
     height: 45vh;
   }
-  #about > article > p {
-    padding: 40vh 10vw 0 10vw;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -856,10 +851,6 @@ h3.artwork-type {
   }
   .artwork-sections-wrapper > a > section {
     height: 35vh;
-  }
-  #about > article > p {
-    padding: 40vh 10vw 0 10vw;
-    margin-top: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
