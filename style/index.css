@@ -25,15 +25,16 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  overflow-x: hidden;
 }
 
 li {
   list-style: none;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -235,6 +236,15 @@ li > a:hover {
 }
 
 #menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: none;
   width: 80px;
   aspect-ratio: 1;
@@ -248,16 +258,16 @@ li > a:hover {
 }
 
 #menu-toggle #ham {
-  height: 80%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
   margin: 15px;
   position: absolute;
 }
 
 #menu-toggle #ham span {
-  width: 70%;
-  height: 4px;
-  margin: 10px 0;
+  width: 60%;
+  height: 3px;
+  margin: 8px 0;
 }
 
 #menu-toggle #ham span:nth-child(1) {
@@ -276,9 +286,9 @@ li > a:hover {
 }
 
 #menu-toggle #cross {
-  height: 80%;
-  width: 80%;
-  margin: 15px;
+  height: 70%;
+  width: 70%;
+  margin: 20px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -287,19 +297,19 @@ li > a:hover {
 #menu-toggle #cross span:nth-child(1) {
   position: absolute;
   height: 0%;
-  width: 4px;
+  width: 3px;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
-  top: 10px;
-  left: 20px;
+  top: 0px;
+  left: 18px;
 }
 
 #menu-toggle #cross span:nth-child(2) {
   position: absolute;
   width: 0%;
-  height: 4px;
-  top: 32px;
-  left: -2px;
+  height: 3px;
+  top: 18px;
+  left: 0px;
   -webkit-transition-delay: .25s;
           transition-delay: .25s;
 }
@@ -324,13 +334,13 @@ li > a:hover {
 }
 
 #menu-toggle.open #cross span:nth-child(1) {
-  height: 80%;
+  height: 70%;
   -webkit-transition-delay: .625s;
           transition-delay: .625s;
 }
 
 #menu-toggle.open #cross span:nth-child(2) {
-  width: 80%;
+  width: 70%;
   -webkit-transition-delay: .375s;
           transition-delay: .375s;
 }
@@ -850,15 +860,6 @@ h3.artwork-type {
   #about > article > p {
     padding: 40vh 10vw 0 10vw;
     margin-top: 0;
-  }
-  #art-3d {
-    margin-right: 8vw;
-  }
-  #art-2d {
-    margin-left: 16vw;
-  }
-  #art-embro {
-    margin-right: 8vw;
   }
 }
 /*# sourceMappingURL=index.css.map */

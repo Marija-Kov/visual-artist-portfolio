@@ -3,6 +3,7 @@ $main-color: rgb(27, 27, 27);
 $main-color-gallery: rgb(36, 23, 16);
 $text-color:whitesmoke;
 $large-heading: rgba(255, 255, 255, 0.5);
+$toggle-btn-size: 70%;
 
 ::-webkit-scrollbar {
   width: 1em;
@@ -31,14 +32,16 @@ $large-heading: rgba(255, 255, 255, 0.5);
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    overflow-x: hidden; 
+    //overflow-x: hidden; 
 }
 
 li {
     list-style: none;
 }
-html {
+html,
+body {
    scroll-behavior: smooth; 
+   overflow-x: hidden;
 }
 a {
   color:whitesmoke;
@@ -183,6 +186,7 @@ li > a {
     transition: .25s ease;
 }
 #menu-toggle {
+  @include center-aligned;
   display: none;
   width: 80px;
   aspect-ratio: 1;
@@ -193,14 +197,14 @@ li > a {
   animation: fadeInX 0.3s;
   cursor:pointer;
   #ham {
-    height:80%;
-    width:80%;
+    height:$toggle-btn-size;
+    width:$toggle-btn-size;
     margin: 15px;
     position: absolute;
     span {
-      width:70%;
-      height:4px;
-      margin:10px 0;
+      width:60%;
+      height:3px;
+      margin:8px 0;
       &:nth-child(1){
         transition-delay:.5s;
       }
@@ -213,27 +217,27 @@ li > a {
     }
   }
   #cross {
-    height:80%;
-    width:80%;
-    margin: 15px;
+    height:$toggle-btn-size;
+    width:$toggle-btn-size;
+    margin: 20px;
     transform:rotate(45deg);
     position: absolute;
     span{
       &:nth-child(1){
         position: absolute;
         height:0%;
-        width:4px;
+        width:3px;
         transition-delay:0s;
-        top: 10px;
-        left: 20px;
+        top: 0px;
+        left: 18px;
 
       }
       &:nth-child(2){
         position:absolute;
         width:0%;
-        height:4px;
-        top: 32px;
-        left: -2px;
+        height:3px;
+        top: 18px;
+        left: 0px;
         transition-delay:.25s;
       }
     }
@@ -258,13 +262,13 @@ li > a {
   #cross {
     span {
       &:nth-child(1){
-        height:80%;
+        height:70%;
         transition-delay:.625s;
       }
     }
     span {
       &:nth-child(2){
-        width:80%;
+        width:70%;
         transition-delay:.375s;
       }
     }    
@@ -713,15 +717,6 @@ h3.artwork-type {
   margin-top: 0;
 }
 
-#art-3d {
-  margin-right: 8vw;
-}
-#art-2d {
-  margin-left: 16vw;
-}
-#art-embro {
-  margin-right: 8vw;
-}
 }
 
 
