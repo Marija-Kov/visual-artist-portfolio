@@ -16,7 +16,7 @@ export const init1 = async function initShowLarger() {
           ? (large.style.filter = "opacity(1)")
           : (large.style.filter = "opacity(0)");
       });
-      gallery.style.background = "rgba(36, 23, 16, 0.8)";
+      gallery.style.background = "rgba(27, 27, 27, 0.8)";
       showDetails.setAttribute("id", `${artId}`);
       showDetails.style.filter = "opacity(1)";
       showDetails.innerText = "details";
