@@ -69,7 +69,7 @@
    "_2d": [
         
       {
-         "name": "Purgatorium",
+         "name": "Purgatorium I",
          "year": "2019 - 2020",
          "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
          "size": "100 x 150 cm",
@@ -82,7 +82,7 @@
          "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
       },
            {
-         "name": "Purgatorium",
+         "name": "Purgatorium II",
          "year": "2019 - 2020",
          "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
          "alt": "Abstract canvas painting",
@@ -90,6 +90,45 @@
          "images": [
              "/media/images/on-canvas/purgatorium-2-thumb.jpg",             
              "/media/images/on-canvas/purgatorium-2.jpg"   
+         ],
+
+         "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
+      },
+       {
+         "name": "Purgatorium III",
+         "year": "2019 - 2020",
+         "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
+         "alt": "Abstract canvas painting",
+         "size": "00 x 100 cm",
+         "images": [
+             "/media/images/on-canvas/purgatorium-3-thumb.jpg",             
+             "/media/images/on-canvas/purgatorium-3.jpg"   
+         ],
+
+         "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
+      },
+       {
+         "name": "Purgatorium IV",
+         "year": "2019 - 2020",
+         "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
+         "alt": "Abstract canvas painting",
+         "size": "150 x 100 cm",
+         "images": [
+             "/media/images/on-canvas/purgatorium-4-thumb.jpg",             
+             "/media/images/on-canvas/purgatorium-4.jpg"   
+         ],
+
+         "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
+      },
+       {
+         "name": "Whitespace",
+         "year": "2021",
+         "medium": "Textured acrylic on canvas",
+         "alt": "Abstract canvas painting",
+         "size": "100 x 150 cm",
+         "images": [
+             "/media/images/on-canvas/whitespace-thumb.jpg",             
+             "/media/images/on-canvas/whitespace.jpg"   
          ],
 
          "description": "Dynamical abstract organic forms done in natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inacessibility of the resources and the growing need to make more out of less with inventive solutions."
