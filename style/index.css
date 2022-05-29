@@ -864,21 +864,37 @@ h3.artwork-type {
     bottom: 22%;
   }
   .artwork-sections-wrapper > a > section {
-    height: 35vh;
+    height: 30vh;
   }
   #about > article > p {
     padding: 45vh 15vw 0vh 15vw;
-    background: rgba(186, 217, 247, 0.459);
   }
 }
 
 @media screen and (max-width: 455px) {
-  h3.artwork {
-    margin-right: 0;
+  main {
+    height: 370vh;
   }
-  #about > article > p {
-    padding: 35vh 15vw 0vh 15vw;
-    background: rgba(186, 217, 247, 0.459);
+  .artwork-sections-wrapper {
+    gap: 6em;
+  }
+  h3.artwork {
+    top: 5vh;
+    font-size: 10vh;
+    margin-right: 0;
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+    padding: 0 21vh 30vh 0;
+  }
+  #about > article {
+    height: 100vh;
+  }
+  #about > article p {
+    margin-top: 20vh;
+    padding: 45vh 10vw 0vh 40px;
+  }
+  #about > article picture {
+    height: 370vh;
   }
 }
 /*# sourceMappingURL=index.css.map */
