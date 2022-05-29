@@ -174,7 +174,7 @@ li > a {
 
 // <<<<  T O P  /  H E A D E R  S E C T I O N  >>>> //
 
-// HAMBURGER MENU //
+// HAMBURGER MENU  start //
 #ham > span,
 #cross > span {
     display: block;
@@ -272,7 +272,7 @@ li > a {
   }
 }
 
-// ^^ HAMBURGER MENU ^^ //
+// HAMBURGER MENU  end //
 
 header {
   height: 100vh;
@@ -324,7 +324,7 @@ video {
     filter: blur(7px);
 }
 
-// <<<<  M A I N  /  C O N T E N T  S E C T I O N  >>>> //
+// <<<<  M A I N  /  C O N T E N T  S E C T I O N  start >>>> //
                       
 main {
   height: 330vh;
@@ -437,7 +437,7 @@ h3.about {
 
 }
 
-// <<<  B O T T O M  /  A B O U T  S E C T I O N  >>>> //
+// <<<  B O T T O M  /  A B O U T  S E C T I O N  start >>>> //
 
 h3.about {
   visibility: hidden;
@@ -474,8 +474,6 @@ h3.about {
  }
 }
 
-
-
 footer {
     height: 10vh;
     @include center-aligned;
@@ -491,7 +489,11 @@ footer {
     }
     color: rgb(186, 217, 247);
 }
-// <<<< G A L L E R Y  P A G E S >>>> //
+
+// <<<  B O T T O M  /  A B O U T  S E C T I O N  end >>>> //
+
+
+// <<<< G A L L E R Y  P A G E S  start >>>> //
 
 h3.artwork-type {
     overflow: hidden;
@@ -542,11 +544,9 @@ h3.artwork-type {
     }
   }
 
-} // THUMBS
+} // THUMBS end
 
-.large {
-  //width: clamp(300px, 80vw, 1500px);
-  
+.large {  
   padding: 5% 0;
   @include center-aligned;
   width: 80vw;
@@ -576,7 +576,7 @@ h3.artwork-type {
     }
     
   }
-} // LARGE
+} // LARGE end
 
 .details {
   filter: opacity(0);
@@ -601,7 +601,9 @@ h3.artwork-type {
   
 }
 
-// <<<<<<  G A L L E R Y  >>>>>
+// <<<<<<  G A L L E R Y  P A G E S  end  >>>>> /
+
+
 @media screen and (max-width: 1024px) {
   #art-2d, #art-3d, #art-embro {
     margin: 0;
@@ -688,11 +690,12 @@ h3.artwork-type {
       }
 
       .large {
-        width: 100vw;
-        height: 80vh;
-        overflow-x: hidden;
-        padding-bottom: 100px;
-
+          width: 100vw;
+          height: 80vh;
+          padding-bottom: 100px;
+        img {
+          max-width: 90vw !important ;
+        }
         .show-details {
         bottom: 180px;
         }
