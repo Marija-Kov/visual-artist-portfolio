@@ -104,7 +104,7 @@ a {
 body {
     background: $main-color;
     font-family: hkgrotesk-light;
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: clamp(12px, 1.5vw, 16px);
     overflow-x: hidden;
     
 }
@@ -417,7 +417,7 @@ main {
 
 h3.artwork,
 h3.about {
-    overflow: hidden;
+    //overflow: hidden;
     position: sticky;
     background: none;
     color: $large-heading; 
@@ -449,6 +449,7 @@ h3.about {
 #about { 
     height: 130vh;
     @include center-aligned;
+    // MAKE RESPONSIVE ABOUT SECTION
 }
 #about > article {
     max-width: 1000px;
@@ -482,7 +483,7 @@ footer {
     z-index: 7;
 }
 .attribution {
-    font-size: 12px;
+    font-size: clamp(10px, 1vw, 12px);
     
      a {
       text-decoration: underline;
@@ -555,6 +556,7 @@ h3.artwork-type {
     position: absolute;
     filter: opacity(0);
     transition: 0.5s;
+    max-height: 90%;
   }
   .show-details {
     filter: opacity(0);
@@ -613,7 +615,7 @@ h3.artwork-type {
     top:0;
   }
    video {
-        height: 100%;
+        height: 122%;
         width: auto;
     }
   #menu-toggle {
@@ -621,7 +623,7 @@ h3.artwork-type {
   }
   nav {
     display: none;
-    width: 50%;
+    width: clamp(310px, 30%, 400px);
     height: 55vh;
     right: 0;
     border-left: solid 1px rgb(150, 150, 150);
@@ -636,9 +638,19 @@ h3.artwork-type {
   h3.artwork,
   h3.about {
   margin-right: 0;
-  &::before{
-   font-size: 40%;
+ }
+ #about > article {
+    picture {
+  
+  height: 330vh;
+  width: 100vw;
+
+  left: 0;
+  overflow: hidden;
+  img {
+  height: 120%;
   }
+ }
  }
 }
 
@@ -650,11 +662,23 @@ h3.artwork-type {
     .artwork-sections-wrapper > a > section  {
        height: 45vh;
     }
+  h3.artwork,
+  h3.about {
+  overflow: unset;
+  font-size: 15vw;
+  padding: 20vh 0 7vh 0;
+  }
 }
 
 
 
 @media screen and (max-width: 768px) {
+
+    h3.artwork,
+    h3.about {
+    overflow: unset;
+    font-size: 18vw;
+    }
 
     nav{ 
       width: 50%;
@@ -709,10 +733,10 @@ h3.artwork-type {
     .artwork-sections-wrapper > a > section  {
        height: 35vh;
     }
-
+   #about > article > p {
+     padding-top: 32vh;
+   }
 
 }
-
-
 
 
