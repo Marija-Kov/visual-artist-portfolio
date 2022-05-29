@@ -844,6 +844,7 @@ h3.artwork-type {
   }
   .gallery .large img {
     max-width: 90vw !important;
+    max-height: auto;
   }
   .gallery .large .show-details {
     bottom: 180px;
