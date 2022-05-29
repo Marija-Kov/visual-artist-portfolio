@@ -104,7 +104,7 @@ a {
 body {
     background: $main-color;
     font-family: hkgrotesk-light;
-    font-size: clamp(12px, 1.5vw, 16px);
+    font-size: clamp(13px, 1.5vw, 16px);
     overflow-x: hidden;
     
 }
@@ -389,7 +389,7 @@ main {
 
 .artwork-sections-wrapper > a > section {
      @include center-aligned;
-        width: clamp(300px, 30vw, 350px);
+        width: clamp(250px, 30vw, 350px);
         aspect-ratio: 1;
         font-size: 50px;
         line-height: 40px;
@@ -452,7 +452,7 @@ h3.about {
     // MAKE RESPONSIVE ABOUT SECTION
 }
 #about > article {
-    max-width: 1000px;
+    max-width: 900px;
     height: 100%;
     p {
     height: 90vh;
@@ -624,7 +624,7 @@ h3.artwork-type {
   nav {
     display: none;
     width: clamp(310px, 30%, 400px);
-    height: 55vh;
+    height: fit-content;
     right: 0;
     border-left: solid 1px rgb(150, 150, 150);
     background-image: none;
@@ -635,16 +635,11 @@ h3.artwork-type {
       flex-direction: column;
     }
   }
-  h3.artwork,
-  h3.about {
-  margin-right: 0;
- }
+
  #about > article {
-    picture {
-  
+  picture {
   height: 330vh;
   width: 100vw;
-
   left: 0;
   overflow: hidden;
   img {
@@ -676,14 +671,11 @@ h3.artwork-type {
 
     h3.artwork,
     h3.about {
-    overflow: unset;
     font-size: 18vw;
     }
 
     nav{ 
       width: 50%;
-      height: 55vh;
-      right: 0;
       ul {
         padding: 60px 0 60px 10vw;
         flex-direction: column;
@@ -734,9 +726,20 @@ h3.artwork-type {
        height: 35vh;
     }
    #about > article > p {
-     padding-top: 32vh;
+     padding: 45vh 15vw 0vh 15vw;
+     background:rgba(186, 217, 247, 0.459)
    }
 
+}
+
+@media screen and (max-width: 455px) {
+  h3.artwork {
+    margin-right: 0;
+  }
+  #about > article > p {
+     padding: 35vh 15vw 0vh 15vw;
+     background:rgba(186, 217, 247, 0.459)
+   }
 }
 
 
