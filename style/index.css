@@ -563,7 +563,7 @@ h3.about {
 }
 
 #about > article {
-  max-width: 900px;
+  max-width: 1000px;
   height: 100%;
 }
 
@@ -706,11 +706,11 @@ h3.artwork-type {
   -webkit-filter: opacity(0);
           filter: opacity(0);
   position: absolute;
+  margin-right: 60vw;
   z-index: 400;
-  bottom: 45px;
-  padding: 5px 20px;
-  border: solid 1px whitesmoke;
-  border-radius: 4px;
+  bottom: 5vh;
+  padding: 0.3em 1.5em;
+  border: solid 0px whitesmoke;
   font-family: hkgrotesk-light;
   color: whitesmoke;
   background: #241710;
@@ -719,7 +719,6 @@ h3.artwork-type {
 }
 
 .gallery .large .show-details:hover {
-  padding: 5px 22px;
   color: #241710;
   background: whitesmoke;
 }

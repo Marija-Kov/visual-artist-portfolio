@@ -37,7 +37,7 @@ export const init2 = async function initShowDetails() {
         : article.classList.remove("visible");
     });
   showDetails.innerText === "details"
-    ? (showDetails.innerText = "collapse")
+    ? (showDetails.innerText = "collapse details")
     : ((showDetails.innerText = "details"),
   articles.forEach((article) => {
     article.classList.contains("visible")
