@@ -528,7 +528,7 @@ h3.about {
   top: 0;
   height: 22vh;
   padding: 15vh 0 7vh 0;
-  font-size: clamp(28px, 24vw, 150px);
+  font-size: clamp(30px, 24vw, 150px);
   z-index: 5;
   margin-right: 30%;
 }
@@ -802,16 +802,11 @@ h3.artwork-type {
   h3.artwork,
   h3.about {
     overflow: unset;
-    font-size: 15vw;
     padding: 20vh 0 7vh 0;
   }
 }
 
 @media screen and (max-width: 768px) {
-  h3.artwork,
-  h3.about {
-    font-size: 18vw;
-  }
   nav {
     width: 50%;
   }
@@ -879,12 +874,10 @@ h3.artwork-type {
     gap: 6em;
   }
   h3.artwork {
-    top: 5vh;
-    font-size: 10vh;
     margin-right: 0;
     -webkit-transform: rotateZ(-90deg);
             transform: rotateZ(-90deg);
-    padding: 0 21vh 30vh 0;
+    padding: 5vh 21vh 30vh 0;
   }
   #about > article {
     height: 100vh;
