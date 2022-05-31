@@ -101,6 +101,17 @@ a {
   }
 }
 
+@keyframes loading {
+  0% {
+     letter-spacing: 0;
+     filter: blur(0px) opacity(1);
+  }
+  100% {
+    letter-spacing: 100px;
+    filter: blur(7px) opacity(0);
+  }
+}
+
 body {
     background: $main-color;
     font-family: hkgrotesk-light;
@@ -114,7 +125,7 @@ nav {
     z-index: 99;
     top:0;
     display: inline-block;
-    animation: fadeInX 0.5s;
+    animation: fadeIn 0.5s;
     font-size: 1em;
     background:$main-color;
     background-image: url('/style/ornament-nav.png');
@@ -304,26 +315,6 @@ video {
     top:0;
 }
 
-#logo {
-    position: absolute;
-    z-index: 3;
-    color:$main-color;
-    font-family: sans-serif;
-    font-size: clamp(90px, 30vw, 270px);  
-    overflow: hidden;
-    transition: 1s;
-    white-space: nowrap;
-    word-wrap: nowrap;
-    animation: fadeIn 3s;  
-}
-
-#logo.apart {
-    //left: 10vw;
-    letter-spacing: 150px;
-    color:rgba(0, 0, 0, 0);
-    filter: blur(7px);
-}
-
 // <<<<  M A I N  /  C O N T E N T  S E C T I O N  start >>>> //
                       
 main {
@@ -496,6 +487,24 @@ footer {
 
 // <<<< G A L L E R Y  P A G E S  start >>>> //
 
+#loading {
+ position: absolute;
+ z-index: 9999;
+ @include center-aligned;
+ height: 100vh;
+ width: 100vw;
+ background:rgb(27, 27, 27);
+ color:rgb(245, 245, 245);
+ font-family: 'Helvetica Neue',Roboto,'Segoe UI',BlinkMacSystemFont,Ubuntu,Oxygen,     Cantarell, 'Open Sans',  sans-serif;
+ font-size: clamp(30px, 30vw, 80px); 
+ span{
+   white-space: nowrap;
+   word-wrap: nowrap;
+   overflow: hidden;
+   animation: loading 1.7s;
+ }
+}
+
 h3.artwork-type {
     overflow: hidden;
     position: absolute;
@@ -629,6 +638,7 @@ h3.artwork-type {
     border-left: solid 1px rgb(150, 150, 150);
     background-image: none;
     font-size: 1.2em;
+    animation: fadeInX 0.5s;
     ul {
       padding: 60px 0 60px 10vw;
       margin: 0 auto;

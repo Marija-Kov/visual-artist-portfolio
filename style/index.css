@@ -143,6 +143,32 @@ a {
   }
 }
 
+@-webkit-keyframes loading {
+  0% {
+    letter-spacing: 0;
+    -webkit-filter: blur(0px) opacity(1);
+            filter: blur(0px) opacity(1);
+  }
+  100% {
+    letter-spacing: 100px;
+    -webkit-filter: blur(7px) opacity(0);
+            filter: blur(7px) opacity(0);
+  }
+}
+
+@keyframes loading {
+  0% {
+    letter-spacing: 0;
+    -webkit-filter: blur(0px) opacity(1);
+            filter: blur(0px) opacity(1);
+  }
+  100% {
+    letter-spacing: 100px;
+    -webkit-filter: blur(7px) opacity(0);
+            filter: blur(7px) opacity(0);
+  }
+}
+
 body {
   background: #1b1b1b;
   font-family: hkgrotesk-light;
@@ -155,8 +181,8 @@ nav {
   z-index: 99;
   top: 0;
   display: inline-block;
-  -webkit-animation: fadeInX 0.5s;
-          animation: fadeInX 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
   font-size: 1em;
   background: #1b1b1b;
   background-image: url("/style/ornament-nav.png");
@@ -382,28 +408,6 @@ video {
   top: 0;
 }
 
-#logo {
-  position: absolute;
-  z-index: 3;
-  color: #1b1b1b;
-  font-family: sans-serif;
-  font-size: clamp(90px, 30vw, 270px);
-  overflow: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
-  white-space: nowrap;
-  word-wrap: nowrap;
-  -webkit-animation: fadeIn 3s;
-          animation: fadeIn 3s;
-}
-
-#logo.apart {
-  letter-spacing: 150px;
-  color: rgba(0, 0, 0, 0);
-  -webkit-filter: blur(7px);
-          filter: blur(7px);
-}
-
 main {
   height: 330vh;
   background: #1b1b1b;
@@ -614,6 +618,34 @@ footer {
   text-decoration: underline;
 }
 
+#loading {
+  position: absolute;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #1b1b1b;
+  color: whitesmoke;
+  font-family: 'Helvetica Neue',Roboto,'Segoe UI',BlinkMacSystemFont,Ubuntu,Oxygen,     Cantarell, 'Open Sans',  sans-serif;
+  font-size: clamp(30px, 30vw, 80px);
+}
+
+#loading span {
+  white-space: nowrap;
+  word-wrap: nowrap;
+  overflow: hidden;
+  -webkit-animation: loading 1.7s;
+          animation: loading 1.7s;
+}
+
 h3.artwork-type {
   overflow: hidden;
   position: absolute;
@@ -770,6 +802,8 @@ h3.artwork-type {
     border-left: solid 1px #969696;
     background-image: none;
     font-size: 1.2em;
+    -webkit-animation: fadeInX 0.5s;
+            animation: fadeInX 0.5s;
   }
   nav ul {
     padding: 60px 0 60px 10vw;
