@@ -189,25 +189,27 @@ li > a {
 #ham > span,
 #cross > span {
     display: block;
-    background: whitesmoke;
+    background: $text-color;
+    box-shadow: 1px 1px 2px rgb(37, 37, 37);
     border-radius: 2px;
     transition: .25s ease;
 }
 #menu-toggle {
-  @include center-aligned;
   display: none;
   width: 80px;
-  aspect-ratio: 1;
+  height: 70px;
   position:fixed;
   right: 0;
   top: -6px;
   z-index: 9999;
   animation: fadeInX 0.3s;
+  border-bottom-left-radius: 50%;
   cursor:pointer;
   #ham {
     height:$toggle-btn-size;
     width:$toggle-btn-size;
-    margin: 15px;
+    margin: 10px;
+    margin-left: 35px;
     position: absolute;
     span {
       width:60%;
@@ -227,7 +229,8 @@ li > a {
   #cross {
     height:$toggle-btn-size;
     width:$toggle-btn-size;
-    margin: 20px;
+    margin: 15px;
+    margin-left: 25px;
     transform:rotate(45deg);
     position: absolute;
     span{
@@ -247,6 +250,7 @@ li > a {
         top: 18px;
         left: 0px;
         transition-delay:.25s;
+        box-shadow: none;
       }
     }
   }
@@ -270,7 +274,7 @@ li > a {
   #cross {
     span {
       &:nth-child(1){
-        height:70%;
+        height:80%;
         transition-delay:.625s;
       }
     }

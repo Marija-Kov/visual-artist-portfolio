@@ -254,37 +254,32 @@ li > a:hover {
 #cross > span {
   display: block;
   background: whitesmoke;
+  -webkit-box-shadow: 1px 1px 2px #252525;
+          box-shadow: 1px 1px 2px #252525;
   border-radius: 2px;
   -webkit-transition: .25s ease;
   transition: .25s ease;
 }
 
 #menu-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: none;
   width: 80px;
-  aspect-ratio: 1;
+  height: 70px;
   position: fixed;
   right: 0;
   top: -6px;
   z-index: 9999;
   -webkit-animation: fadeInX 0.3s;
           animation: fadeInX 0.3s;
+  border-bottom-left-radius: 50%;
   cursor: pointer;
 }
 
 #menu-toggle #ham {
   height: 70%;
   width: 70%;
-  margin: 15px;
+  margin: 10px;
+  margin-left: 35px;
   position: absolute;
 }
 
@@ -312,7 +307,8 @@ li > a:hover {
 #menu-toggle #cross {
   height: 70%;
   width: 70%;
-  margin: 20px;
+  margin: 15px;
+  margin-left: 25px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -336,6 +332,8 @@ li > a:hover {
   left: 0px;
   -webkit-transition-delay: .25s;
           transition-delay: .25s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #menu-toggle.open #ham span {
@@ -358,7 +356,7 @@ li > a:hover {
 }
 
 #menu-toggle.open #cross span:nth-child(1) {
-  height: 70%;
+  height: 80%;
   -webkit-transition-delay: .625s;
           transition-delay: .625s;
 }
