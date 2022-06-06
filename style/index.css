@@ -531,7 +531,7 @@ h3.about {
   top: 0;
   height: 22vh;
   padding: 15vh 0 7vh 0;
-  font-size: clamp(30px, 24vw, 150px);
+  font-size: clamp(30px, 24vw, 120px);
   z-index: 5;
   margin-right: 30%;
 }
@@ -822,13 +822,10 @@ h3.artwork-type {
             flex-direction: column;
   }
   #about > article picture {
-    height: 330vh;
+    height: 340vh;
     width: 100vw;
     left: 0;
     overflow: hidden;
-  }
-  #about > article picture img {
-    height: 120%;
   }
 }
 
@@ -836,14 +833,6 @@ h3.artwork-type {
   .artwork-sections-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .artwork-sections-wrapper > a > section {
-    height: 45vh;
-  }
-  h3.artwork,
-  h3.about {
-    overflow: unset;
-    padding: 20vh 0 7vh 0;
   }
 }
 
@@ -898,6 +887,10 @@ h3.artwork-type {
   }
   .gallery .details {
     bottom: 22%;
+    padding: 5vw;
+    max-width: 70vw;
+    left: unset;
+    right: 0;
   }
   .artwork-sections-wrapper > a > section {
     height: 30vh;
@@ -905,17 +898,12 @@ h3.artwork-type {
   #about > article > p {
     padding: 45vh 15vw 0vh 15vw;
   }
-  .gallery .details {
-    padding: 5vw;
-    max-width: 70vw;
-    left: unset;
-    right: 0;
-  }
 }
 
 @media screen and (max-width: 455px) {
-  main {
-    height: 370vh;
+  main,
+  picture {
+    height: 340vh;
   }
   .artwork-sections-wrapper {
     gap: 6em;
@@ -925,17 +913,15 @@ h3.artwork-type {
     -webkit-transform: translateY(40%);
             transform: translateY(40%);
     padding: 5vh 0 30vh 0;
+    font-size: 21vw;
   }
   #about > article {
     height: 100vh;
   }
   #about > article p {
-    padding: 45vh 10vw 0vh 40px;
+    padding: 35vh 20vw 0vh 20vw;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
-  }
-  #about > article picture {
-    height: 370vh;
   }
   .gallery .details {
     min-width: 290px;
@@ -944,6 +930,19 @@ h3.artwork-type {
   .visible {
     -webkit-filter: opacity(0.9) !important;
             filter: opacity(0.9) !important;
+  }
+}
+
+@media (max-height: 455px) and (max-width: 768px) {
+  h3.artwork {
+    margin: 0;
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+    padding: 5vh 0 30vh 0;
+    font-size: 15vw;
+  }
+  #about > article p {
+    padding: 35vh 8vw 0vh 8vw;
   }
 }
 /*# sourceMappingURL=index.css.map */

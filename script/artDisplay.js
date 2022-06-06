@@ -10,6 +10,9 @@ export const init1 = async function initShowLarger() {
     thumb.addEventListener("click", () => {
       // let style = window.getComputedStyle(thumb);
       // let image = style.backgroundImage.slice(5
+      if (window.innerWidth < 1024 || window.innerHeight < 740) {
+        nav.setAttribute("style", "display: none");
+      }
       let artId = thumb.getAttribute("id");
       larges.forEach((large) => {
         large.getAttribute("id") === artId
@@ -48,6 +51,10 @@ export const init2 = async function initShowDetails() {
   hamMenu.classList.contains('open') ?
   hamMenu.classList.remove('open') :
   null;
+
+  if((window.innerWidth < 1024) || (window.innerHeight < 768)){
+    nav.setAttribute('style', 'display: none');
+  }
 
   });
 };
