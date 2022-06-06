@@ -187,10 +187,6 @@
     let header = document.querySelector('header');
     let logo = document.querySelector("#logo");
 
-    window.addEventListener('scroll', () => {
-            logo.classList.add('apart');
-            setTimeout(() => { logo.classList.remove('apart') }, 3000)
-        })
 
     const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {

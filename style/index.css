@@ -502,6 +502,7 @@ main {
           align-items: center;
   width: clamp(250px, 30vw, 350px);
   aspect-ratio: 1;
+  min-height: 200px;
   font-size: 50px;
   line-height: 40px;
   -webkit-filter: grayscale(0.9);
@@ -742,16 +743,17 @@ h3.artwork-type {
   z-index: 400;
   bottom: 5vh;
   padding: 0.3em 1.5em;
+  padding-right: 0.7em;
   border: solid 0px whitesmoke;
   font-family: hkgrotesk-light;
   color: whitesmoke;
-  background: #241710;
+  background: #1b1b1b;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .gallery .large .show-details:hover {
-  color: #241710;
+  color: #1b1b1b;
   background: whitesmoke;
 }
 
@@ -761,19 +763,27 @@ h3.artwork-type {
   position: absolute;
   bottom: 5%;
   left: 70%;
-  height: 30%;
-  background: #241710;
-  color: wheat;
-  width: clamp(300px 17vw 500px);
-  padding: 1vw;
+  right: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #1b1b1b;
+  border-top-left-radius: 5vw;
+  color: whitesmoke;
+  width: clamp(400px 40vw 500px);
+  padding: 3vw;
   overflow-y: scroll;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
+.gallery .details::first-line {
+  font-size: 150%;
+}
+
 .visible {
-  -webkit-filter: opacity(0.9) !important;
-          filter: opacity(0.9) !important;
+  -webkit-filter: opacity(1) !important;
+          filter: opacity(1) !important;
   z-index: 300;
 }
 
@@ -897,6 +907,12 @@ h3.artwork-type {
   #about > article > p {
     padding: 45vh 15vw 0vh 15vw;
   }
+  .gallery .details {
+    padding: 5vw;
+    max-width: 70vw;
+    left: unset;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 455px) {
@@ -908,19 +924,28 @@ h3.artwork-type {
   }
   h3.artwork {
     margin-right: 0;
-    -webkit-transform: rotateZ(-90deg);
-            transform: rotateZ(-90deg);
-    padding: 5vh 21vh 30vh 0;
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+    padding: 5vh 0 30vh 0;
   }
   #about > article {
     height: 100vh;
   }
   #about > article p {
-    margin-top: 20vh;
     padding: 45vh 10vw 0vh 40px;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
   #about > article picture {
     height: 370vh;
+  }
+  .gallery .details {
+    min-width: 290px;
+    max-width: 90vw;
+  }
+  .visible {
+    -webkit-filter: opacity(0.9) !important;
+            filter: opacity(0.9) !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
