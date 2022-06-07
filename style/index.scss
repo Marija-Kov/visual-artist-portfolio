@@ -770,7 +770,6 @@ h3.artwork-type {
         height: 15vh;
         .thumb {
           min-width: 115px;
-          
           }
       }
    .details {
@@ -807,6 +806,8 @@ h3.artwork-type {
     bottom:0;
    }
    .large{
+     height: 100vh;
+     width: 85vw;
      .show-details {
        bottom: 80px;
        left: 120px;
