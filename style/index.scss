@@ -534,7 +534,7 @@ h3.artwork-type {
 
 .thumbs {
   display: flex;
-  gap: 10px;
+  gap: 1%;
   flex-direction: column;
   height: 100%;
   max-width: 200px;
@@ -766,6 +766,13 @@ h3.artwork-type {
   }
   
   .gallery{
+     .thumbs {
+        height: 15vh;
+        .thumb {
+          min-width: 115px;
+          
+          }
+      }
    .details {
     max-width: 90vw;
     overscroll-behavior: contain;
@@ -796,18 +803,21 @@ h3.artwork-type {
    .details {
     left: 40%;
     height: 90vh;
+    max-height: 320px;
     bottom:0;
    }
    .large{
      .show-details {
        bottom: 80px;
+       left: 120px;
      }
    }
    .thumbs {
      min-width: 0;
+     max-width: fit-content;
     .thumb{
       min-height: 100px;
-      height: auto;
+      height: unset;
       width: 100px;
     }
  }

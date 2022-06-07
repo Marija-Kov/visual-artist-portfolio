@@ -674,7 +674,7 @@ h3.artwork-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 1%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -924,6 +924,12 @@ h3.artwork-type {
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
   }
+  .gallery .thumbs {
+    height: 15vh;
+  }
+  .gallery .thumbs .thumb {
+    min-width: 115px;
+  }
   .gallery .details {
     max-width: 90vw;
     overscroll-behavior: contain;
@@ -949,17 +955,22 @@ h3.artwork-type {
   .gallery .details {
     left: 40%;
     height: 90vh;
+    max-height: 320px;
     bottom: 0;
   }
   .gallery .large .show-details {
     bottom: 80px;
+    left: 120px;
   }
   .gallery .thumbs {
     min-width: 0;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .gallery .thumbs .thumb {
     min-height: 100px;
-    height: auto;
+    height: unset;
     width: 100px;
   }
   h3.artwork-type {
