@@ -761,10 +761,11 @@ h3.artwork-type {
   position: absolute;
   bottom: 5%;
   left: 70%;
-  right: 0;
+  right: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  max-height: 90vh;
   background: #1b1b1b;
   border-top-left-radius: 5vw;
   color: whitesmoke;
@@ -924,7 +925,6 @@ h3.artwork-type {
             transform: translateY(10%);
   }
   .gallery .details {
-    min-width: 290px;
     max-width: 90vw;
     overscroll-behavior: contain;
     max-height: 350px;
@@ -947,7 +947,8 @@ h3.artwork-type {
     padding: 35vh 8vw 0vh 8vw;
   }
   .gallery .details {
-    max-height: 320px;
+    left: 40%;
+    height: 90vh;
     bottom: 0;
   }
   .gallery .large .show-details {
