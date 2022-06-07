@@ -767,6 +767,8 @@ h3.artwork-type {
   height: fit-content;
   max-height: 90vh;
   background: #1b1b1b;
+  border-top: solid 1px whitesmoke;
+  border-left: solid 1px whitesmoke;
   border-top-left-radius: 5vw;
   color: whitesmoke;
   width: clamp(400px 40vw 500px);
@@ -953,18 +955,21 @@ h3.artwork-type {
     padding: 35vh 8vw 0vh 8vw;
   }
   .gallery .details {
-    left: 40%;
-    height: 90vh;
-    max-height: 320px;
-    bottom: 0;
+    right: 0;
+    height: 80vh;
+    bottom: 0.1%;
+    top: 80px;
   }
   .gallery .large {
     height: 100vh;
-    width: 85vw;
   }
   .gallery .large .show-details {
     bottom: 80px;
     left: 120px;
+  }
+  .gallery .large img {
+    height: 99%;
+    max-height: unset;
   }
   .gallery .thumbs {
     min-width: 0;
