@@ -777,7 +777,7 @@ h3.artwork-type {
   }
 }
 
-@media (max-height: 455px) and (max-width: 768px){
+@media (max-height: 455px) and (max-width: 1023px){
 
    h3.artwork {
     margin: 0;
@@ -803,8 +803,9 @@ h3.artwork-type {
        bottom: 80px;
      }
    }
-  } 
+  }   
+ h3.artwork-type {
+    font-size: 50px;  
+ }
 
 }
-
-
