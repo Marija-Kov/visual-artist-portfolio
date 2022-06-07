@@ -720,11 +720,11 @@ h3.artwork-type {
           max-height: auto;
         }
         .show-details {
-        bottom: 140px;
+        bottom: 18vh;
         }
       }
       .details {
-        bottom: 22%;
+        bottom: 20%;
         padding: 5vw;
         max-width: 70vw;
         left: unset;
@@ -775,7 +775,7 @@ h3.artwork-type {
           }
       }
    .details {
-    max-width: 90vw;
+    width: 80vw;
     overscroll-behavior: contain;
     max-height: 350px;
    }

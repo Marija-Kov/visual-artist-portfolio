@@ -52,7 +52,7 @@ export const init2 = async function initShowDetails() {
   hamMenu.classList.remove('open') :
   null;
 
-  if((window.innerWidth < 1024) || (window.innerHeight < 768)){
+  if((window.innerWidth < 1200) || (window.innerHeight < 768)){
     nav.setAttribute('style', 'display: none');
   }
 

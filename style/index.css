@@ -886,10 +886,10 @@ h3.artwork-type {
     max-height: auto;
   }
   .gallery .large .show-details {
-    bottom: 140px;
+    bottom: 18vh;
   }
   .gallery .details {
-    bottom: 22%;
+    bottom: 20%;
     padding: 5vw;
     max-width: 70vw;
     left: unset;
@@ -933,7 +933,7 @@ h3.artwork-type {
     min-width: 115px;
   }
   .gallery .details {
-    max-width: 90vw;
+    width: 80vw;
     overscroll-behavior: contain;
     max-height: 350px;
   }
