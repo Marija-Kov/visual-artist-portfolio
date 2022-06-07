@@ -717,7 +717,7 @@ h3.artwork-type {
           max-height: auto;
         }
         .show-details {
-        bottom: 180px;
+        bottom: 140px;
         }
       }
       .details {
@@ -768,13 +768,13 @@ h3.artwork-type {
    .details {
     min-width: 290px;
     max-width: 90vw;
+    overscroll-behavior: contain;
+    max-height: 350px;
    }
   } 
   .visible{
   filter: opacity(0.9) !important;
- 
-  
-}
+  }
 }
 
 @media (max-height: 455px) and (max-width: 768px){
@@ -792,6 +792,16 @@ h3.artwork-type {
    } 
 
   }
+  .gallery{
+   .details {
+    max-height: 320px;
+   }
+   .large{
+     .show-details {
+       bottom: 80px;
+     }
+   }
+  } 
 
 }
 

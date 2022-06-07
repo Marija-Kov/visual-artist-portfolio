@@ -883,7 +883,7 @@ h3.artwork-type {
     max-height: auto;
   }
   .gallery .large .show-details {
-    bottom: 180px;
+    bottom: 140px;
   }
   .gallery .details {
     bottom: 22%;
@@ -926,6 +926,8 @@ h3.artwork-type {
   .gallery .details {
     min-width: 290px;
     max-width: 90vw;
+    overscroll-behavior: contain;
+    max-height: 350px;
   }
   .visible {
     -webkit-filter: opacity(0.9) !important;
@@ -943,6 +945,12 @@ h3.artwork-type {
   }
   #about > article p {
     padding: 35vh 8vw 0vh 8vw;
+  }
+  .gallery .details {
+    max-height: 320px;
+  }
+  .gallery .large .show-details {
+    bottom: 80px;
   }
 }
 /*# sourceMappingURL=index.css.map */
