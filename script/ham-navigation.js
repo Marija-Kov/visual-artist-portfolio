@@ -15,10 +15,14 @@ hamMenu.addEventListener('click', ()=> {
 
       document.querySelector('.show-details').innerText = "details >>";
        
-
     }
 })
 
 document.querySelector('#contact').style = "display: none";
+
+if(document.querySelector('.gallery')){
+  nav.style.display = 'none';
+  hamMenu.style.display = 'inline-block';
+}
 
 
