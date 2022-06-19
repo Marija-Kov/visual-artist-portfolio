@@ -104,24 +104,24 @@ a {
 }
 @-webkit-keyframes blink {
   0% {
-    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+    border-left: solid 1px rgba(245, 245, 245, 0.1);
   }
   50% {
-    border-bottom: solid 50px rgb(245, 245, 245);
+    border-left: solid 1.2px rgb(245, 245, 245);
   }
   100% {
-    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+    border-left: solid 1px rgba(245, 245, 245, 0.1);
   }
 }
 @keyframes blink {
   0% {
-    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+    border-left: solid 1px rgba(245, 245, 245, 0.1);
   }
   50% {
-    border-bottom: solid 50px rgb(245, 245, 245);
+    border-left: solid 1.2px rgb(245, 245, 245);
   }
   100% {
-    border-bottom: solid 50px rgba(245, 245, 245, 0.5);
+    border-left: solid 1px rgba(245, 245, 245, 0.1);
   }
 }
 @-webkit-keyframes loading {
@@ -317,6 +317,15 @@ video {
           animation: fadeInY 1s;
 }
 
+.this-way::after {
+  content: "";
+  height: 30vh;
+  top: 70%;
+  position: absolute;
+  -webkit-animation: blink 2s infinite;
+          animation: blink 2s infinite;
+}
+
 .video-overlay {
   height: 100%;
   width: 100%;
@@ -344,15 +353,14 @@ h3.about {
   color: rgba(255, 255, 255, 0.8);
   top: 0;
   height: 22vh;
-  padding: 100px 10% 0 10%;
-  font-size: clamp(30px, 24vw, 120px);
+  padding: 150px 10% 0 15%;
+  font-size: clamp(70px, 17vw, 120px);
   z-index: 5;
-  margin-right: 30%;
 }
 h3.about::before {
-  content: "··";
+  content: "·· ";
   font-size: 90%;
-  filter: opacity(0.7);
+  filter: opacity(0.5);
   color: whitesmoke;
 }
 
@@ -371,7 +379,7 @@ h3.about::before {
   min-width: 365px;
   position: relative;
   z-index: 4;
-  padding: 40vh 10vw 10vh 10vw;
+  padding: 35vh 5vw 10vh 20vw;
 }
 
 footer {
@@ -557,8 +565,12 @@ h3.artwork-type {
     margin: 0 auto;
     flex-direction: column;
   }
+
+  h3.about {
+    padding: 150px 10% 0 10%;
+  }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   nav {
     width: 50%;
   }
@@ -608,16 +620,23 @@ h3.artwork-type {
   }
 
   #about > article > p {
-    padding: 40vh 15vw 0vh 15vw;
+    padding: 30vh 15vw 0vh 15vw;
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 455px) {
+  h3.about {
+    height: 25vh;
+    padding: 100px 10% 0 0%;
+  }
+
   #about > article {
     height: 100vh;
   }
   #about > article p {
-    padding: 35vh 20vw 0vh 20vw;
-    transform: translateY(10%);
+    padding: 28vh 20vw 0vh 20vw;
+    transform: translateY(5%);
+    font-size: 1.2em;
   }
 
   .gallery .thumbs {
@@ -636,8 +655,16 @@ h3.artwork-type {
   .visible {
     filter: opacity(0.9) !important;
   }
+
+  footer {
+    height: 5vh;
+  }
 }
 @media (max-height: 500px) and (max-width: 1023px) {
+  h3.about {
+    padding: 70px 10% 0 10%;
+  }
+
   #about > article p {
     padding: 35vh 8vw 0vh 8vw;
   }
