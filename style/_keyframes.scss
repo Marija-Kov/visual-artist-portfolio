@@ -1,0 +1,52 @@
+@keyframes fadeInY {
+  from {
+    opacity: 0;
+    transform: rotateY(-60deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+@keyframes fadeInX {
+  from {
+    opacity: 0;
+    transform: rotateX(-60deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-left :solid 1px rgba(245, 245, 245, 0.1);
+  }
+  50% {
+    border-left:solid 1.2px rgba(245, 245, 245, 1);
+  }
+  100% {
+    border-left:solid 1px rgba(245, 245, 245, 0.1);
+  }
+}
+
+@keyframes loading {
+  0% {
+     letter-spacing: 0;
+     filter: blur(0px) opacity(1);
+  }
+  100% {
+    letter-spacing: 100px;
+    filter: blur(7px) opacity(0);
+  }
+}

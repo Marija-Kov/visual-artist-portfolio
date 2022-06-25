@@ -1,0 +1,21 @@
+@use 'vars';
+
+::-webkit-scrollbar {
+  width: 1em;
+
+}
+
+::-webkit-scrollbar-track {
+  margin-block: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 245, 245, 0.76);
+  border-radius: 50px;
+  border: solid 0.25em vars.$main-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(245, 245, 245);
+  
+}
