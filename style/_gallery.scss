@@ -1,10 +1,8 @@
 @use 'vars';
 @use 'mixins';
-@use 'mediaQs';
 
-// <<<< G A L L E R Y  P A G E S  start >>>> //
 
-#loading {
+#loading {  
  position: absolute;
  z-index: 9999;
  @include mixins.center-aligned;
@@ -71,7 +69,7 @@ h3.artwork-type {
     }
   }
 
-} // THUMBS end
+} 
 
 .large {  
   padding: 5% 0;
@@ -104,7 +102,7 @@ h3.artwork-type {
     }
     
   }
-} // LARGE end
+} 
 
 .details {
   filter: opacity(0);
@@ -136,4 +134,3 @@ h3.artwork-type {
    
 }
 
-// <<<<<<  G A L L E R Y  P A G E S  end  >>>>> /

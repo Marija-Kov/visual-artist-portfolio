@@ -6,7 +6,7 @@
     background: vars.$text-color;
     box-shadow: 1px 1px 2px rgb(37, 37, 37);
     border-radius: 2px;
-    transition: .25s ease;
+    transition: .25s ease-in-out;
 }
 #menu-toggle {
   display: none;
