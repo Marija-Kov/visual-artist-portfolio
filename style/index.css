@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@100;400&display=swap");
 #ham > span,
 #cross > span {
   display: block;
@@ -473,8 +473,6 @@ video {
 
 main {
   background: rgb(27, 27, 27);
-  background-image: url("blue_texture_bkg.png");
-  background-size: cover;
   color: whitesmoke;
   line-height: 1.3em;
 }
@@ -484,17 +482,12 @@ h3.about {
   position: sticky;
   background: none;
   color: rgba(255, 255, 255, 0.8);
+  font-family: "Trispace", sans-serif;
   top: 0;
-  height: 22vh;
+  height: 15vh;
   padding: 150px 10% 0 15%;
-  font-size: clamp(70px, 17vw, 120px);
+  font-size: clamp(30px, 15vw, 100px);
   z-index: 5;
-}
-h3.about::before {
-  content: "·· ";
-  font-size: 90%;
-  filter: opacity(0.5);
-  color: whitesmoke;
 }
 
 #about {

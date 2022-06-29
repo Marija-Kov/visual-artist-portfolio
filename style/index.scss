@@ -25,6 +25,9 @@ html{
 a {
   color:whitesmoke;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;400&display=swap');
+
 @font-face {
     font-family: hkgrotesk-light;
     src: url("/fonts/HKGrotesk-Light.ttf");
@@ -150,8 +153,8 @@ video {
                       
 main {
   background: vars.$main-color;
-  background-image: url("blue_texture_bkg.png");
-  background-size: cover;
+  //background-image: url("blue_texture_bkg.png");
+  //background-size: cover;
   color: vars.$text-color;
   line-height: 1.3em;
 }
@@ -163,17 +166,18 @@ h3.about {
     position: sticky;
     background: none;
     color: vars.$large-heading; 
+    font-family: 'Trispace', sans-serif;
     top: 0;
-    height: 22vh;
+    height: 15vh;
     padding: 150px 10% 0 15%;
-    font-size: clamp(70px, 17vw, 120px);
+    font-size: clamp(30px, 15vw, 100px);
     z-index: 5;
-    &::before {
-      content: "·· ";
-      font-size: 90%;
-      filter: opacity(0.5);
-      color: vars.$text-color;
-    }
+    // &::before {
+    //   content: "·· ";
+    //   font-size: 90%;
+    //   filter: opacity(0.5);
+    //   color: vars.$text-color;
+    // }
 
 
 }
