@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Trispace:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,500;1,100&display=swap");
 #ham > span,
 #cross > span {
   display: block;
@@ -216,7 +217,8 @@
   width: 100vw;
   background: rgb(27, 27, 27);
   color: whitesmoke;
-  font-family: "Helvetica Neue", Roboto, "Segoe UI", BlinkMacSystemFont, Ubuntu, Oxygen, Cantarell, "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
   font-size: clamp(30px, 30vw, 80px);
 }
 #loading span {
@@ -239,6 +241,7 @@ h3.artwork-type {
   height: 75vh;
   padding-top: 7vh;
   font-size: clamp(70px, 16vw, 120px);
+  font-weight: 400;
   z-index: -1;
   -webkit-animation: fadeIn 0.5s;
           animation: fadeIn 0.5s;
@@ -300,7 +303,7 @@ h3.artwork-type {
   padding: 0.3em 1.5em;
   padding-right: 0.7em;
   border: solid 0px whitesmoke;
-  font-family: hkgrotesk-light;
+  font-family: "Work Sans", sans-serif;
   color: whitesmoke;
   background: rgb(27, 27, 27);
   transition: 0.5s;
@@ -359,17 +362,10 @@ a {
   color: whitesmoke;
 }
 
-@font-face {
-  font-family: hkgrotesk-light;
-  src: url("/fonts/HKGrotesk-Light.ttf");
-}
-@font-face {
-  font-family: semplicita-ombra;
-  src: url("/fonts/SemplicitaOmbra.otf");
-}
 body {
   background: rgb(27, 27, 27);
-  font-family: hkgrotesk-light;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
   font-size: clamp(13px, 1.5vw, 16px);
   overflow-x: hidden;
 }
@@ -383,9 +379,6 @@ nav {
           animation: fadeIn 0.5s;
   font-size: 1em;
   background: rgb(27, 27, 27);
-  background-image: url("/style/ornament-nav.png");
-  background-size: 100%;
-  background-position-y: 90%;
   height: 80px;
   width: 100vw;
   overflow: hidden;
@@ -472,7 +465,8 @@ video {
 }
 
 main {
-  background: rgb(27, 27, 27);
+  background: rgb(20, 33, 37);
+  background: linear-gradient(173deg, rgb(20, 33, 37) 10%, rgb(31, 24, 23) 74%);
   color: whitesmoke;
   line-height: 1.3em;
 }
@@ -482,10 +476,10 @@ h3.about {
   position: sticky;
   background: none;
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Trispace", sans-serif;
+  font-family: "Work Sans", sans-serif;
   top: 0;
   height: 15vh;
-  padding: 150px 10% 0 15%;
+  padding: 150px 10% 0 25%;
   font-size: clamp(30px, 15vw, 100px);
   z-index: 5;
 }
@@ -549,7 +543,7 @@ footer {
     height: fit-content;
     right: 0;
     border-left: solid 1px rgb(150, 150, 150);
-    background-image: none;
+    background: rgb(27, 27, 27);
     font-size: 1.2em;
     -webkit-animation: fadeInX 0.5s;
             animation: fadeInX 0.5s;
@@ -621,14 +615,14 @@ footer {
 @media screen and (max-width: 455px) {
   h3.about {
     height: 25vh;
-    padding: 100px 10% 0 0%;
+    padding: 100px 10% 0 20%;
   }
 
   #about > article {
     height: 100vh;
   }
   #about > article p {
-    padding: 28vh 20vw 0vh 20vw;
+    padding: 28vh 15vw 0vh 20vw;
     transform: translateY(5%);
     font-size: 1.2em;
   }

@@ -3,3 +3,8 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin dark-gradient {
+    background: rgb(20, 33, 37);
+    background: linear-gradient(173deg, rgba(20, 33, 37, 1) 10%, rgba(31, 24, 23, 1) 74%);
+}

@@ -27,22 +27,13 @@ a {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;400&display=swap');
-
-@font-face {
-    font-family: hkgrotesk-light;
-    src: url("/fonts/HKGrotesk-Light.ttf");
-}
-
-@font-face {
-    font-family: semplicita-ombra;
-    src: url("/fonts/SemplicitaOmbra.otf");
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,500;1,100&display=swap');
 
 body {
     background: vars.$main-color;
-    font-family: hkgrotesk-light;
+    font-family: 'Work Sans',
+    sans-serif;
+    font-weight: 300;
     font-size: clamp(13px, 1.5vw, 16px);
     overflow-x: hidden;
     
@@ -56,9 +47,6 @@ nav {
     animation: fadeIn 0.5s;
     font-size: 1em;
     background: vars.$main-color;
-    background-image: url('/style/ornament-nav.png');
-    background-size: 100%;
-    background-position-y: 90%;
     height: 80px;
     width: 100vw;
     overflow: hidden;
@@ -152,9 +140,7 @@ video {
 
                       
 main {
-  background: vars.$main-color;
-  //background-image: url("blue_texture_bkg.png");
-  //background-size: cover;
+  @include mixins.dark-gradient;
   color: vars.$text-color;
   line-height: 1.3em;
 }
@@ -166,19 +152,12 @@ h3.about {
     position: sticky;
     background: none;
     color: vars.$large-heading; 
-    font-family: 'Trispace', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     top: 0;
     height: 15vh;
-    padding: 150px 10% 0 15%;
+    padding: 150px 10% 0 25%;
     font-size: clamp(30px, 15vw, 100px);
     z-index: 5;
-    // &::before {
-    //   content: "·· ";
-    //   font-size: 90%;
-    //   filter: opacity(0.5);
-    //   color: vars.$text-color;
-    // }
-
 
 }
 
