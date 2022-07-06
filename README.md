@@ -1,5 +1,7 @@
 # visual-artist-portfolio - work in progress
 
+A front-end project reated using HTML, CSS(SASS) and vanilla JavaScript.
+
 ## Project structure clarification
 
 ### HTML
@@ -8,23 +10,30 @@ The website consists of:
 
 - index.html
 
-- three "artwork" pages - these were given generic names for some flexibility in order to avoid too excessive website restructuring and refactoring as the content changes
-
-- a contact page 
+- three pages for different types of artwork (3D, 2D, embroidery)
 
 ### SCSS
 
-- index.scss contains styling for the whole website
+- index.scss + several partials for different groups of rules
 
 ### JavaScript
 
-- ham-navigation.js is reused on all pages
+- 'ham-navigation' enables the proper functionality of the hamburger menu button
 
-- three "artwork" scripts for each artwork page (again, generic names were given for flexibility) as each of them uses a different portion of data.json via fetch(url)
+- 'gallery' scripts (in gallery folder) for each gallery page
 
+- modules: 
+   'showData' (containing the function that makes sure that each gallery page displays corresponding data to the artwork type);
+   'artDisplay' (contains the function that enables showing/hiding of artwork images and details)
+
+- 'loading' takes care of the intro animation on gallery pages
 ### JSON
 
-All artwork data organized.
+Contains all artwork and details from the galleries.
+
+### Media
+
+Folder containing all artwork images used in the project including the homepage background video and favicon (all created/photographed/designed by Marija K.)
 
 
  

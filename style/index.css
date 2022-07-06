@@ -241,7 +241,7 @@ h3.artwork-type {
   height: 75vh;
   padding-top: 7vh;
   font-size: clamp(70px, 16vw, 120px);
-  font-weight: 400;
+  font-weight: 300;
   z-index: -1;
   -webkit-animation: fadeIn 0.5s;
           animation: fadeIn 0.5s;
@@ -689,6 +689,7 @@ footer {
   h3.artwork-type {
     padding-top: 30vh;
     padding-right: 1vw;
-    font-size: 50px;
+    font-size: 40px;
+    letter-spacing: 0;
   }
 }/*# sourceMappingURL=index.css.map */

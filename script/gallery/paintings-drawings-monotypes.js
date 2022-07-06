@@ -8,10 +8,11 @@ fetch(url)
       return response.json();
     }
   })
-  .then((data) => showData(data, data.embroidery))
+  .then((data) => showData(data, data._2d))
   .then(init1)
   .then(init2)
   .catch((err) => `Error: ${err}`);
 
-import { init1, init2 } from "./artDisplay.js";
-import { showData } from "./showData.js";
+
+import { init1, init2 } from "../artDisplay.js";
+import { showData } from "../showData.js";
