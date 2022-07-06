@@ -1,7 +1,4 @@
 let url = "/pages/data.json";
-let thumbs = document.querySelector(".thumbs");
-let largeImg = document.querySelector(".large");
-let gallery = document.querySelector(".gallery");
 
 fetch(url)
   .then((response) => {
@@ -11,37 +8,10 @@ fetch(url)
       return response.json();
     }
   })
-  .then((data) => showData(data))
+  .then((data) => showData(data, data.embroidery))
   .then(init1)
   .then(init2)
   .catch((err) => `Error: ${err}`);
-async function showData(data) {
-  for (let i = 0; i < data.embroidery.length; ++i) {
-    let thumb = document.createElement("div");
-    thumb.classList.add("thumb");
-    thumb.setAttribute("id", `a${i}`);
-    thumb.setAttribute(
-      "style",
-      `background-image: url(${data.embroidery[i].images[0]});`
-    );
-    thumbs.appendChild(thumb);
-    let details = document.createElement("article");
-    details.classList.add("details");
-    details.setAttribute("id", `a${i}`);
-    details.innerText = `${data.embroidery[i].name} (${data.embroidery[i].year}) 
-
-                             ${data.embroidery[i].medium} 
-
-                             ${data.embroidery[i].size}
-
-                             ${data.embroidery[i].description}`;
-    gallery.appendChild(details);
-    let large = document.createElement("img");
-    large.setAttribute("src", `${data.embroidery[i].images[1]}`);
-    large.setAttribute("id", `a${i}`);
-    large.setAttribute("alt", `${data.embroidery[i].alt}`);
-    largeImg.appendChild(large);
-  }
-}
 
 import { init1, init2 } from "./artDisplay.js";
+import { showData } from "./showData.js";
