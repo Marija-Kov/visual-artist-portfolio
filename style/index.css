@@ -426,6 +426,16 @@ header {
   height: 100vh;
 }
 
+.this-way {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 70%;
+  color: rgba(245, 245, 245, 0.7);
+}
+.this-way::after {
+  display: none;
+}
+
 .video-container {
   width: 100vw;
   position: relative;
@@ -443,7 +453,7 @@ video {
           animation: fadeInY 1s;
 }
 
-.this-way::after {
+.line::after {
   content: "";
   height: 30vh;
   top: 70%;
