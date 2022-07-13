@@ -97,6 +97,17 @@
 
    }
 
+     .this-way {
+       top: 80%;
+
+     }
+
+     .line {
+       &::after {
+         height: 25vh;
+         top: 75%;
+       }
+     }
 
 }
 
@@ -134,6 +145,7 @@
   footer {
     height: 5vh;
   }
+
 }
 
 @media (max-height: 500px) and (max-width: 1023px){

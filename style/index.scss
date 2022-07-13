@@ -90,7 +90,7 @@ li > a {
     
   }
    &:hover {
-   filter: brightness(2); 
+   filter: brightness(4); 
     }
    }
   }
@@ -101,13 +101,15 @@ header {
 }
 
 .this-way {
-  transform: rotate(-90deg);
   position: absolute;
+  font-size: 150%;
   top: 70%;
-  color: rgba(245, 245, 245, 0.7);
+  color: white;
+  transition: 0.5s;
   &::after {
    display: none;
   }
+  
 
 }
 
@@ -129,8 +131,8 @@ video {
 .line {
   &::after {
     content: "";
-    height: 30vh;
-    top: 70%;
+    height: 40vh;
+    top: 60%;
     position: absolute;
     animation: blink 2s infinite;
   }
@@ -140,7 +142,8 @@ video {
     width: 100%;
     @include mixins.center-aligned;
     z-index: 1;
-    background: rgba(106, 220, 248, 0.363);
+    background: rgb(183, 241, 255);
+    background: linear-gradient(180deg, rgba(183, 241, 255, 0.4) 28%, rgba(160, 210, 255, 0.7) 91%);
     position: absolute;
     top:0;
 }

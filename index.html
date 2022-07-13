@@ -27,7 +27,7 @@
   <nav>
      <ul>
         <li>
-            <a href="/index.html" style="color: white">Home</a>
+          <a href="/index.html" style="color: white">Home</a>
         </li>
         <li>
           <a href="/pages/installations-sculptures-relief.html">3D</a>
@@ -136,8 +136,11 @@
        
       <video src="/media/video/grey-sky-crows.mp4" autoplay muted loop></video>
       <div class="video-overlay">
-        <span class="line"></span>  
-        <span class="line this-way">this way</span> 
+
+        <span class="line" style="opacity: 0"></span>  
+        <span class="line this-way" style="opacity: 0">&#9661;</span>
+         
+        
         </div>
         
      
@@ -167,9 +170,7 @@
 
 <footer>
 <p class="attribution"> Art, web design and development by <a href="https://marija-kovacevic.netlify.app/">Marija Kovacevic</a>, 2022 </p>
-</footer>    
-   
-    
+</footer>      
 <script src="/script/ham-navigation.js"></script>
 
 <script>
@@ -211,7 +212,12 @@
 
     setTimeout(()=>{
         document.querySelector('.social').style.opacity = "1";
-    }, 1200)
+    }, 1200)   
+
+    setTimeout(()=>{
+        document.querySelectorAll('.line')
+        .forEach(e => {e.style.opacity = "1";}
+    )}, 2000)
 
 </script>
 </body>

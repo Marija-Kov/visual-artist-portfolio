@@ -420,7 +420,7 @@ li > a:hover {
   margin-bottom: 1em;
 }
 .social ul li:hover {
-  filter: brightness(2);
+  filter: brightness(4);
 }
 
 header {
@@ -428,10 +428,11 @@ header {
 }
 
 .this-way {
-  transform: rotate(-90deg);
   position: absolute;
+  font-size: 150%;
   top: 70%;
-  color: rgba(245, 245, 245, 0.7);
+  color: white;
+  transition: 0.5s;
 }
 .this-way::after {
   display: none;
@@ -456,8 +457,8 @@ video {
 
 .line::after {
   content: "";
-  height: 30vh;
-  top: 70%;
+  height: 40vh;
+  top: 60%;
   position: absolute;
   -webkit-animation: blink 2s infinite;
           animation: blink 2s infinite;
@@ -470,7 +471,8 @@ video {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background: rgba(106, 220, 248, 0.363);
+  background: rgb(183, 241, 255);
+  background: linear-gradient(180deg, rgba(183, 241, 255, 0.4) 28%, rgba(160, 210, 255, 0.7) 91%);
   position: absolute;
   top: 0;
 }
@@ -615,6 +617,13 @@ footer {
   #about > article > p {
     padding: 30vh 15vw 0vh 15vw;
     font-size: 1.2em;
+  }
+  .this-way {
+    top: 80%;
+  }
+  .line::after {
+    height: 25vh;
+    top: 75%;
   }
 }
 @media screen and (max-width: 455px) {
