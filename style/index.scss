@@ -4,7 +4,7 @@
 @forward 'keyframes';
 @forward 'scrollbars';
 @forward 'gallery';
-
+@forward 'fonts';
 
 
 *,
@@ -25,9 +25,6 @@ html{
 a {
   color:whitesmoke;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,500;1,100&display=swap');
 
 body {
     background: vars.$main-color;

@@ -1,6 +1,6 @@
 @use 'vars';
 @use 'mixins';
-
+@forward 'fonts';
 
 #loading {  
  position: absolute;
@@ -25,15 +25,16 @@ h3.artwork-type {
     overflow: hidden;
     position: absolute;
     background: none;
-    line-height: 65%;
+    line-height: 80%;
     text-align: right;
     color: rgb(148, 148, 148);
     right: 0.5vw; 
     bottom: 0;
     height: 75vh;
     padding-top: 7vh;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
     font-size: clamp(70px, 16vw, 120px);
-    font-weight: 300;
     z-index: -1;
     animation: fadeIn 0.5s;
     

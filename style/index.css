@@ -233,15 +233,16 @@ h3.artwork-type {
   overflow: hidden;
   position: absolute;
   background: none;
-  line-height: 65%;
+  line-height: 80%;
   text-align: right;
   color: rgb(148, 148, 148);
   right: 0.5vw;
   bottom: 0;
   height: 75vh;
   padding-top: 7vh;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
   font-size: clamp(70px, 16vw, 120px);
-  font-weight: 300;
   z-index: -1;
   -webkit-animation: fadeIn 0.5s;
           animation: fadeIn 0.5s;
@@ -535,16 +536,13 @@ footer {
     height: 100vh;
     top: 0;
   }
-
   video {
     height: 122%;
     width: auto;
   }
-
   #menu-toggle {
     display: inline-block;
   }
-
   nav {
     display: none;
     width: clamp(310px, 30%, 400px);
@@ -563,7 +561,6 @@ footer {
     margin: 0 auto;
     flex-direction: column;
   }
-
   h3.about {
     padding: 150px 10% 0 10%;
   }
@@ -576,7 +573,6 @@ footer {
     padding: 60px 0 60px 10vw;
     flex-direction: column;
   }
-
   .gallery {
     width: 100vw;
     flex-direction: column-reverse;
@@ -616,7 +612,6 @@ footer {
     left: unset;
     right: 0;
   }
-
   #about > article > p {
     padding: 30vh 15vw 0vh 15vw;
     font-size: 1.2em;
@@ -627,7 +622,6 @@ footer {
     height: 25vh;
     padding: 100px 10% 0 20%;
   }
-
   #about > article {
     height: 100vh;
   }
@@ -636,7 +630,6 @@ footer {
     transform: translateY(5%);
     font-size: 1.2em;
   }
-
   .gallery .thumbs {
     height: 15vh;
   }
@@ -649,11 +642,9 @@ footer {
         overscroll-behavior: contain;
     max-height: 350px;
   }
-
   .visible {
     filter: opacity(0.9) !important;
   }
-
   footer {
     height: 5vh;
   }
@@ -662,11 +653,9 @@ footer {
   h3.about {
     padding: 70px 10% 0 10%;
   }
-
   #about > article p {
     padding: 35vh 8vw 0vh 8vw;
   }
-
   .gallery .details {
     right: 0;
     height: 80vh;
@@ -695,7 +684,6 @@ footer {
     height: unset;
     width: 100px;
   }
-
   h3.artwork-type {
     padding-top: 30vh;
     padding-right: 1vw;
