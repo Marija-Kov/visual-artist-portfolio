@@ -10,7 +10,7 @@ The website consists of:
 
 - index.html
 
-- three pages for different types of artwork (3D, 2D, embroidery)
+- four pages for different types of artwork (3D, paintings, drawings, embroidery)
 
 ### SCSS
 
