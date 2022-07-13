@@ -1,243 +1,250 @@
 {
-   "_3d": [
-       {
-         "name": "Mercy",
-         "year": "2019",
-         "medium": "5l plastic bottles, vacuum pipe, tape, straw, sodium-bicarbonate, vinegar, blue ink",
-         "size": "00 x 00 cm",
-         "alt": "Art installation",
-          "images": [
-            "/media/images/3d/mercy-thumb.jpg", 
-            "/media/images/3d/mercy.jpg"      
-       ],
-         "description": "A functional construction for the performance of euthanasia on small animals directly poses the question of ethics and compassion in situations where the thought of effectively putting an end to someone's suffering seems counterintuitive. "
-      },
-       {
-         "name": "We are Stardust",
-         "year": "2019",
-         "medium": "glass jar, charred bits of plants and animal body parts",
-         "size": "720ml",
-         "alt": "Art installation",
-          "images": [
-            "/media/images/3d/we-are-stardust-thumb.jpg",
-            "/media/images/3d/we-are-stardust.jpg"
-         ],
-         "description": "The concept was inspired by the lyrics of Joni Mitchell in the context of preservation of the life on Earth. The charred substance composed out of burnt animal body parts (byproducts of the food industry) and plants stand as the essentialist response to the illusionist ideas about existence, primarily that of humans and their consciousness - a cultural tendency that transcends the mere fight for survival and that might just be the one which makes humans the most invasive species on the planet. The project is a particularly uncharismatic allusion to the distant future."
-      },
-       {
-         "name": "Conflux series",
-         "year": "2019",
-         "medium": "Acrylic, paper pulp, cement, salt crystals on chipwood board",
-         "size": "46 x 37 cm",
-         "alt": "Abstract art relief",
-          "images": [
-             "/media/images/3d/conflux-1-thumb.jpg",
-             "/media/images/3d/conflux-1.jpg"         
-         ],
-         "description": " "
-      }
-      
-   ],
-   "embroidery": [
-      {
-         "name": "Fusion",
-         "year": "2021",
-         "medium": "Hand embroidery mounted on canvas",
-         "size": "∅  23,5 cm / 9.25 in",
-         "alt": "Abstract embroidery piece of art",
-         "images": [
-            "/media/images/embroidery/fusion-1-thumb.jpg",
-            "/media/images/embroidery/fusion-1.jpg"         
-         ],
+  "_3d": [
+    {
+      "name": "Mercy",
+      "year": "2019",
+      "medium": "5l plastic bottles, vacuum pipe, tape, straw, sodium-bicarbonate, vinegar, blue ink",
+      "size": "00 x 00 cm",
+      "alt": "Art installation",
+      "images": [
+        "/media/images/3d/mercy-thumb.jpg",
+        "/media/images/3d/mercy.jpg"
+      ],
+      "description": "A functional construction for the performance of euthanasia on small animals directly poses the question of ethics and compassion in situations where the thought of effectively putting an end to someone's suffering seems counterintuitive. "
+    },
+    {
+      "name": "We are Stardust",
+      "year": "2019",
+      "medium": "glass jar, handwritten label, charred bits of plants and animal body parts",
+      "size": "720ml",
+      "alt": "Art installation",
+      "images": [
+        "/media/images/3d/we-are-stardust-thumb.jpg",
+        "/media/images/3d/we-are-stardust.jpg"
+      ],
+      "description": "The concept was inspired by the lyrics of Joni Mitchell in the context of preservation of the life on Earth. The charred substance composed out of burnt animal body parts (byproducts of the food industry) and plants stand as the essentialist response to the illusionist ideas about existence, primarily that of humans and their consciousness - a cultural tendency that transcends the mere fight for survival and that might just be the one which makes humans the most invasive species on the planet. The project is a particularly uncharismatic allusion to the distant future."
+    },
+    {
+      "name": "Conflux series",
+      "year": "2019",
+      "medium": "Acrylic, paper pulp, cement, salt crystals on chipwood board",
+      "size": "46 x 37 cm",
+      "alt": "Abstract art relief",
+      "images": [
+        "/media/images/3d/conflux-1-thumb.jpg",
+        "/media/images/3d/conflux-1.jpg"
+      ],
+      "description": " "
+    }
+  ],
+  "embroidery": [
+    {
+      "name": "Fusion",
+      "year": "2021",
+      "medium": "Hand embroidery mounted on canvas",
+      "size": "∅  23,5 cm / 9.25 in",
+      "alt": "Abstract embroidery piece of art",
+      "images": [
+        "/media/images/embroidery/fusion-1-thumb.jpg",
+        "/media/images/embroidery/fusion-1.jpg"
+      ],
 
-         "description": " "
-      },
-      {
-         "name": "Untitled",
-         "year": "2022",
-         "medium": "Hand embroidery",
-         "size": "∅  24 cm / 9.45 in",
-         "alt": "Abstract embroidery piece of art",
-         "images": [
-            "/media/images/embroidery/vez-05-2022-thumb.jpg",
-            "/media/images/embroidery/vez-05-2022.jpg"         
-         ],
+      "description": " "
+    },
+    {
+      "name": "Untitled",
+      "year": "2022",
+      "medium": "Hand embroidery",
+      "size": "∅  24 cm / 9.45 in",
+      "alt": "Abstract embroidery piece of art",
+      "images": [
+        "/media/images/embroidery/vez-05-2022-thumb.jpg",
+        "/media/images/embroidery/vez-05-2022.jpg"
+      ],
 
-         "description": " "
-      },
-       {
-         "name": "Untitled",
-         "year": "2022",
-         "medium": "Hand embroidery",
-         "size": "~21 x 16.5 cm",
-         "alt": "Abstract embroidery piece of art",
-         "images": [
-            "/media/images/embroidery/vez-06-2022-thumb.jpg",
-            "/media/images/embroidery/vez-06-2022.jpg"         
-         ],
+      "description": " "
+    },
+    {
+      "name": "Untitled",
+      "year": "2022",
+      "medium": "Hand embroidery",
+      "size": "~21 x 16.5 cm",
+      "alt": "Abstract embroidery piece of art",
+      "images": [
+        "/media/images/embroidery/vez-06-2022-thumb.jpg",
+        "/media/images/embroidery/vez-06-2022.jpg"
+      ],
 
-         "description": " "
-      }
-   ],
-   "_2d": [
-        
-      {
-         "name": "Purgatorium I",
-         "year": "2019 - 2020",
-         "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
-         "size": "100 x 150 cm",
-         "alt": "Abstract canvas painting",
-         "images": [
-             "/media/images/on-canvas/purgatorium-1-thumb.jpg",
-             "/media/images/on-canvas/purgatorium-1.jpg" 
-         ],
+      "description": " "
+    }
+  ],
 
-         "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
-      },
-           {
-         "name": "Purgatorium II",
-         "year": "2019 - 2020",
-         "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
-         "alt": "Abstract canvas painting",
-         "size": "150 x 100 cm",
-         "images": [
-             "/media/images/on-canvas/purgatorium-2-thumb.jpg",             
-             "/media/images/on-canvas/purgatorium-2.jpg"   
-         ],
+  "drawings": [
+    {
+      "name": "Azul",
+      "year": "2019",
+      "medium": "Oil monotype on paper",
+      "size": "41 x 65 cm",
+      "alt": "Abstract oil monotype",
+      "images": [
+        "/media/images/on-paper/monotype-1-thumb.jpg",
+        "/media/images/on-paper/monotype-1.jpg"
+      ],
 
-         "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
-      },
-       {
-         "name": "Purgatorium III",
-         "year": "2019 - 2020",
-         "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
-         "alt": "Abstract canvas painting",
-         "size": "180 x 130 cm",
-         "images": [
-             "/media/images/on-canvas/purgatorium-3-thumb.jpg",             
-             "/media/images/on-canvas/purgatorium-3.jpg"   
-         ],
+      "description": "Abstract oil monotype on paper."
+    },
+    {
+      "name": "Untitled",
+      "year": "2020",
+      "medium": "Oil pastel on paper",
+      "size": "30 x 40cm",
+      "alt": "Abstract oil pastel on paper",
+      "images": [
+        "/media/images/on-paper/pastel-1-thumb.jpg",
+        "/media/images/on-paper/pastel-1.jpg"
+      ],
 
-         "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
-      },
-       {
-         "name": "Purgatorium IV",
-         "year": "2019 - 2020",
-         "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
-         "alt": "Abstract canvas painting",
-         "size": "185 x 155 cm",
-         "images": [
-             "/media/images/on-canvas/purgatorium-4-thumb.jpg",             
-             "/media/images/on-canvas/purgatorium-4.jpg"   
-         ],
+      "description": "Oil pastel on paper series."
+    },
+    {
+      "name": "Untitled",
+      "year": "2020",
+      "medium": "Oil pastel on paper",
+      "size": "30 x 40cm",
+      "alt": "Abstract oil pastel on paper",
+      "images": [
+        "/media/images/on-paper/pastel-2-thumb.jpg",
+        "/media/images/on-paper/pastel-2.jpg"
+      ],
 
-         "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
-      },
-       {
-         "name": "Whitespace",
-         "year": "2021",
-         "medium": "Textured acrylic on canvas",
-         "alt": "Abstract canvas painting",
-         "size": "100 x 150 cm",
-         "images": [
-             "/media/images/on-canvas/whitespace-thumb.jpg",             
-             "/media/images/on-canvas/whitespace.jpg"   
-         ],
+      "description": "Oil pastel on paper series."
+    },
+    {
+      "name": "Untitled",
+      "year": "2020",
+      "medium": "Oil pastel on paper",
+      "size": "40 x 30cm",
+      "alt": "Abstract oil pastel on paper",
+      "images": [
+        "/media/images/on-paper/pastel-3-thumb.jpg",
+        "/media/images/on-paper/pastel-3.jpg"
+      ],
+      "description": "Oil pastel on paper series."
+    },
+    {
+      "name": "Untitled",
+      "year": "2020",
+      "medium": "Oil pastel on paper",
+      "size": "40 x 30cm",
+      "alt": "Abstract oil pastel on paper",
+      "images": [
+        "/media/images/on-paper/pastel-4-thumb.jpg",
+        "/media/images/on-paper/pastel-4.jpg"
+      ],
+      "description": "Oil pastel on paper series."
+    },
+    {
+      "name": "Untitled",
+      "year": "2020",
+      "medium": "Oil pastel on paper",
+      "size": "30 x 40cm",
+      "alt": "Abstract oil pastel on paper",
+      "images": [
+        "/media/images/on-paper/pastel-5-thumb.jpg",
+        "/media/images/on-paper/pastel-5.jpg"
+      ],
+      "description": "Oil pastel on paper series."
+    },
+    {
+      "name": "Untitled",
+      "year": "2020",
+      "medium": "Oil pastel on paper",
+      "size": "30 x 40cm",
+      "alt": "Abstract oil pastel on paper",
+      "images": [
+        "/media/images/on-paper/pastel-6-thumb.jpg",
+        "/media/images/on-paper/pastel-6.jpg"
+      ],
+      "description": "Oil pastel on paper series."
+    },
+    {
+      "name": "Untitled",
+      "year": "2020",
+      "medium": "Oil pastel on paper",
+      "size": "30 x 40cm",
+      "alt": "Abstract oil pastel on paper",
+      "images": [
+        "/media/images/on-paper/pastel-7-thumb.jpg",
+        "/media/images/on-paper/pastel-7.jpg"
+      ],
+      "description": "Oil pastel on paper series."
+    }
+  ],
+  "paintings": [
+    {
+      "name": "Purgatorium I",
+      "year": "2019 - 2020",
+      "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
+      "size": "100 x 150 cm",
+      "alt": "Abstract canvas painting",
+      "images": [
+        "/media/images/on-canvas/purgatorium-1-thumb.jpg",
+        "/media/images/on-canvas/purgatorium-1.jpg"
+      ],
 
-         "description": " "
-      },
-      {
-         "name": "Azul",
-         "year": "2019",
-         "medium": "Oil monotype on paper",
-         "size": "41 x 65 cm",
-         "alt": "Abstract oil monotype",
-         "images": [
-            "/media/images/on-paper/monotype-1-thumb.jpg",
-            "/media/images/on-paper/monotype-1.jpg"      
-         ],
+      "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
+    },
+    {
+      "name": "Purgatorium II",
+      "year": "2019 - 2020",
+      "medium": "Ginger, cacao, turmeric in flaxseed gel binder on canvas",
+      "alt": "Abstract canvas painting",
+      "size": "150 x 100 cm",
+      "images": [
+        "/media/images/on-canvas/purgatorium-2-thumb.jpg",
+        "/media/images/on-canvas/purgatorium-2.jpg"
+      ],
 
-         "description": "Oil monotype on paper in colours from light blue and lavender over turquoise to deep prussian blue and green featuring a full circle, shred-like stripes complemented with soft abstract shapes."
-      },
-      {
-         "name": "Untitled",
-         "year": "2020",
-         "medium": "Oil pastel on paper",
-         "size": "30 x 40cm",
-         "alt": "Abstract oil pastel on paper",
-         "images": [
-            "/media/images/on-paper/pastel-1-thumb.jpg",
-            "/media/images/on-paper/pastel-1.jpg"],
+      "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
+    },
+    {
+      "name": "Purgatorium III",
+      "year": "2019 - 2020",
+      "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
+      "alt": "Abstract canvas painting",
+      "size": "180 x 130 cm",
+      "images": [
+        "/media/images/on-canvas/purgatorium-3-thumb.jpg",
+        "/media/images/on-canvas/purgatorium-3.jpg"
+      ],
 
-         "description": "Oil pastel on paper series."
-      },
-      {
-         "name": "Untitled",
-         "year": "2020",
-         "medium": "Oil pastel on paper",
-         "size": "30 x 40cm",
-         "alt": "Abstract oil pastel on paper",
-         "images": [
-            "/media/images/on-paper/pastel-2-thumb.jpg",
-            "/media/images/on-paper/pastel-2.jpg"],  
+      "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
+    },
+    {
+      "name": "Purgatorium IV",
+      "year": "2019 - 2020",
+      "medium": "Ginger, turmeric in flaxseed gel binder on canvas",
+      "alt": "Abstract canvas painting",
+      "size": "185 x 155 cm",
+      "images": [
+        "/media/images/on-canvas/purgatorium-4-thumb.jpg",
+        "/media/images/on-canvas/purgatorium-4.jpg"
+      ],
 
-         "description": "Oil pastel on paper series."
-      },
-      {
-         "name": "Untitled",
-         "year": "2020",
-         "medium": "Oil pastel on paper",
-         "size": "40 x 30cm",
-         "alt": "Abstract oil pastel on paper",
-         "images": [
-             "/media/images/on-paper/pastel-3-thumb.jpg",
-            "/media/images/on-paper/pastel-3.jpg"],
-         "description": "Oil pastel on paper series."
-      },
-       {
-         "name": "Untitled",
-         "year": "2020",
-         "medium": "Oil pastel on paper",
-         "size": "40 x 30cm",
-         "alt": "Abstract oil pastel on paper",
-         "images": [
-            "/media/images/on-paper/pastel-4-thumb.jpg",
-            "/media/images/on-paper/pastel-4.jpg"],
-         "description": "Oil pastel on paper series."
-      },
-       {
-         "name": "Untitled",
-         "year": "2020",
-         "medium": "Oil pastel on paper",
-         "size": "30 x 40cm",
-         "alt": "Abstract oil pastel on paper",
-         "images": [
-            "/media/images/on-paper/pastel-5-thumb.jpg",
-            "/media/images/on-paper/pastel-5.jpg"],
-         "description": "Oil pastel on paper series."
-      },
-       {
-         "name": "Untitled",
-         "year": "2020",
-         "medium": "Oil pastel on paper",
-         "size": "30 x 40cm",
-         "alt": "Abstract oil pastel on paper",
-         "images": [
-            "/media/images/on-paper/pastel-6-thumb.jpg",
-            "/media/images/on-paper/pastel-6.jpg"],
-         "description": "Oil pastel on paper series."
-      },
-       {
-         "name": "Untitled",
-         "year": "2020",
-         "medium": "Oil pastel on paper",
-         "size": "30 x 40cm",
-         "alt": "Abstract oil pastel on paper",
-         "images": [
-            "/media/images/on-paper/pastel-7-thumb.jpg",
-            "/media/images/on-paper/pastel-7.jpg"],
-         "description": "Oil pastel on paper series."
-      }
+      "description": "Abstract-organic forms done using natural materials that are traditionally used for the internal organ cleansing and fortifying of the immune system above all represent a reaction to the years of handling and exposure to toxic chemicals in the artistic work. The material simplicity that is turned into a rich variety of forms and textures - that are unique to this technique - at the same time reminds of the challenge of scarcity and inaccessibility of the resources and the growing need to make more out of less with inventive solutions."
+    },
+    {
+      "name": "Whitespace",
+      "year": "2021",
+      "medium": "Textured acrylic on canvas",
+      "alt": "Abstract canvas painting",
+      "size": "100 x 150 cm",
+      "images": [
+        "/media/images/on-canvas/whitespace-thumb.jpg",
+        "/media/images/on-canvas/whitespace.jpg"
+      ],
 
-   ]
+      "description": " "
+    }
+  ]
 }
