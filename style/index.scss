@@ -163,9 +163,13 @@ h3.about {
     background: none;
     color: vars.$large-heading; 
     font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
     top: 0;
-    height: 15vh;
-    padding: 150px 10% 0 25%;
+    border-bottom: solid 0.15vw rgba(247, 255, 252, 0.137);
+    border-bottom-left-radius: 60%;
+    height: 25vh;
+    padding: 150px 10% 0 8%;
+    margin-left: 27%;
     font-size: clamp(30px, 15vw, 100px);
     z-index: 5;
 
