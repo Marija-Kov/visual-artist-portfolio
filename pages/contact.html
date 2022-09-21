@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="art, artist, abstract, embroidery, sculpture, painting, drawing, monotype, installation, print, 3d, 2d, contemporary, textile, ginger, turmeric, flaxseed, canvas, paper" />
+    <meta name="description" content="Marija Kovacevic - abstract drawings and monotypes in oil pastel, oil paint, pencil, sgrafitto and other techniques." />
+    <meta name="subject" content="Art portfolio">
+    <meta name="copyright" content="Marija Kovacevic">
+    <meta name="language" content="EN">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="/style/index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/images/favicon-mk.png">
+    <title>Marija K &middot;&middot; Contact </title>
+</head>
+<body>
+<nav style="background-image: none">
+    <ul>
+        <li>
+            <a href="/index.html">home</a>
+        </li>
+        <li>
+            <a href="/pages/installations-sculptures-relief.html">3D</a>
+        </li>
+        <li>
+            <a href="/pages/paintings.html">paintings</a>
+        </li>
+        <li>
+            <a href="/pages/drawings.html" >drawings</a>
+        </li>
+        <li>
+            <a href="/pages/embroidery.html">embroidery</a>
+        </li>
+        <li>
+            <a href="/pages/contact.html" style="color: white">contact</a>
+        </li>
+    </ul>
+</nav>
+<div id="menu-toggle">
+    <div id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="cross">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="contact">
+
+   <div class="logo-container"><img src="/media/images/logo-negative.png" /></div>
+
+ <div class="contact-container">
+    <form action="https://formsubmit.co/19729b25666c5b0c288e722717a7dd07" 
+       method="POST" 
+       name="contactForm" 
+       id="contactForm"
+       >
+       <!-- <label for="firstname">Your name</label>  -->
+       <input 
+          type="text" 
+          name="firstname" 
+          id="firstname" 
+          class="form-element" 
+          placeholder="Your name"
+          required
+          />
+        
+        <!-- <label for="email">Email</label> -->
+        <input 
+           type="email" 
+           name="email" 
+           id="email" 
+           class="form-element" 
+           placeholder="Your email address"
+           required
+           />
+        <!-- <label for="message">Message</label> -->
+        <textarea 
+           name="message" 
+           id="message" 
+           class="form-element"
+           required
+           placeholder="Your message"></textarea>
+        
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://marija-kovacevic.netlify.app/pages/thankyou.html">
+        <button type="submit">send</button>
+    </form>
+    </div>
+  </div>
+<script src="/script/ham-navigation.js"></script>
+
+<script>
+   let send = document.querySelector('button');
+   let firstName = document.querySelector('#firstname').value;
+   let email = document.querySelector('#email').value;
+   let message = document.querySelector('textarea').value;
+   send.addEventListener('click', ()=> {
+    if(firstName && email && message) {
+       send.innerText = "sending...";
+       setTimeout(()=> {
+           send.innerText="Thanks! I will respond shortly."
+       }, 2000);
+       setTimeout(()=> {
+           send.innerText="Redirecting..."
+       }, 5000)
+       setTimeout(()=>{
+         window.location.href = '/index.html'  
+       },6000)
+     } else {
+        send.innerText = "Please fill out all the fields properly." 
+        setTimeout(()=> {
+           send.innerText="send"
+       }, 3000);
+    }
+   })
+
+        setTimeout(()=>{
+        document.querySelector('.social').style.opacity = "1";
+    }, 1200)   
+</script>
+</body>
+</html>
