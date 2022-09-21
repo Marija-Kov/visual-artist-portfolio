@@ -218,7 +218,7 @@
   background: rgb(27, 27, 27);
   color: whitesmoke;
   font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-size: clamp(30px, 30vw, 80px);
 }
 #loading span {
@@ -680,6 +680,122 @@ footer {
   }
   #about > article p {
     padding: 35vh 8vw 0vh 8vw;
+  }
+}
+body {
+  background: rgb(20, 33, 37);
+  background: linear-gradient(173deg, rgb(20, 33, 37) 10%, rgb(31, 24, 23) 74%);
+}
+
+.contact {
+  margin-top: 100px;
+  color: whitesmoke;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.logo-container img {
+  width: 100px;
+  filter: opacity(0.4);
+}
+
+.contact > h2 {
+  padding-left: 50px;
+}
+
+.contact > p {
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+}
+
+form {
+  width: clamp(300px, 100%, 600px);
+  z-index: 60;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 3em;
+}
+
+.form-element {
+  font-size: clamp(16px, 3vw, 18px);
+  font-family: "Work Sans";
+  font-weight: 100;
+  border: none;
+  border-bottom: solid 1px whitesmoke;
+  height: 28px;
+  padding: 5px;
+  background: transparent;
+  color: whitesmoke;
+}
+.form-element:focus {
+  background: none;
+  border: none;
+}
+.form-element:focus::-moz-placeholder {
+  color: transparent;
+}
+.form-element:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.form-element:focus::placeholder {
+  color: transparent;
+}
+
+textarea[id=message] {
+  height: 20vh;
+  border: solid 1px whitesmoke;
+  padding: 10px;
+  font-family: "Work Sans";
+}
+
+button[type=submit] {
+  background: transparent;
+  border: solid 1px whitesmoke;
+  cursor: pointer;
+  padding: 5px 20px;
+  font-size: clamp(16px, 4vw, 18px);
+  font-family: "Trispace", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.3s;
+  color: whitesmoke;
+}
+button[type=submit]:hover {
+  color: rgb(77, 77, 77);
+  background: whitesmoke;
+}
+
+@media screen and (max-width: 1024px) and (max-height: 500px) {
+  .contact {
+    padding-top: 30vh;
+    flex-direction: row;
+    height: 150vh;
+  }
+  .contact-container {
+    flex-direction: row;
+    min-width: 300px;
+    max-width: 560px;
+  }
+}
+@media screen and (max-width: 768px) {
+  form {
+    align-items: center;
+  }
+  .form-element {
+    width: 100%;
   }
 }
 *,
