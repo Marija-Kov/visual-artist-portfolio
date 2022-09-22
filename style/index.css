@@ -692,16 +692,6 @@ body {
   color: whitesmoke;
 }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-.logo-container img {
-  width: 100px;
-  filter: opacity(0.4);
-}
-
 .contact > h2 {
   padding-left: 50px;
 }
@@ -714,7 +704,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   max-width: 600px;
 }
 
@@ -825,4 +814,14 @@ body {
   font-weight: 300;
   font-size: clamp(13px, 1.5vw, 16px);
   overflow-x: hidden;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.logo-container img {
+  width: 100px;
+  filter: opacity(0.6);
 }/*# sourceMappingURL=index.css.map */

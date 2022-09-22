@@ -8,15 +8,7 @@ body {
     margin-top: 100px;
     color: vars.$text-color;
 }
-.logo-container {
-    display:flex;
-    justify-content: center;
-    margin: 20px;
-    img {
-        width:100px;
-        filter: opacity(0.4);
-    }
-}
+
 .contact>h2 {
     padding-left: 50px;
 }
@@ -29,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     max-width: 600px;
 }
 
