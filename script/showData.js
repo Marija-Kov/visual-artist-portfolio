@@ -1,8 +1,9 @@
-let thumbs = document.querySelector(".thumbs");
-let largeImg = document.querySelector(".large");
-let gallery = document.querySelector(".gallery");
 
-export const showData = async function showData(data, category) {
+
+export const showData = async (data, category) => {
+   let thumbs = document.querySelector(".thumbs");
+   let largeImg = document.querySelector(".large");
+   let gallery = document.querySelector(".gallery");
   for (let i = 0; i < category.length; ++i) {
     let thumb = document.createElement("div");
     thumb.classList.add("thumb");

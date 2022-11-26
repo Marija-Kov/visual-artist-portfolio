@@ -8,7 +8,6 @@ hamMenu.addEventListener('click', ()=> {
       : nav.setAttribute("style", "display: none");
 
     if(((window.innerWidth < 1024) || (window.innerHeight < 768))&& document.querySelector('.details')){
-
       document.querySelector('.details').classList.contains('visible') ?
       document.querySelector('.details').classList.remove('visible') :
       null;

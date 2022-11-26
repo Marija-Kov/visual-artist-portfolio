@@ -9,9 +9,9 @@ fetch(url)
     }
   })
   .then((data) => showData(data, data.paintings))
-  .then(init1)
-  .then(init2)
+  .then(initShowDetails)
+  .then(initShowLarger)
   .catch((err) => `Error: ${err}`);
 
-import { init1, init2 } from "../artDisplay.js";
+import { initShowDetails, initShowLarger } from "../artDisplay.js";
 import { showData } from "../showData.js";
