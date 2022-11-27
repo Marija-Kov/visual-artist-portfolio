@@ -1,0 +1,22 @@
+{
+  "name": "visual-artist-portfolio",
+  "version": "1.0.0",
+  "description": "A front-end project reated using HTML, CSS(SASS) and vanilla JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marija-Kov/visual-artist-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marija-Kov/visual-artist-portfolio/issues"
+  },
+  "homepage": "https://github.com/Marija-Kov/visual-artist-portfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
+}

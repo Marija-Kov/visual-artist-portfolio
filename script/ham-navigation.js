@@ -1,3 +1,4 @@
+export const hamburgerMenuDisplay = () => {
 let hamMenu = document.querySelector('#menu-toggle');
 let nav = document.querySelector('nav');
 
@@ -19,9 +20,9 @@ hamMenu.addEventListener('click', ()=> {
 
 document.querySelector('#contact').style = "display: none";
 
-if(document.querySelector('.gallery')){
+ if(document.querySelector('.gallery')){
   nav.style.display = 'none';
   hamMenu.style.display = 'inline-block';
+ }
 }
-
 

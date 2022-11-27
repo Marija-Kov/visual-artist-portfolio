@@ -1,14 +1,12 @@
-let showDetails = document.querySelector(".show-details");
-let articles = document.querySelectorAll(".details");
-let nav = document.querySelector("nav");
-
 export const initShowLarger = async () => {
   let thumbs = document.querySelectorAll(".thumb");
   let larges = document.querySelectorAll(".large>img");
   let gallery = document.querySelector(".gallery");
+  let showDetails = document.querySelector(".show-details");
+  let nav = document.querySelector("nav");
+  let articles = document.querySelectorAll(".details");
   thumbs.forEach((thumb) =>
     thumb.addEventListener("click", () => {
-      // let style = window.getComputedStyle(thumb);
       if (window.innerWidth < 1024 || window.innerHeight < 740) {
         nav.setAttribute("style", "display: none");
       }
@@ -33,6 +31,9 @@ export const initShowLarger = async () => {
 
 export const initShowDetails = async () => {
   let hamMenu = document.querySelector("#menu-toggle");
+  let showDetails = document.querySelector(".show-details");
+  let nav = document.querySelector("nav");
+  let articles = document.querySelectorAll(".details");
   showDetails.addEventListener("click", () => {
     articles.forEach((article) => {
       article.getAttribute("id") === showDetails.getAttribute("id")
