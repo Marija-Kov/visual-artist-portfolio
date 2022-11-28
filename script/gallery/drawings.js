@@ -14,6 +14,9 @@ fetch(url)
   .then(hamburgerMenuDisplay)
   .catch((err) => `Error: ${err}`);
 
+  loading();
+
 import { hamburgerMenuDisplay } from "../ham-navigation.js"
 import { initShowDetails, initShowLarger } from "../artDisplay.js";
 import { showData } from "../showData.js";
+import { loading } from "../loading.js"

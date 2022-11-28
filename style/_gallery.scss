@@ -8,7 +8,7 @@
  @include mixins.center-aligned;
  height: 100vh;
  width: 100vw;
- background:rgb(27, 27, 27);
+ background:vars.$main-color-gallery;
  color: vars.$text-color;
  font-family: 'Work Sans', sans-serif;
  font-weight: 200;
@@ -27,7 +27,7 @@ h3.artwork-type {
     background: none;
     line-height: 80%;
     text-align: right;
-    color: rgb(148, 148, 148);
+    color: rgb(197, 209, 177);
     right: 0.5vw; 
     bottom: 0;
     height: 75vh;
