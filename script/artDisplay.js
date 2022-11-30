@@ -5,7 +5,6 @@ export const initShowLarger = async () => {
   let showDetails = document.querySelector(".show-details");
   let nav = document.querySelector("nav");
   let articles = document.querySelectorAll(".details");
-  let bod = document.querySelector('body')
   thumbs.forEach((thumb) =>
     thumb.addEventListener("click", () => {
       if (window.innerWidth < 1024 || window.innerHeight < 740) {
@@ -17,12 +16,14 @@ export const initShowLarger = async () => {
           ? (large.style.filter = "opacity(1)")
           : (large.style.filter = "opacity(0)");
       });
-      let rgb = getComputedStyle(bod).getPropertyValue('background').slice(4, 14);
-      console.log(`rgba(${rgb}, 0.8)`);
+      let overlay = document.querySelector('.thumbs');
+      let rgb = getComputedStyle(overlay)
+        .getPropertyValue("background")
+        .match(/\d+, \d+, \d+/);
       gallery.style.background = `rgba(${rgb}, 0.8)`;
       showDetails.setAttribute("id", `${artId}`);
       showDetails.style.filter = "opacity(1)";
-      showDetails.innerText = "details >>";
+      showDetails.innerText = "?";
       articles.forEach((article) => {
         article.classList.contains("visible")
           ? article.classList.remove("visible")
