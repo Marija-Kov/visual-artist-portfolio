@@ -5,5 +5,7 @@
       });
     }, 2000);
     hamburgerMenuDisplay();
+    logoScrollAnimation();
 
 import { hamburgerMenuDisplay } from "./ham-navigation.js";
+import { logoScrollAnimation } from "./logoScrollAnimation.js";
