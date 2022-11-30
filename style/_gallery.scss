@@ -44,7 +44,6 @@ h3.artwork-type {
  display: flex;
  padding: 1%;
 
-
 .thumbs {
   display: flex;
   gap: 1%;
@@ -53,7 +52,7 @@ h3.artwork-type {
   max-width: 200px;
   width: 15vw;
   min-width: 180px;
-  background: vars.$main-color;
+  background: vars.$main-color-gallery;
   z-index: 250;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -96,7 +95,7 @@ h3.artwork-type {
     border: solid 0px whitesmoke;
     font-family: 'Work Sans', sans-serif;
     color: vars.$text-color;
-    background:vars.$main-color;
+    background:vars.$main-color-gallery;
     transition: 0.5s;
     &:hover {
       color: vars.$main-color;
@@ -115,7 +114,7 @@ h3.artwork-type {
   right: auto;
   height: fit-content;
   max-height: 90vh;
-  background:vars.$main-color;
+  background:vars.$main-color-gallery;
   border-top: solid 1px vars.$text-color;
   border-left: solid 1px vars.$text-color;
   border-top-left-radius: 5vw;

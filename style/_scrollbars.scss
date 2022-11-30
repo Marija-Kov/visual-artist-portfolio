@@ -2,6 +2,7 @@
 
 ::-webkit-scrollbar {
   width: 1em;
+  max-width: 10px;
 
 }
 
@@ -12,7 +13,7 @@
 ::-webkit-scrollbar-thumb {
   background: rgba(245, 245, 245, 0.76);
   border-radius: 50px;
-  border: solid 0.25em vars.$main-color;
+  border: solid 0.25em vars.$main-color-gallery;
 }
 
 ::-webkit-scrollbar-thumb:hover {

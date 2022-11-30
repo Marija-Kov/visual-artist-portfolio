@@ -3,8 +3,7 @@
 #ham > span,
 #cross > span {
   display: block;
-  background: linear-gradient(90deg, rgb(255, 255, 255) 63%, rgb(251, 255, 248) 100%);
-  box-shadow: 1px 1px 2px rgb(37, 37, 37);
+  background: rgb(120, 151, 159);
   border-radius: 2px;
   transition: 0.25s ease-in-out;
 }
@@ -13,7 +12,7 @@
   display: none;
   width: 80px;
   height: 70px;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: -6px;
   z-index: 9999;
@@ -191,6 +190,7 @@
 }
 ::-webkit-scrollbar {
   width: 1em;
+  max-width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -200,7 +200,7 @@
 ::-webkit-scrollbar-thumb {
   background: rgba(245, 245, 245, 0.76);
   border-radius: 50px;
-  border: solid 0.25em rgb(27, 27, 27);
+  border: solid 0.25em rgb(42, 36, 47);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -215,8 +215,8 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: rgb(27, 27, 27);
-  color: whitesmoke;
+  background: rgb(42, 36, 47);
+  color: rgb(197, 209, 177);
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
   font-size: clamp(30px, 30vw, 80px);
@@ -235,7 +235,7 @@ h3.artwork-type {
   background: none;
   line-height: 80%;
   text-align: right;
-  color: rgb(148, 148, 148);
+  color: rgb(197, 209, 177);
   right: 0.5vw;
   bottom: 0;
   height: 75vh;
@@ -261,7 +261,7 @@ h3.artwork-type {
   max-width: 200px;
   width: 15vw;
   min-width: 180px;
-  background: rgb(27, 27, 27);
+  background: rgb(42, 36, 47);
   z-index: 250;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -305,13 +305,13 @@ h3.artwork-type {
   padding-right: 0.7em;
   border: solid 0px whitesmoke;
   font-family: "Work Sans", sans-serif;
-  color: whitesmoke;
-  background: rgb(27, 27, 27);
+  color: rgb(197, 209, 177);
+  background: rgb(42, 36, 47);
   transition: 0.5s;
 }
 .gallery .large .show-details:hover {
-  color: rgb(27, 27, 27);
-  background: whitesmoke;
+  color: rgb(58, 52, 71);
+  background: rgb(197, 209, 177);
 }
 .gallery .details {
   filter: opacity(0);
@@ -323,11 +323,11 @@ h3.artwork-type {
   height: -moz-fit-content;
   height: fit-content;
   max-height: 90vh;
-  background: rgb(27, 27, 27);
-  border-top: solid 1px whitesmoke;
-  border-left: solid 1px whitesmoke;
+  background: rgb(42, 36, 47);
+  border-top: solid 1px rgb(197, 209, 177);
+  border-left: solid 1px rgb(197, 209, 177);
   border-top-left-radius: 5vw;
-  color: whitesmoke;
+  color: rgb(197, 209, 177);
   width: clamp(400px, 40vw, 500px);
   padding: 3vw;
   overflow-y: scroll;
@@ -437,17 +437,19 @@ h3.artwork-type {
   }
 }
 nav {
-  position: fixed;
+  position: absolute;
   z-index: 99;
-  top: 0;
+  top: -15px;
   display: inline-block;
   -webkit-animation: fadeIn 0.5s;
           animation: fadeIn 0.5s;
   font-size: 1em;
-  background: rgb(27, 27, 27);
+  background: transparent;
   height: 80px;
   width: 100vw;
   overflow: hidden;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 nav ul {
   padding: 40px;
@@ -460,10 +462,20 @@ nav ul li::first-letter {
 }
 
 li > a {
-  color: rgba(245, 245, 245, 0.747);
+  color: rgba(169, 169, 169, 0.747);
 }
 li > a:hover {
   color: rgb(245, 245, 245);
+}
+
+.nav--index {
+  background-color: transparent;
+}
+.nav--index ul li a {
+  color: rgb(58, 52, 71);
+}
+.nav--index ul li a:hover {
+  filter: brightness(0.1);
 }
 
 .social {
@@ -506,7 +518,7 @@ header {
 .video-container {
   width: 100vw;
   position: relative;
-  top: 10%;
+  top: 0%;
   overflow-y: hidden;
   overflow-x: hidden;
   position: fixed;
@@ -514,7 +526,7 @@ header {
 }
 
 video {
-  width: 100%;
+  width: 120%;
   height: auto;
   -webkit-animation: fadeInY 1s;
           animation: fadeInY 1s;
@@ -523,7 +535,7 @@ video {
 .line::after {
   content: "";
   height: 40vh;
-  top: 60%;
+  top: 170%;
   position: absolute;
   -webkit-animation: blink 2s infinite;
           animation: blink 2s infinite;
@@ -562,7 +574,7 @@ video {
     height: fit-content;
     right: 0;
     border-left: solid 1px rgb(150, 150, 150);
-    background: rgb(27, 27, 27);
+    background: rgb(42, 36, 47);
     font-size: 1.2em;
     -webkit-animation: fadeInX 0.5s;
             animation: fadeInX 0.5s;
@@ -588,31 +600,25 @@ video {
   .this-way {
     top: 80%;
   }
-  .line::after {
-    height: 25vh;
-    top: 75%;
-  }
 }
 main {
   background: rgb(20, 33, 37);
-  background: linear-gradient(173deg, rgb(20, 33, 37) 10%, rgb(31, 24, 23) 74%);
-  color: whitesmoke;
-  line-height: 1.3em;
+  background: linear-gradient(180deg, rgb(72, 116, 129) 10%, rgb(58, 52, 71) 90%);
+  color: rgb(197, 209, 177);
+  line-height: 1.35em;
 }
 
 h3.about {
   position: -webkit-sticky;
   position: sticky;
   background: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(197, 209, 177);
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
   top: 0;
-  border-bottom: solid 0.15vw rgba(247, 255, 252, 0.237);
-  border-bottom-left-radius: 60%;
-  height: 25vh;
+  height: 5vh;
   padding: 150px 10% 0 8%;
-  margin-left: 27%;
+  margin-left: 20%;
   font-size: clamp(30px, 15vw, 100px);
   z-index: 5;
 }
@@ -624,7 +630,7 @@ h3.about {
 }
 
 #about > article {
-  max-width: 1000px;
+  max-width: 80vw;
   height: 100%;
 }
 #about > article p {
@@ -632,16 +638,16 @@ h3.about {
   min-width: 365px;
   position: relative;
   z-index: 4;
-  padding: 35vh 5vw 10vh 20vw;
+  padding: 35vh 5vw 10vh 10vw;
 }
 
 footer {
-  height: 10vh;
+  height: 4vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: rgb(27, 27, 27);
+  background: rgb(58, 52, 71);
   z-index: 7;
 }
 
@@ -653,25 +659,27 @@ footer {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   h3.about {
-    padding: 150px 10% 0 0%;
+    height: 25vh;
+    min-height: 50px;
+    padding-top: 80px;
+    padding-left: 0;
+    font-size: clamp(30px, 15vw, 100px);
+  }
+  #about > article {
+    height: 100vh;
+    max-width: unset;
+  }
+  #about > article p {
+    padding: 23vh 15vw 0vh 20vw;
+    transform: translateY(5%);
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 455px) {
   h3.about {
-    height: 25vh;
-  }
-  #about > article {
-    height: 100vh;
-  }
-  #about > article p {
-    padding: 30vh 15vw 0vh 20vw;
-    transform: translateY(5%);
-    font-size: 1.2em;
-  }
-  footer {
-    height: 5vh;
+    font-size: 60px;
   }
 }
 @media (max-height: 500px) and (max-width: 1023px) {
@@ -679,17 +687,17 @@ footer {
     padding: 70px 10% 0 10%;
   }
   #about > article p {
-    padding: 35vh 8vw 0vh 8vw;
+    padding: 25vh 8vw 0vh 8vw;
   }
 }
 body {
   background: rgb(20, 33, 37);
-  background: linear-gradient(173deg, rgb(20, 33, 37) 10%, rgb(31, 24, 23) 74%);
+  background: linear-gradient(180deg, rgb(72, 116, 129) 10%, rgb(58, 52, 71) 90%);
 }
 
 .contact {
   margin-top: 100px;
-  color: whitesmoke;
+  color: rgb(197, 209, 177);
 }
 
 .contact > h2 {
@@ -722,11 +730,11 @@ form {
   font-family: "Work Sans";
   font-weight: 100;
   border: none;
-  border-bottom: solid 1px whitesmoke;
+  border-bottom: solid 1px rgb(197, 209, 177);
   height: 28px;
   padding: 5px;
   background: transparent;
-  color: whitesmoke;
+  color: rgb(197, 209, 177);
 }
 .form-element:focus {
   background: none;
@@ -744,14 +752,14 @@ form {
 
 textarea[id=message] {
   height: 20vh;
-  border: solid 1px whitesmoke;
+  border: solid 1px rgb(197, 209, 177);
   padding: 10px;
   font-family: "Work Sans";
 }
 
 button[type=submit] {
   background: transparent;
-  border: solid 1px whitesmoke;
+  border: solid 1px rgb(197, 209, 177);
   cursor: pointer;
   padding: 5px 20px;
   font-size: clamp(16px, 4vw, 18px);
@@ -760,11 +768,11 @@ button[type=submit] {
   width: -moz-fit-content;
   width: fit-content;
   transition: 0.3s;
-  color: whitesmoke;
+  color: rgb(197, 209, 177);
 }
 button[type=submit]:hover {
   color: rgb(77, 77, 77);
-  background: whitesmoke;
+  background: rgb(197, 209, 177);
 }
 
 @media screen and (max-width: 1024px) and (max-height: 500px) {
@@ -809,14 +817,20 @@ a {
 }
 
 body {
-  background: rgb(27, 27, 27);
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: clamp(13px, 1.5vw, 16px);
   overflow-x: hidden;
+  background: rgb(42, 36, 47);
+}
+
+.index--body {
+  background: rgb(58, 52, 71);
 }
 
 .logo-container {
+  position: absolute;
+  top: 40%;
   display: flex;
   justify-content: center;
   margin: 20px;

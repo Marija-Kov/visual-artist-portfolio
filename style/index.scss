@@ -27,21 +27,24 @@ html{
 a {
   color:whitesmoke;
 }
-
 body {
-    background: vars.$main-color;
-    font-family: 'Work Sans',
-    sans-serif;
-    font-weight: 300;
-    font-size: clamp(13px, 1.5vw, 16px);
-    overflow-x: hidden;
-    
+        font-family: 'Work Sans',
+                sans-serif;
+            font-weight: 300;
+            font-size: clamp(13px, 1.5vw, 16px);
+            overflow-x: hidden;
+            background: vars.$main-color-gallery;
 }
+.index--body {
+    background: vars.$main-color; 
+}
+
 .logo-container {
+    position: absolute;
+    top: 40%;
     display: flex;
     justify-content: center;
     margin: 20px;
-
     img {
         width: 100px;
         filter: opacity(0.6);

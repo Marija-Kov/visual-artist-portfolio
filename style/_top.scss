@@ -3,16 +3,17 @@
 @use 'mixins';
 
 nav {
-    position: fixed;
+    position: absolute;
     z-index: 99;
-    top: 0;
+    top: -15px;
     display: inline-block;
     animation: fadeIn 0.5s;
     font-size: 1em;
-    background: vars.$main-color;
+    background: transparent;
     height: 80px;
     width: 100vw;
     overflow: hidden;
+    backdrop-filter: blur(20px);
 
     ul {
         padding: 40px;
@@ -31,10 +32,26 @@ nav {
 }
 
 li>a {
-    color: rgba(245, 245, 245, 0.747);
+    color: rgba(169, 169, 169, 0.747);
 
     &:hover {
         color: rgba(245, 245, 245, 1);
+    }
+}
+
+.nav--index {
+    background-color: transparent;
+
+    ul {
+        li {
+            a {
+                color: vars.$main-color;
+
+                &:hover {
+                    filter: brightness(0.1)
+                }
+            }
+        }
     }
 }
 
@@ -83,14 +100,12 @@ header {
     &::after {
         display: none;
     }
-
-
 }
 
 .video-container {
     width: 100vw;
     position: relative;
-    top: 10%;
+    top: 0%;
     overflow-y: hidden;
     overflow-x: hidden;
     position: fixed;
@@ -98,7 +113,7 @@ header {
 }
 
 video {
-    width: 100%;
+    width: 120%;
     height: auto;
     animation: fadeInY 1s;
 }
@@ -107,7 +122,7 @@ video {
     &::after {
         content: "";
         height: 40vh;
-        top: 60%;
+        top: 170%;
         position: absolute;
         animation: blink 2s infinite;
     }
@@ -146,7 +161,7 @@ video {
       height: fit-content;
       right: 0;
       border-left: solid 1px rgb(150, 150, 150);
-      background: vars.$main-color;
+      background: vars.$main-color-gallery;
       font-size: 1.2em;
       animation: fadeInX 0.5s;
 
@@ -179,13 +194,6 @@ video {
            .this-way {
                top: 80%;
 
-           }
-
-           .line {
-               &::after {
-                   height: 25vh;
-                   top: 75%;
-               }
            }
 }
 
