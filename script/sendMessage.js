@@ -6,7 +6,14 @@ export const sendMessage = () => {
   let message = document.querySelector("textarea");
 
   send.addEventListener("click", () => {
-    if (message.value && email.value && firstName.value) {
+    if (
+      message.value &&
+      email.value &&
+      email.value.match(
+        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+      ) &&
+      firstName.value
+    ) {
       send.innerText = "sending...";
       setTimeout(() => {
         send.innerText = "Thanks! I will respond shortly.";
