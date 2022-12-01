@@ -196,8 +196,9 @@ video {
 }
 
 @media (max-width: 768px) {
-
-        nav {
+       
+        nav,
+        .nav--gallery {
             width: 50%;
 
             ul {
