@@ -14,7 +14,9 @@ body {
 }
 
 .contact>p {
-    font-size: clamp(16px, 3vw, 20px);
+    font-size: clamp(16px, 2vw, 18px);
+    padding: 0 50px;
+    max-width: 700px;
 }
 
 .contact-container {
@@ -26,7 +28,6 @@ body {
 
 form {
     width: clamp(300px, 100%, 600px);
-    z-index: 60;
     flex: 3;
     display: flex;
     flex-direction: column;
@@ -81,7 +82,11 @@ button[type=submit] {
     }
 }
 
-
+.footer--contact {
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+}
 
 @media screen and (max-width: 1024px) and (max-height: 500px) {
 

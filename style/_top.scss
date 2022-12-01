@@ -31,10 +31,10 @@ nav {
 }
 
 li>a {
-    color: rgba(169, 169, 169, 0.747);
+    color: vars.$link-text-color;
 
     &:hover {
-        color: rgba(245, 245, 245, 1);
+        color:vars.$link-text-color-hover;
     }
 }
 
@@ -62,7 +62,7 @@ li>a {
       border-left: solid 1px rgb(150, 150, 150);
       background: vars.$main-color-gallery;
       font-size: 1.2em;
-      animation: fadeInX 0.5s;
+      animation: fadeInX 0.3s;
 
       ul {
           padding: 60px 0 60px 10vw;
@@ -150,7 +150,7 @@ video {
     @include mixins.center-aligned;
     z-index: 1;
     background: rgb(183, 241, 255);
-    background: linear-gradient(180deg, rgba(183, 241, 255, 0.4) 28%, rgba(160, 210, 255, 0.7) 91%);
+    background: vars.$video-overlay-gradient;
     position: absolute;
     top: 0;
 }
@@ -179,7 +179,7 @@ video {
       border-left: solid 1px rgb(150, 150, 150);
       background: vars.$main-color-gallery;
       font-size: 1.2em;
-      animation: fadeInX 0.5s;
+      animation: fadeInX 0.3s;
 
       ul {
           padding: 60px 0 60px 10vw;

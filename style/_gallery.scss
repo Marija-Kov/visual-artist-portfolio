@@ -10,7 +10,7 @@
  width: 100vw;
  background:vars.$main-color-gallery;
  color: vars.$text-color;
- font-family: 'Work Sans', sans-serif;
+ font-family: vars.$main-font;
  font-weight: 200;
  font-size: clamp(30px, 30vw, 80px); 
  span{
@@ -32,7 +32,7 @@ h3.artwork-type {
     bottom: 0;
     height: 75vh;
     padding-top: 7vh;
-    font-family: 'Work Sans', sans-serif;
+    font-family: vars.$main-font;
     font-weight: 200;
     font-size: clamp(70px, 16vw, 120px);
     z-index: -1;
@@ -94,7 +94,7 @@ h3.artwork-type {
     width: 2em;
     border: solid 2px vars.$text-color;
     border-radius: 100%;
-    font-family: 'Work Sans', sans-serif;
+    font-family: vars.$main-font;
     font-size: 2em;
     color: vars.$text-color;
     background:vars.$main-color-gallery;
@@ -253,6 +253,7 @@ h3.artwork-type {
       width: 80vw;
       overscroll-behavior: contain;
       max-height: 350px;
+      bottom: 15%;
     }
   }
 

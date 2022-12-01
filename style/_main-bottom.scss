@@ -11,7 +11,7 @@ h3.about {
     position: sticky;
     background: none;
     color: vars.$large-heading; 
-    font-family: 'Work Sans', sans-serif;
+    font-family: vars.$main-font;
     font-weight: 200;
     top: 0;
     height: 5vh;
@@ -45,15 +45,14 @@ footer {
     @include mixins.center-aligned;
     width: 100%;
     background: vars.$main-color; 
-    z-index: 7;
 }
 
 .attribution {
-    font-size: clamp(10px, 1vw, 12px);
+    font-size: clamp(12px, 1vw, 12px);
      a {
       text-decoration: underline;
     }
-    color: rgb(186, 217, 247);
+    color: vars.$attribution-text-color;
 }
 
 @media screen and (max-width: 600px) {

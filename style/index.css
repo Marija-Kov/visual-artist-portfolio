@@ -92,7 +92,7 @@
 @-webkit-keyframes fadeInY {
   from {
     opacity: 0;
-    transform: rotateY(-60deg);
+    transform: rotateY(-20deg);
   }
   to {
     opacity: 1;
@@ -103,7 +103,7 @@
 @keyframes fadeInY {
   from {
     opacity: 0;
-    transform: rotateY(-60deg);
+    transform: rotateY(-20deg);
   }
   to {
     opacity: 1;
@@ -113,7 +113,7 @@
 @-webkit-keyframes fadeInX {
   from {
     opacity: 0;
-    transform: rotateX(-60deg);
+    transform: rotateX(-10deg);
   }
   to {
     opacity: 1;
@@ -123,7 +123,7 @@
 @keyframes fadeInX {
   from {
     opacity: 0;
-    transform: rotateX(-60deg);
+    transform: rotateX(-10deg);
   }
   to {
     opacity: 1;
@@ -435,6 +435,7 @@ h3.artwork-type {
     -ms-scroll-chaining: none;
         overscroll-behavior: contain;
     max-height: 350px;
+    bottom: 15%;
   }
   .visible {
     filter: opacity(0.9) !important;
@@ -491,8 +492,8 @@ li > a:hover {
   border-left: solid 1px rgb(150, 150, 150);
   background: rgb(42, 36, 47);
   font-size: 1.2em;
-  -webkit-animation: fadeInX 0.5s;
-          animation: fadeInX 0.5s;
+  -webkit-animation: fadeInX 0.3s;
+          animation: fadeInX 0.3s;
 }
 .nav--gallery ul {
   padding: 60px 0 60px 10vw;
@@ -598,8 +599,8 @@ video {
     border-left: solid 1px rgb(150, 150, 150);
     background: rgb(42, 36, 47);
     font-size: 1.2em;
-    -webkit-animation: fadeInX 0.5s;
-            animation: fadeInX 0.5s;
+    -webkit-animation: fadeInX 0.3s;
+            animation: fadeInX 0.3s;
   }
   nav ul {
     padding: 60px 0 60px 10vw;
@@ -677,11 +678,10 @@ footer {
   align-items: center;
   width: 100%;
   background: rgb(58, 52, 71);
-  z-index: 7;
 }
 
 .attribution {
-  font-size: clamp(10px, 1vw, 12px);
+  font-size: clamp(12px, 1vw, 12px);
   color: rgb(186, 217, 247);
 }
 .attribution a {
@@ -734,7 +734,9 @@ body {
 }
 
 .contact > p {
-  font-size: clamp(16px, 3vw, 20px);
+  font-size: clamp(16px, 2vw, 18px);
+  padding: 0 50px;
+  max-width: 700px;
 }
 
 .contact-container {
@@ -746,7 +748,6 @@ body {
 
 form {
   width: clamp(300px, 100%, 600px);
-  z-index: 60;
   flex: 3;
   display: flex;
   flex-direction: column;
@@ -802,6 +803,12 @@ button[type=submit] {
 button[type=submit]:hover {
   color: rgb(77, 77, 77);
   background: rgb(197, 209, 177);
+}
+
+.footer--contact {
+  position: absolute;
+  background: transparent;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1024px) and (max-height: 500px) {
