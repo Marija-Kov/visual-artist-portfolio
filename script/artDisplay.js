@@ -16,8 +16,8 @@ export const initShowLarger = async () => {
           ? (large.style.filter = "opacity(1)")
           : (large.style.filter = "opacity(0)");
       });
-      let overlay = document.querySelector('.thumbs');
-      let rgb = getComputedStyle(overlay)
+      let thumbsContainer = document.querySelector('.thumbs');
+      let rgb = getComputedStyle(thumbsContainer)
         .getPropertyValue("background")
         .match(/\d+, \d+, \d+/);
       gallery.style.background = `rgba(${rgb}, 0.8)`;
@@ -42,17 +42,11 @@ export const initShowDetails = async () => {
     articles.forEach((article) => {
       article.getAttribute("id") === showDetails.getAttribute("id")
         ? article.classList.add("visible")
-        : article.classList.remove("visible");
-    });
-  
-  showDetails.innerText === "details >>"
-    ? (showDetails.innerText = "collapse <<")
-    : ((showDetails.innerText = "details >>"),
-      articles.forEach((article) => {
-        article.classList.contains("visible")
-          ? article.classList.remove("visible")
-          : null;
-      }));
+        : article.classList.remove("visible");  
+      article.addEventListener('click', ()=>{
+        article.classList.remove("visible");
+      })
+  });
   hamMenu.classList.contains('open') ?
   hamMenu.classList.remove('open') :
   null;

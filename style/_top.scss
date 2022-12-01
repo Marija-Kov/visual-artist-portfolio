@@ -13,7 +13,6 @@ nav {
     height: 80px;
     width: 100vw;
     overflow: hidden;
-    backdrop-filter: blur(20px);
 
     ul {
         padding: 40px;
@@ -41,7 +40,7 @@ li>a {
 
 .nav--index {
     background-color: transparent;
-
+    border: none;
     ul {
         li {
             a {
@@ -53,6 +52,23 @@ li>a {
             }
         }
     }
+}
+
+.nav--gallery {
+      display: none;
+      width: clamp(310px, 30%, 400px);
+      height: fit-content;
+      right: 0;
+      border-left: solid 1px rgb(150, 150, 150);
+      background: vars.$main-color-gallery;
+      font-size: 1.2em;
+      animation: fadeInX 0.5s;
+
+      ul {
+          padding: 60px 0 60px 10vw;
+          margin: 0 auto;
+          flex-direction: column;
+      }
 }
 
 .social {
@@ -170,6 +186,11 @@ video {
           margin: 0 auto;
           flex-direction: column;
       }
+  }
+
+  .nav--index {
+    background-color: rgba(255, 255, 255, 0.176);
+    backdrop-filter: blur(20px);
   }
    
 }

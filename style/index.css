@@ -5,7 +5,7 @@
   display: block;
   background: rgb(120, 151, 159);
   border-radius: 2px;
-  transition: 0.25s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 #menu-toggle {
@@ -34,13 +34,13 @@
   margin: 8px 0;
 }
 #menu-toggle #ham span:nth-child(1) {
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
 }
 #menu-toggle #ham span:nth-child(2) {
-  transition-delay: 0.625s;
+  transition-delay: 0.425s;
 }
 #menu-toggle #ham span:nth-child(3) {
-  transition-delay: 0.75s;
+  transition-delay: 0.55s;
 }
 #menu-toggle #cross {
   height: 70%;
@@ -64,7 +64,7 @@
   height: 3px;
   top: 18px;
   left: 0px;
-  transition-delay: 0.25s;
+  transition-delay: 0.05s;
   box-shadow: none;
 }
 
@@ -75,18 +75,18 @@
   transition-delay: 0s;
 }
 #menu-toggle.open #ham span:nth-child(2) {
-  transition-delay: 0.125s;
+  transition-delay: 0.025s;
 }
 #menu-toggle.open #ham span:nth-child(3) {
-  transition-delay: 0.25s;
+  transition-delay: 0.15s;
 }
 #menu-toggle.open #cross span:nth-child(1) {
   height: 80%;
-  transition-delay: 0.625s;
+  transition-delay: 0.425s;
 }
 #menu-toggle.open #cross span:nth-child(2) {
   width: 70%;
-  transition-delay: 0.375s;
+  transition-delay: 0.175s;
 }
 
 @-webkit-keyframes fadeInY {
@@ -262,7 +262,7 @@ h3.artwork-type {
   width: 15vw;
   min-width: 180px;
   background: rgb(42, 36, 47);
-  z-index: 250;
+  z-index: 150;
   overflow-y: scroll;
   overflow-x: hidden;
   -webkit-animation: fadeIn 0.5s;
@@ -292,32 +292,36 @@ h3.artwork-type {
 .gallery .large img {
   position: absolute;
   filter: opacity(0);
-  transition: 0.5s;
+  transition: 0.3s;
   max-height: 90%;
 }
 .gallery .large .show-details {
   filter: opacity(0);
   position: absolute;
   margin-right: 60vw;
-  z-index: 400;
-  bottom: 5vh;
-  padding: 0.3em 1.5em;
-  padding-right: 0.7em;
-  border: solid 0px whitesmoke;
+  z-index: 99;
+  bottom: 10vh;
+  height: 2em;
+  width: 2em;
+  border: solid 2px rgb(197, 209, 177);
+  border-radius: 100%;
   font-family: "Work Sans", sans-serif;
+  font-size: 2em;
   color: rgb(197, 209, 177);
   background: rgb(42, 36, 47);
-  transition: 0.5s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 .gallery .large .show-details:hover {
   color: rgb(58, 52, 71);
   background: rgb(197, 209, 177);
+  border: solid 2px rgb(42, 36, 47);
 }
 .gallery .details {
   filter: opacity(0);
   position: absolute;
   bottom: 5%;
-  left: 70%;
+  left: 60%;
   right: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -331,7 +335,7 @@ h3.artwork-type {
   width: clamp(400px, 40vw, 500px);
   padding: 3vw;
   overflow-y: scroll;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .gallery .details::first-line {
   font-size: 150%;
@@ -373,7 +377,7 @@ h3.artwork-type {
     max-height: auto;
   }
   .gallery .large .show-details {
-    bottom: 18vh;
+    bottom: 25vh;
   }
   .gallery .details {
     bottom: 20%;
@@ -448,8 +452,6 @@ nav {
   height: 80px;
   width: 100vw;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
 }
 nav ul {
   padding: 40px;
@@ -470,12 +472,32 @@ li > a:hover {
 
 .nav--index {
   background-color: transparent;
+  border: none;
 }
 .nav--index ul li a {
   color: rgb(58, 52, 71);
 }
 .nav--index ul li a:hover {
   filter: brightness(0.1);
+}
+
+.nav--gallery {
+  display: none;
+  width: clamp(310px, 30%, 400px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  right: 0;
+  border-left: solid 1px rgb(150, 150, 150);
+  background: rgb(42, 36, 47);
+  font-size: 1.2em;
+  -webkit-animation: fadeInX 0.5s;
+          animation: fadeInX 0.5s;
+}
+.nav--gallery ul {
+  padding: 60px 0 60px 10vw;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .social {
@@ -583,6 +605,11 @@ video {
     padding: 60px 0 60px 10vw;
     margin: 0 auto;
     flex-direction: column;
+  }
+  .nav--index {
+    background-color: rgba(255, 255, 255, 0.176);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
   }
 }
 @media (max-width: 768px) {
