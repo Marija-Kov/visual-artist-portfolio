@@ -8,7 +8,7 @@
  @include mixins.center-aligned;
  height: 100vh;
  width: 100vw;
- background:vars.$main-color-gallery;
+ background:vars.$main-bkg-color;
  color: vars.$text-color;
  font-family: vars.$main-font;
  font-weight: 200;
@@ -34,7 +34,7 @@ h3.artwork-type {
     padding-top: 7vh;
     font-family: vars.$main-font;
     font-weight: 200;
-    font-size: clamp(70px, 16vw, 120px);
+    font-size: clamp(50px, 16vw, 100px);
     z-index: -1;
     animation: fadeIn 0.5s;
     
@@ -52,7 +52,7 @@ h3.artwork-type {
   max-width: 200px;
   width: 15vw;
   min-width: 180px;
-  background: vars.$main-color-gallery;
+  background: vars.$main-bkg-color;
   z-index: 150;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -77,10 +77,10 @@ h3.artwork-type {
   padding: 5% 0;
   @include mixins.center-aligned;
   width: 80vw;
-  
    img {
     position: absolute;
     filter: opacity(0);
+    z-index: -10;
     transition: 0.3s;
     max-height: 90%;
   }
@@ -97,13 +97,13 @@ h3.artwork-type {
     font-family: vars.$main-font;
     font-size: 2em;
     color: vars.$text-color;
-    background:vars.$main-color-gallery;
+    background:vars.$main-bkg-color;
     transition: 0.3s;
     cursor: pointer;
     &:hover {
-      color: vars.$main-color;
+      color: vars.$main-bkg-color;
       background: vars.$text-color;
-      border: solid 2px vars.$main-color-gallery;
+      border: solid 2px vars.$main-bkg-color;
     }
     
   }
@@ -111,13 +111,15 @@ h3.artwork-type {
 
 .details {
   filter: opacity(0);
+  z-index: -5;
+  cursor: pointer;
   position: absolute;
   bottom: 5%;
   left: 60%;
   right: auto;
   height: fit-content;
   max-height: 90vh;
-  background:vars.$main-color-gallery;
+  background:vars.$main-bkg-color;
   border-top: solid 1px vars.$text-color;
   border-left: solid 1px vars.$text-color;
   border-top-left-radius: 5vw;
@@ -135,7 +137,7 @@ h3.artwork-type {
 
 .visible{
   filter: opacity(1) !important;
-  z-index: 300;
+  z-index: 300 !important;
    
 }
 

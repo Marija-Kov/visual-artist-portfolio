@@ -1,15 +1,16 @@
 // backgrounds
-$main-color: rgb(58,52,71);
-$main-color-gallery: rgb(42, 36, 47);
+$home-page-bottom-gradient: linear-gradient(180deg, rgba(56, 89, 101, 0.75) 16%, rgba(25, 39, 44, 1) 27%);
+$main-bkg-color: rgb(25, 39, 44);
 $toggle-btn-color: rgb(120, 151, 159);
-$video-overlay-gradient: linear-gradient(180deg, rgba(183, 241, 255, 0.4) 28%, rgba(160, 210, 255, 0.7) 91%);
+$video-overlay-gradient: linear-gradient(138deg, rgba(0, 154, 210, 0.6) 16%, rgba(13, 56, 43, 0.6) 77%);
 
 // text colors
+$heading-index:rgb(25, 39, 44);
 $text-color:rgb(197, 209, 177);
 $large-heading: rgb(197, 209, 177);
-$attribution-text-color: rgb(186, 217, 247);
-$link-text-color:rgba(169, 169, 169, 0.747);
-$link-text-color-hover: rgba(245, 245, 245, 1);
+$attribution-text-color: rgb(197, 209, 177);
+$link-text-color:rgb(204, 235, 247);
+$link-text-color-hover: rgb(131, 157, 167);
 
 $main-font:'Work Sans', sans-serif;
 
