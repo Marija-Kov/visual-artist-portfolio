@@ -10,7 +10,7 @@ fetch(url)
     }
   })
   .then((data) => showData(data, data._3d))
-  .then(initShowDetails)
+  .then(initshowDetailsBtn)
   .then(initShowLarger)
   .then(hamburgerMenuDisplay)
   .catch((err) => `Error: ${err}`);
@@ -18,6 +18,6 @@ fetch(url)
   loading();
  
   import { hamburgerMenuDisplay } from "../ham-navigation.js";
-  import {initShowDetails, initShowLarger} from "../artDisplay.js";
+  import {initshowDetailsBtn, initShowLarger} from "../artDisplay.js";
   import { showData } from "../showData.js";
   import { loading } from "../loading.js";
