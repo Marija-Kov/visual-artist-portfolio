@@ -28,15 +28,11 @@ a {
   color:whitesmoke;
 }
 body {
-        font-family: 'Work Sans',
-                sans-serif;
-            font-weight: 300;
-            font-size: clamp(13px, 1.5vw, 16px);
-            overflow-x: hidden;
-            background: vars.$main-color-gallery;
-}
-.index--body {
-    background: vars.$main-color; 
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: clamp(16px, 1.6vw, 18px);
+    overflow-x: hidden;
+    background: vars.$main-bkg-color;
 }
 
 .logo-container {
@@ -44,11 +40,17 @@ body {
     top: 40%;
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin-top: 40px;
     img {
-        width: 100px;
-        filter: opacity(0.6);
+        width: 120px;
+        filter: opacity(0.7);
     }
+}
+
+.categories {
+    position: fixed;
+    right: 25%;
+    top: 100px;
 }
 
 

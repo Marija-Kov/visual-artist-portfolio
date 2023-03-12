@@ -4,8 +4,6 @@
         e.style.opacity = "1";
       });
     }, 2000);
-    hamburgerMenuDisplay();
-    logoScrollAnimation();
+    indexScrollAnimation();
 
-import { hamburgerMenuDisplay } from "./ham-navigation.js";
-import { logoScrollAnimation } from "./logoScrollAnimation.js";
+import { indexScrollAnimation } from "./indexScrollAnimation.js";

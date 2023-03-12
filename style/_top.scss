@@ -1,4 +1,3 @@
-
 @use 'vars';
 @use 'mixins';
 
@@ -32,9 +31,16 @@ nav {
 
 li>a {
     color: vars.$link-text-color;
-
     &:hover {
         color:vars.$link-text-color-hover;
+    }
+}
+
+.categories {
+    a {
+        &:hover{
+            color: vars.$heading-index;
+        }
     }
 }
 
@@ -44,7 +50,7 @@ li>a {
     ul {
         li {
             a {
-                color: vars.$main-color;
+                color: vars.$main-bkg-color;
 
                 &:hover {
                     filter: brightness(0.1)
@@ -60,7 +66,7 @@ li>a {
       height: fit-content;
       right: 0;
       border-left: solid 1px rgb(150, 150, 150);
-      background: vars.$main-color-gallery;
+      background: vars.$main-bkg-color;
       font-size: 1.2em;
       animation: fadeInX 0.3s;
 
@@ -145,7 +151,7 @@ video {
       height: fit-content;
       right: 0;
       border-left: solid 1px rgb(150, 150, 150);
-      background: vars.$main-color-gallery;
+      background: vars.$main-bkg-color;
       font-size: 1.2em;
       animation: fadeInX 0.3s;
 
@@ -164,27 +170,17 @@ video {
 }
 
 @media (max-width: 768px) {
-       
-        nav,
-        .nav--gallery {
-            width: 50%;
-
-            ul {
-                padding: 60px 0 60px 10vw;
-                flex-direction: column;
-            }
+    nav,
+    .nav--gallery {
+        width: 50%;
+        ul {
+            padding: 60px 0 60px 10vw;
+            flex-direction: column;
         }
-
-           #about>article>p {
-               padding: 30vh 15vw 0vh 15vw;
-               font-size: 1.2em;
-
-           }
-
-           .this-way {
-               top: 80%;
-
-           }
+    }
+    .this-way {
+        top: 80%;
+    }
 }
 
 
