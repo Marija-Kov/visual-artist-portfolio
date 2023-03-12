@@ -1,9 +1,6 @@
 @use 'vars';
 @use 'mixins';
 
-body {
- @include mixins.dark-gradient;   
-}
 .contact {
     margin-top: 100px;
     color: vars.$text-color;

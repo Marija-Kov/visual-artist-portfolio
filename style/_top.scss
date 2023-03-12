@@ -71,37 +71,6 @@ li>a {
       }
 }
 
-.social {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    position: sticky;
-    top: 110px;
-    width: 50px;
-    margin-left: 40px;
-    transition: 0.5s;
-
-    ul {
-        li {
-            &:nth-child(1) {
-                margin-bottom: 0.5em;
-            }
-
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(4) {
-                margin-bottom: 1em;
-
-            }
-
-            &:hover {
-                filter: brightness(4);
-            }
-        }
-    }
-}
-
 header {
     height: 100vh;
 }
@@ -120,7 +89,6 @@ header {
 
 .video-container {
     width: 100vw;
-    position: relative;
     top: 0%;
     overflow-y: hidden;
     overflow-x: hidden;
