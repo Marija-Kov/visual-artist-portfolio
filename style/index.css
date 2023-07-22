@@ -16,8 +16,7 @@
   right: 0;
   top: -6px;
   z-index: 9999;
-  -webkit-animation: fadeInX 0.3s;
-          animation: fadeInX 0.3s;
+  animation: fadeInX 0.3s;
   border-bottom-left-radius: 50%;
   cursor: pointer;
 }
@@ -89,17 +88,6 @@
   transition-delay: 0.175s;
 }
 
-@-webkit-keyframes fadeInY {
-  from {
-    opacity: 0;
-    transform: rotateY(-20deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotateY(0);
-  }
-}
-
 @keyframes fadeInY {
   from {
     opacity: 0;
@@ -108,16 +96,6 @@
   to {
     opacity: 1;
     transform: rotateY(0);
-  }
-}
-@-webkit-keyframes fadeInX {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotateX(0);
   }
 }
 @keyframes fadeInX {
@@ -130,31 +108,12 @@
     transform: rotateX(0);
   }
 }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    border-left: solid 1px rgba(245, 245, 245, 0.1);
-  }
-  50% {
-    border-left: solid 1.2px rgb(245, 245, 245);
-  }
-  100% {
-    border-left: solid 1px rgba(245, 245, 245, 0.1);
   }
 }
 @keyframes blink {
@@ -166,16 +125,6 @@
   }
   100% {
     border-left: solid 1px rgba(245, 245, 245, 0.1);
-  }
-}
-@-webkit-keyframes loading {
-  0% {
-    letter-spacing: 0;
-    filter: blur(0px) opacity(1);
-  }
-  100% {
-    letter-spacing: 100px;
-    filter: blur(7px) opacity(0);
   }
 }
 @keyframes loading {
@@ -225,8 +174,7 @@
   white-space: nowrap;
   word-wrap: nowrap;
   overflow: hidden;
-  -webkit-animation: loading 1.7s;
-          animation: loading 1.7s;
+  animation: loading 1.7s;
 }
 
 h3.artwork-type {
@@ -244,8 +192,7 @@ h3.artwork-type {
   font-weight: 200;
   font-size: clamp(50px, 16vw, 100px);
   z-index: -1;
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
 }
 
 .gallery {
@@ -265,8 +212,7 @@ h3.artwork-type {
   z-index: 150;
   overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
 }
 .gallery .thumbs .thumb {
   min-height: 150px;
@@ -275,8 +221,7 @@ h3.artwork-type {
   transition: 0.5s;
   background-size: 160%;
   background-position-x: center;
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
 }
 .gallery .thumbs .thumb:hover {
   filter: grayscale(0);
@@ -326,7 +271,6 @@ h3.artwork-type {
   bottom: 5%;
   left: 60%;
   right: auto;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   max-height: 90vh;
@@ -410,7 +354,6 @@ h3.artwork-type {
   }
   .gallery .thumbs {
     min-width: 0;
-    max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
@@ -435,8 +378,7 @@ h3.artwork-type {
   }
   .gallery .details {
     width: 80vw;
-    -ms-scroll-chaining: none;
-        overscroll-behavior: contain;
+    overscroll-behavior: contain;
     max-height: 350px;
     bottom: 15%;
   }
@@ -449,8 +391,7 @@ nav {
   z-index: 99;
   top: -15px;
   display: inline-block;
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
   font-size: 1em;
   background: transparent;
   height: 80px;
@@ -492,15 +433,13 @@ li > a:hover {
 .nav--gallery {
   display: none;
   width: clamp(310px, 30%, 400px);
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   right: 0;
   border-left: solid 1px rgb(150, 150, 150);
   background: rgb(25, 39, 44);
   font-size: 1.2em;
-  -webkit-animation: fadeInX 0.3s;
-          animation: fadeInX 0.3s;
+  animation: fadeInX 0.3s;
 }
 .nav--gallery ul {
   padding: 60px 0 60px 10vw;
@@ -535,8 +474,7 @@ header {
 video {
   width: 120%;
   height: auto;
-  -webkit-animation: fadeInY 1s;
-          animation: fadeInY 1s;
+  animation: fadeInY 1s;
 }
 
 .line::after {
@@ -544,8 +482,7 @@ video {
   height: 40vh;
   top: 170%;
   position: absolute;
-  -webkit-animation: blink 2s infinite;
-          animation: blink 2s infinite;
+  animation: blink 2s infinite;
 }
 
 .video-overlay {
@@ -576,15 +513,13 @@ video {
   nav {
     display: none;
     width: clamp(310px, 30%, 400px);
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     right: 0;
     border-left: solid 1px rgb(150, 150, 150);
     background: rgb(25, 39, 44);
     font-size: 1.2em;
-    -webkit-animation: fadeInX 0.3s;
-            animation: fadeInX 0.3s;
+    animation: fadeInX 0.3s;
   }
   nav ul {
     padding: 60px 0 60px 10vw;
@@ -599,11 +534,11 @@ video {
 }
 @media (max-width: 768px) {
   nav,
-.nav--gallery {
+  .nav--gallery {
     width: 50%;
   }
   nav ul,
-.nav--gallery ul {
+  .nav--gallery ul {
     padding: 60px 0 60px 10vw;
     flex-direction: column;
   }
@@ -682,19 +617,20 @@ footer::before {
 .contact {
   margin-top: 100px;
   color: rgb(197, 209, 177);
+  display: flex;
 }
 
 .contact > h2 {
   padding-left: 50px;
 }
 
-.contact > p {
+.form-container > p {
   font-size: clamp(16px, 2vw, 18px);
   padding: 0 50px;
   max-width: 700px;
 }
 
-.contact-container {
+.form-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -728,9 +664,6 @@ form {
 .form-element:focus::-moz-placeholder {
   color: transparent;
 }
-.form-element:focus:-ms-input-placeholder {
-  color: transparent;
-}
 .form-element:focus::placeholder {
   color: transparent;
 }
@@ -749,7 +682,6 @@ button[type=submit] {
   padding: 5px 20px;
   font-size: clamp(16px, 4vw, 18px);
   font-family: "Trispace", sans-serif;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   transition: 0.3s;
@@ -758,6 +690,17 @@ button[type=submit] {
 button[type=submit]:hover {
   color: rgb(77, 77, 77);
   background: rgb(197, 209, 177);
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 4em;
+  margin-top: 2em;
+}
+.links-section a {
+  text-decoration: underline;
 }
 
 .footer--contact {
@@ -772,18 +715,27 @@ button[type=submit]:hover {
     flex-direction: row;
     height: 150vh;
   }
-  .contact-container {
+  .form-container {
     flex-direction: row;
     min-width: 300px;
     max-width: 560px;
   }
 }
 @media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
   form {
     align-items: center;
   }
   .form-element {
     width: 100%;
+  }
+  .links-section {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
   }
 }
 *,
