@@ -15,8 +15,10 @@ fetch(url)
   .catch((err) => `Error: ${err}`);
 
   loading();
+  navigation();
 
 import { hamburgerMenuDisplay } from "../ham-navigation.js"
 import { initshowDetailsBtn, initShowLarger } from "../artDisplay.js";
 import { showData } from "../showData.js";
-import { loading } from "../loading.js"
+import { loading } from "../loading.js";
+import { navigation } from "../components/navigation.js"
