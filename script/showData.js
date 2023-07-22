@@ -25,7 +25,10 @@ export const showData = async (data, category) => {
                              ${category[i].description}`;
     gallery.appendChild(details);
     let large = document.createElement("img");
-    large.setAttribute("src", `${category[i].images[1]}`);
+    if(window.innerWidth > 500){
+     large.setAttribute("src", `${category[i].images[1]}`);
+    }
+    large.setAttribute("src", `${category[i].images[2]}`);
     large.setAttribute("id", `a${i}`);
     large.setAttribute("alt", `${category[i].alt}`);
     largeImg.appendChild(large);

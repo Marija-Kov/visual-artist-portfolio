@@ -9,14 +9,17 @@ fetch(url)
     }
   })
   .then((data) => showData(data, data.drawings))
+  .then(hamburgerMenu)
   .then(initshowDetailsBtn)
   .then(initShowLarger)
   .then(hamburgerMenuDisplay)
   .catch((err) => `Error: ${err}`);
 
   loading();
+  navigation();
 
 import { hamburgerMenuDisplay } from "../ham-navigation.js"
 import { initshowDetailsBtn, initShowLarger } from "../artDisplay.js";
 import { showData } from "../showData.js";
-import { loading } from "../loading.js"
+import { loading } from "../loading.js";
+import { navigation, hamburgerMenu } from "../components/navigation.js"
