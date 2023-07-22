@@ -10,6 +10,7 @@ fetch(url)
     }
   })
   .then((data) => showData(data, data._3d))
+  .then(hamburgerMenu)
   .then(initshowDetailsBtn)
   .then(initShowLarger)
   .then(hamburgerMenuDisplay)
@@ -21,4 +22,4 @@ fetch(url)
   import {initshowDetailsBtn, initShowLarger} from "../artDisplay.js";
   import { showData } from "../showData.js";
   import { loading } from "../loading.js";
-  import { navigation } from "../components/navigation.js"
+  import { navigation, hamburgerMenu } from "../components/navigation.js"

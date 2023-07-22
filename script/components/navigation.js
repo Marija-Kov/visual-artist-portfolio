@@ -25,3 +25,25 @@ export const navigation = () => {
   return
 }
 
+export const hamburgerMenu = () => {
+    const body = document.querySelector('body');
+    const wrapper = document.createElement('div');
+    wrapper.setAttribute('id', 'menu-toggle');
+    const ham = document.createElement('div');
+    ham.setAttribute('id', 'ham');
+    const cross = document.createElement('div');
+    cross.setAttribute('id', 'cross');
+    for(let i = 0; i < 3; ++i){
+        const span = document.createElement('span');
+        ham.appendChild(span)
+    }
+    for(let i = 0; i < 2; ++i){
+        const span = document.createElement('span');
+        cross.appendChild(span)
+    }
+    wrapper.appendChild(ham);
+    wrapper.appendChild(cross);
+    body.appendChild(wrapper);
+    return
+}
+
