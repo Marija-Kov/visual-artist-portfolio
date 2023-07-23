@@ -6,4 +6,4 @@
     }, 2000);
     indexScrollAnimation();
 
-import { indexScrollAnimation } from "./indexScrollAnimation.js";
+import { indexScrollAnimation } from "./aesthetics/indexScrollAnimation.js";

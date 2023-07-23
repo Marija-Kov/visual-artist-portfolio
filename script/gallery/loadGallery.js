@@ -7,9 +7,9 @@ const loadGallery = (category) => {
          return response.json();
        }
      })
-     .then((data) => showData(data, data[category]))
+     .then((data) => showDetails(data[category]))
      .then(hamburgerMenu)
-     .then(initshowDetailsBtn)
+     .then(initShowDetailsBtn)
      .then(initShowLarger)
      .then(hamburgerMenuDisplay)
      .catch((err) => `Error: ${err}`);
@@ -19,10 +19,8 @@ const loadGallery = (category) => {
      return
    }
    
-   import { hamburgerMenuDisplay } from "../ham-navigation.js";
-   import {initshowDetailsBtn, initShowLarger} from "../artDisplay.js";
-   import { showData } from "../showData.js";
-   import { loading } from "../loading.js";
-   import { navigation, hamburgerMenu } from "../components/navigation.js"
+   import {initShowDetailsBtn, initShowLarger, showDetails} from "./artDisplay.js";
+   import { loading } from "../aesthetics/loading.js";
+   import { navigation, hamburgerMenu, hamburgerMenuDisplay } from "../navigation/navigation.js"
    
    export default loadGallery;
