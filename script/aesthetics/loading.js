@@ -1,3 +1,4 @@
+
 export const loading = () => {
   window.addEventListener('load', () => {
     let loading = document.querySelector('#loading');
